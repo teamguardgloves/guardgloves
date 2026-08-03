@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Collections — Guard Gloves</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fcfcfc] font-sans text-gray-900 antialiased pt-16 sm:pt-20">
+
+  <!-- ========================================== -->
+    <!-- 1. FIXED NAVIGATION BAR (Blog 2 Matching Theme) -->
+    <!-- ========================================== -->
+    <header class="h-16 sm:h-20">
+        <nav class="fixed top-0 left-0 w-full z-50 bg-[#000000] border-b border-white/[0.05]">
+            <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
+                
+                <!-- Logo Area -->
+                <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
+                    <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" 
+                             alt="Guard Gloves Official Logo" 
+                             class="object-contain object-left w-full h-full">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center justify-center flex-1 px-4">
+                    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+                        <a href="collection.html" class="hover:text-red-600 transition-colors duration-300">Collection</a>
+                        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+                        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+                        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+                        <a href="catalogue.html" class="hover:text-red-600 transition-colors duration-300">Catalogue</a>
+                        <a href="resources.html" class="text-red-600 hover:text-red-600 transition-colors duration-300">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Contact Button -->
+                <div class="hidden lg:flex items-center z-10 shrink-0">
+                    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <input type="checkbox" id="nav-toggle" class="hidden peer">
+                <div class="flex lg:hidden items-center z-10">
+                    <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- Mobile Navigation Drawer -->
+                <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300">
+                    <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                        <a href="collection.html" class="block py-2 text-red-600 border-b border-white/[0.03] hover:text-red-600 transition-colors">Collection</a>
+                        <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                        <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                        <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                        <a href="catalogue.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Catalogue</a>
+                        <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-color">Resources</a>
+                        <a href="contact.html" class="block py-2 text-white bg-red-600 rounded text-center font-bold mt-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-10">
+  
+  <!-- CONTROLS / FILTER BAR (Clean Light Theme Optimized) -->
+<div class="bg-white border border-gray-100 rounded-xl shadow-sm p-3.5 sm:p-4 mb-6 sm:mb-8 flex items-center justify-between gap-4 border-l-4 border-l-red-700">
+  <div class="text-xs sm:text-sm font-medium text-gray-600 tracking-wide">
+    Showing <span class="text-black font-semibold">1-10</span> <span class="text-gray-400">
+  </div>
+  <div class="flex items-center gap-2 sm:gap-3">
+    <label for="sort" class="text-[9px] sm:text-[11px] uppercase tracking-widest text-gray-400 font-bold">Sort By:</label>
+    <div class="relative flex items-center">
+      <select id="sort" class="appearance-none bg-gray-50 border border-gray-200 text-xs sm:text-sm rounded-lg pl-3 pr-8 py-1.5 sm:py-2 text-gray-700 font-medium focus:outline-none focus:border-red-700 focus:bg-white transition cursor-pointer">
+        <option>Default</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Latest</option>
+      </select>
+      <!-- Premium Custom Light Dropdown Arrow Element -->
+      <div class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400">
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+    
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Premium</span>
+        <img src="assets/images/glove1.webp" alt="Ironclad Pro" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Heavy-Duty</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.9</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Ironclad Pro — Full Grain Leather Work Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Best Seller</span>
+        <img src="assets/images/glove2.webp" alt="Stealth Grip" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Tactical Series</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">5.0</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Stealth Grip — Tactical Safety Shield Impact Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">New</span>
+        <img src="assets/images/glove3.webp" alt="Vanguard Element" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Waterproof</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.8</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Vanguard Element — Handcrafted Goatskin Protective Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Elite</span>
+        <img src="assets/images/glove4.webp" alt="Grip Elite" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Classic Line</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.7</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Grip Elite — Premium Leather Driving Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Hot</span>
+        <img src="assets/images/glovecollection6.webp" alt="Apex Defender" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Mechanic Series</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.9</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Apex Defender — High-Dexterity Industrial Work Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Pro Line</span>
+        <img src="assets/images/glovecollection7.webp" alt="Titan Shield" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Heat Resistant</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">5.0</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Titan Shield — Heavy Duty Welder & Thermal Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-span-2 md:col-span-3 lg:col-span-2 h-full min-h-[200px] sm:min-h-[320px] rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden flex items-center justify-center group">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 z-20">
+        <p class="text-[#d32f2f] text-[8px] sm:text-[10px] font-bold uppercase tracking-widest mb-0.5 sm:mb-1">Premium Crafted</p>
+        <h2 class="text-white text-xs sm:text-base md:text-lg font-bold uppercase tracking-tight drop-shadow-sm leading-tight">
+          World-Class Protection <br>For Heavy Industries
+        </h2>
+      </div>
+      <img src="assets/images/glovecollection.webp" alt="Industrial Showcase" class="absolute inset-0 object-cover w-full h-full group-hover:scale-105 transition duration-500 ease-out">
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Premium</span>
+        <img src="assets/images/glovecollection8.webp" alt="Ironclad Pro" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Heavy-Duty</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.9</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Ironclad Pro — Full Grain Leather Work Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Best Seller</span>
+        <img src="assets/images/glovecollection9.webp" alt="Stealth Grip" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Tactical Series</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">5.0</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Stealth Grip — Tactical Safety Shield Impact Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">New</span>
+        <img src="assets/images/glovecollection11.webp" alt="Vanguard Element" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Waterproof</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.8</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Vanguard Element — Handcrafted Goatskin Protective Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="group bg-white rounded-xl sm:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-300 overflow-hidden flex flex-col w-full">
+      <div class="relative w-full aspect-square overflow-hidden bg-[#fafafa]">
+        <span class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#d32f2f] text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase px-1.5 py-0.5 sm:px-2 rounded shadow-sm z-10">Elite</span>
+        <img src="assets/images/glovecollection12.webp" alt="Grip Elite" class="object-cover w-full h-full group-hover:scale-105 transition duration-300">
+      </div>
+      <div class="p-3 sm:p-4 flex-grow flex flex-col justify-between bg-white">
+        <div class="space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate">Classic Line</span>
+            <span class="flex items-center text-[10px] sm:text-xs font-semibold text-gray-700 shrink-0">⭐ <span class="ml-0.5 text-[9px] sm:text-[11px] font-medium">4.7</span></span>
+          </div>
+          <h3 class="text-xs sm:text-sm font-bold text-gray-800 group-hover:text-[#d32f2f] transition line-clamp-2 leading-snug">
+            Grip Elite — Premium Leather Driving Gloves
+          </h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex items-center justify-center gap-1.5 mt-12 sm:mt-16">
+    <button class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-black text-white text-xs font-bold flex items-center justify-center transition active:scale-95">1</button>
+    <button class="w-8 h-8 sm:w-9 sm:h-9 rounded border border-gray-200 text-xs text-gray-600 font-medium hover:border-black hover:text-black flex items-center justify-center transition active:scale-95">2</button>
+    <button class="w-8 h-8 sm:w-9 sm:h-9 rounded border border-gray-200 text-xs text-gray-600 font-medium hover:border-black hover:text-black flex items-center justify-center transition active:scale-95">3</button>
+  </div>
+
+   <!-- BULK CORPORATE ORDERS INFRASTRUCTURE BANNER -->
+    <section class="bg-gray-50 border-t border-b border-gray-100 py-16 px-4 sm:px-8 lg:px-12 text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <span class="text-red-800 text-xs font-bold tracking-widest uppercase block">Corporate Procurement</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-light text-gray-900 leading-tight">
+                Need Customized Enterprise Allocation or Custom Logo Stamping?
+            </h2>
+            <p class="text-gray-500 text-xs sm:text-sm font-light leading-relaxed max-w-xl mx-auto">
+                We handle scalable supply requirements for logistic chains, military assets, and factory operations globally with personalized dye configurations.
+            </p>
+            <div class="pt-4">
+                <a href="contact.html" class="inline-block bg-black hover:bg-red-800 text-white text-[10px] font-semibold tracking-widest uppercase px-8 py-4 rounded-md transition-colors shadow-sm">
+                    Connect With Enterprise Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+  <!-- PREMIUM FOOTER -->
+  <footer class="bg-[#000000] text-gray-400 text-sm border-t border-white/5 pt-12 sm:pt-16 pb-8 font-sans overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-white/5">
+                
+                <div class="lg:col-span-4 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <a href="#" class="block" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" 
+                            alt="Guard Gloves Premium Luxury Leather Brand Official Logo" 
+                            class="w-48 sm:w-56 h-auto object-contain mx-auto lg:mx-0" />
+                    </a>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed max-w-sm">
+                        Engineered for absolute precision and unrivaled hands protection. Delivering world-class handcrafted leather gear globally since 1966.
+                    </p>
+                    <div class="flex gap-4 pt-1 justify-center lg:justify-start">
+                        <a href="#" aria-label="Guard Gloves Facebook" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-[#c5a880] hover:border-[#c5a880] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Guard Gloves Instagram" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-[#c5a880] hover:border-[#c5a880] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 0.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-3 text-center lg:text-left">
+                    <h4 class="text-xs uppercase tracking-widest text-white font-bold">Shop</h4>
+                    <ul class="space-y-2 text-xs font-light">
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Work Collection</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Tactical Gear</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Limited Edition</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 space-y-3 text-center lg:text-left">
+                    <h4 class="text-xs uppercase tracking-widest text-white font-bold">The Brand</h4>
+                    <ul class="space-y-2 text-xs font-light">
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Our Craft</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Leather Story</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-0.5 block transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 space-y-3 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <h4 class="text-xs uppercase tracking-widest text-white font-bold">Join the Inner Circle</h4>
+                    <p class="text-xs text-gray-500 font-light leading-relaxed max-w-sm">
+                        Subscribe to receive exclusive access to private collection drops, heritage stories, and premium member offers.
+                    </p>
+                    <form class="flex flex-col sm:flex-row gap-2 pt-1 w-full max-w-sm lg:max-w-none">
+                        <input 
+                            type="email" 
+                            id="newsletter-email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="Your email address" 
+                            class="w-full bg-white/[0.03] border border-white/10 focus:border-[#c5a880] outline-none px-3 py-2 text-sm text-white placeholder-gray-600 rounded-md sm:rounded-none transition-colors" 
+                            required>
+                        <button type="submit" class="bg-white text-black font-bold uppercase tracking-widest text-[10px] px-4 py-2.5 hover:bg-[#c5a880] hover:text-black transition-colors duration-300 whitespace-nowrap rounded-md sm:rounded-none">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-center text-[10px] uppercase tracking-widest text-gray-600 font-medium">
+                <p>&copy; 2026 Guard Gloves. All Rights Reserved.</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability - Guard Gloves</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#f7f7f7] font-sans text-gray-900 antialiased">
+    
+    <!-- MAIN HEADER NAVIGATION -->
+    <header class="h-16 sm:h-20">
+        <nav class="fixed top-0 left-0 w-full z-50 bg-[#000000] border-b border-white/[0.05]">
+            <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
+                
+                <!-- Logo -->
+                <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
+                    <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center justify-center flex-1 px-4">
+                    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+                        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+                        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+                        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+                        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+                        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+                        <a href="terms.html" class="hover:text-red-600 transition-colors duration-300">Terms of Use</a>
+                        <a href="privacy.html" class="hover:text-red-600 transition-colors duration-300">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <!-- Desktop CTA -->
+                <div class="hidden lg:flex items-center z-10 shrink-0">
+                    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Toggle Checkbox -->
+                <input type="checkbox" id="nav-toggle" class="hidden peer">
+
+                <!-- Mobile Hamburger/Close Button -->
+                <div class="flex lg:hidden items-center z-10">
+                    <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                            <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- Mobile Menu Dropdown -->
+                <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+                    <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                        <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                        <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                        <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                        <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                        <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                        <a href="terms.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Terms of Use</a>
+                        <a href="privacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Privacy Policy</a>
+                        <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="relative w-full bg-black text-white min-h-[380px] sm:min-h-[440px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 w-full h-full flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 bg-gradient-to-r from-black via-black to-transparent z-10"></div>
+            <div class="w-full md:w-1/2 h-full relative">
+                <img src="assets/blogs/blog9/blog11bgh.webp" 
+                     alt="Guard Gloves Manufacturing Facility" 
+                     class="w-full h-full object-cover grayscale opacity-60 contrast-125 brightness-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent md:bg-gradient-to-l md:from-transparent md:via-black/50 md:to-black"></div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 w-full relative z-20">
+            <div class="space-y-4 sm:space-y-6 max-w-xl text-left">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight uppercase leading-tight">
+                    Sustainability <br>
+                    <span class="text-[#d92323]">At Guard Gloves</span>
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl font-semibold text-gray-200 border-l-4 border-[#d92323] pl-3 sm:pl-4">
+                    Better Practices. Better Products. Better Future.
+                </p>
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                    We integrate responsible practices in our operations to create value for our customers, employees, communities and the planet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: RESPONSIBLE MANUFACTURING PILLARS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <div class="max-w-3xl mx-auto mb-8 sm:mb-12 space-y-3">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-gray-900">
+                Responsible Manufacturing. <br>
+                <span class="text-[#d92323]">Sustainable Impact.</span>
+            </h2>
+            <p class="text-gray-600 text-xs sm:text-sm md:text-base max-w-2xl mx-auto px-2">
+                We integrate sustainability in our processes to protect people, reduce impact and create long-term value for our partners.
+            </p>
+        </div>
+
+        <!-- 6 Pillars Responsive Grid (Enhanced Font Sizes & Readability) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-5">
+    
+    <!-- Pillar 1: Responsible Sourcing -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-leaf"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">Responsible Sourcing</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">Ethical sourcing and responsible supply chain management.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=400" alt="Sourcing" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Pillar 2: Resource & Energy -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">Resource & Energy</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">Efficient operations and continuous energy improvement.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=400" alt="Energy" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Pillar 3: Waste Reduction -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-recycle"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">Waste Reduction</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">Minimizing waste, reusing and recycling where possible.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=400" alt="Waste" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Pillar 4: Chemical Mgmt -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-flask-vial"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">Chemical Mgmt</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">Safe handling and responsible use of chemicals.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&q=80&w=400" alt="Chemicals" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Pillar 5: People & Workplace -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-users"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">People & Workplace</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">A safe, inclusive and supportive environment.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Workplace" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Pillar 6: Purified Water -->
+    <div class="bg-black text-white flex flex-col justify-between rounded-xl overflow-hidden shadow-lg group transition-all duration-300 hover:-translate-y-1">
+        <div class="p-4 sm:p-5 flex-grow flex flex-col items-center text-center space-y-3">
+            <div class="text-[#d92323] text-3xl sm:text-4xl"><i class="fa-solid fa-droplet"></i></div>
+            <h3 class="text-sm sm:text-base font-bold uppercase tracking-wide min-h-[44px] flex items-center justify-center leading-snug">Purified Water</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-normal">Purified drinking water available for all team members.</p>
+        </div>
+        <div class="h-28 sm:h-36 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-300">
+            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80&w=400" alt="Water Filtration" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+</div>
+    </section>
+
+    <!-- SECTION 3: SUSTAINABILITY DNA & COMMITMENTS (Updated Background Color) -->
+    <section class="bg-[#f7f7f7] border-t border-gray-200 py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6 text-left">
+                <div class="space-y-2">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-gray-900 leading-none">
+                        Sustainability <br>
+                        Is In <span class="text-[#d92323]">Our DNA</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-600">
+                        From raw material to finished product, we integrate responsible practices in every step of our journey.
+                    </p>
+                </div>
+
+                <div class="bg-black text-white p-5 sm:p-6 rounded-xl shadow-lg space-y-4">
+                    <h3 class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase border-b border-gray-800 pb-2">Our Commitment</h3>
+                    <ul class="space-y-3 text-xs sm:text-sm">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#d92323] mt-0.5"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-gray-300">Comply with applicable laws and standards</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#d92323] mt-0.5"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-gray-300">Continuous improvement in sustainability performance</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#d92323] mt-0.5"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-gray-300">Transparency and accountability</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#d92323] mt-0.5"><i class="fa-solid fa-check"></i></span>
+                            <span class="text-gray-300">Long-term value for partners and communities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Side Clean Image Section -->
+            <div class="lg:col-span-7 flex justify-center items-center relative mt-6 lg:mt-0">
+                <div class="w-full max-w-[480px]">
+                    <img src="assets/blogs/sustainibiltyh1.webp" 
+                         alt="Guard Gloves Sustainability Diagram" 
+                         class="w-full h-auto object-contain block mx-auto">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="bg-[#000000] text-white text-sm border-t border-white/5 pt-12 sm:pt-16 pb-8 font-sans overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            
+            <!-- Top Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-white/5">
+                
+                <!-- Column 1: Brand Info -->
+                <div class="lg:col-span-4 space-y-4 sm:space-y-5 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <a href="index.html" class="block" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" 
+                            alt="Guard Gloves Official Logo" 
+                            class="w-[160px] sm:w-[180px] md:w-[240px] h-auto object-contain mx-auto lg:mx-0" />
+                    </a>
+                    <p class="text-xs sm:text-sm text-white font-light leading-relaxed max-w-sm mx-auto lg:mx-0">
+                        Engineered for absolute precision and unrivaled hands protection. Delivering world-class handcrafted leather gear globally since 1966.
+                    </p>
+                    <!-- Social Media Icons -->
+                    <div class="flex gap-4 pt-1 justify-center lg:justify-start">
+                        <a href="#" aria-label="Guard Gloves Facebook" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white hover:text-white hover:bg-[#d92323] hover:border-[#d92323] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Guard Gloves Instagram" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white hover:text-white hover:bg-[#d92323] hover:border-[#d92323] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0 3.204 0.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Guard Gloves LinkedIn" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white hover:text-white hover:bg-[#d92323] hover:border-[#d92323] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 & 3: Navigation Columns -->
+            <div class="lg:col-span-4 pt-0 lg:pt-2">
+                <div class="grid grid-cols-2 gap-4 text-left">
+                    <ul class="space-y-3 text-xs font-semibold tracking-wider uppercase text-white">
+                        <li><a href="index.html" class="hover:text-brand-red transition-colors block py-0.5">Home</a></li>
+                        
+                        <li><a href="story.html" class="hover:text-brand-red transition-colors block py-0.5">About Us</a></li>
+                        <li><a href="strengths.html" class="hover:text-brand-red transition-colors block py-0.5">Strengths</a></li>
+                        <li><a href="sustainibilty.html" class="hover:text-brand-red transition-colors block py-0.5">Sustainability</a></li>
+                    </ul>
+                    <ul class="space-y-3 text-xs font-semibold tracking-wider uppercase text-white">
+                        <li><a href="technical.html" class="text-brand-red hover:text-brand-red transition-colors block py-0.5">Technical Blueprint</a></li>
+                        <li><a href="legacy.html" class="hover:text-brand-red transition-colors block py-0.5">Legacy</a></li>
+                        <li><a href="resources.html" class="hover:text-brand-red transition-colors block py-0.5">Resources</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-red transition-colors block py-0.5">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="lg:col-span-4 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <h4 class="text-[11px] uppercase tracking-widest text-white font-bold">Join the Inner Circle</h4>
+                    <p class="text-xs text-white font-light leading-relaxed max-w-sm mx-auto lg:mx-0">
+                        Subscribe to receive exclusive access to private collection drops, heritage stories, and premium member offers.
+                    </p>
+                    
+                    <form id="newsletter-form" action="https://script.google.com/macros/s/AKfycbyQIrGIb81iYcMSFGX6rmVPv-IpuAuGwOPktcNBHboE1TgbF3so-a5Z09RaYiWOSZrXzg/exec" method="POST" class="flex flex-col sm:flex-row gap-2 pt-2 w-full max-w-sm lg:max-w-none">
+                        <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Your email address" 
+                            class="w-full bg-white/[0.03] border border-white/10 focus:border-[#d92323] outline-none px-4 py-3 text-xs text-white placeholder-gray-600 rounded-md sm:rounded-none transition-colors" 
+                            required>
+                        <button type="submit" id="submit-btn" class="bg-white text-black font-bold uppercase tracking-widest text-[10px] px-6 py-3.5 sm:py-3 hover:bg-[#d92323] hover:text-white transition-colors duration-300 whitespace-nowrap rounded-md sm:rounded-none">
+                            Subscribe
+                        </button>
+                    </form>
+
+                    <p id="form-response" class="text-[10px] uppercase tracking-wider font-bold mt-2 hidden"></p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center text-[10px] sm:text-[11px] uppercase tracking-widest text-white font-semibold">
+                <p>&copy; 2026 Guard Gloves. All Rights Reserved.</p>
+                <div class="flex gap-6 justify-center">
+                    <a href="privacy.html" class="hover:text-[#d92323] transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-[#d92323] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

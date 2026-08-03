@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GuardGloves</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Premium Crimson Red & Dark Color Scheme */
+        .brand-red { color: #991b1b; }
+        .bg-brand-red { background-color: #991b1b; }
+        .border-brand-red { border-color: #991b1b; }
+        .hover\:bg-brand-red-dark:hover { background-color: #7f1d1d; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, #111111 0%, #1f1f1f 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#fcfcfc] text-gray-900 antialiased overflow-x-hidden">
+
+    <!-- ========================================== -->
+    <!-- 1. FIXED NAVIGATION BAR (Blog 2 Matching Theme) -->
+    <!-- ========================================== -->
+    <header class="h-16 sm:h-20">
+        <nav class="fixed top-0 left-0 w-full z-50 bg-[#000000] border-b border-white/[0.05]">
+            <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
+                
+                <!-- Logo Area -->
+                <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
+                    <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" 
+                             alt="Guard Gloves Official Logo" 
+                             class="object-contain object-left w-full h-full">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center justify-center flex-1 px-4">
+                    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+                        <a href="collection.html" class="hover:text-red-600 transition-colors duration-300">Collection</a>
+                        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+                        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+                        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+                        <a href="catalogue.html" class="hover:text-red-600 transition-colors duration-300">Catalogue</a>
+                        <a href="resources.html" class="text-red-600 hover:text-red-600 transition-colors duration-300">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Contact Button -->
+                <div class="hidden lg:flex items-center z-10 shrink-0">
+                    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <input type="checkbox" id="nav-toggle" class="hidden peer">
+                <div class="flex lg:hidden items-center z-10">
+                    <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- Mobile Navigation Drawer -->
+                <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300">
+                    <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
+                        <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                        <a href="collection.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Collection</a>
+                        <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                        <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                        <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                        <a href="catalogue.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Catalogue</a>
+                        <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-color">Resources</a>
+                        <a href="contact.html" class="block py-2 text-white bg-red-600 rounded text-center font-bold mt-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB / HERO TITLE (Adjusted for Fixed Header) -->
+    <section class="w-full bg-[#111111] border-b border-white/[0.05] pt-28 pb-12 sm:pb-16 text-center relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-red-800 via-transparent to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-3xl sm:text-4xl font-serif font-light tracking-wide text-[#f5f5f5] mb-2">Contact Our Team</h1>
+            <nav aria-label="Breadcrumb" class="text-[10px] sm:text-xs tracking-widest uppercase text-gray-400 flex items-center justify-center gap-2 font-medium">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span class="text-gray-600" aria-hidden="true">/</span>
+                <span class="text-gray-500" aria-current="page">Contact Us</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- INFO CARDS SECTION -->
+    <section class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto text-center">
+        <span class="text-red-800 text-xs font-bold tracking-widest uppercase block mb-2">Get in Touch</span>
+        <h2 class="text-2xl sm:text-3xl font-serif font-light text-gray-900 mb-4">We'd Love to Hear From You</h2>
+        <p class="text-gray-500 max-w-xl mx-auto text-xs sm:text-sm mb-12 font-light leading-relaxed">
+            Have any questions or need premium hand protection? Reach out to us through any of the channels below.
+        </p>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Phone -->
+            <div class="card-gradient text-white p-8 rounded-2xl flex flex-col items-center justify-center min-h-[220px] shadow-md border border-white/[0.03] hover:border-red-800/30 transition-all duration-300 group">
+                <div class="bg-red-800/10 text-red-800 p-4 rounded-full mb-4 group-hover:bg-red-800 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                </div>
+                <h3 class="text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Phone</h3>
+                <p class="text-gray-400 text-xs sm:text-sm select-all font-light">+92 324 1101741</p>
+            </div>
+            <!-- Email -->
+            <div class="card-gradient text-white p-8 rounded-2xl flex flex-col items-center justify-center min-h-[220px] shadow-md border border-white/[0.03] hover:border-red-800/30 transition-all duration-300 group">
+                <div class="bg-red-800/10 text-red-800 p-4 rounded-full mb-4 group-hover:bg-red-800 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </div>
+                <h3 class="text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Email</h3>
+                <p class="text-gray-400 text-xs sm:text-sm select-all font-light">info@guardgloves.com</p>
+            </div>
+            <!-- WhatsApp -->
+            <div class="card-gradient text-white p-8 rounded-2xl flex flex-col items-center justify-center min-h-[220px] shadow-md border border-white/[0.03] hover:border-red-800/30 transition-all duration-300 group">
+                <div class="bg-red-800/10 text-red-800 p-4 rounded-full mb-4 group-hover:bg-red-800 group-hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </div>
+                <h3 class="text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">WhatsApp</h3>
+                <p class="text-gray-400 text-xs sm:text-sm select-all font-light">+92 324 1101741</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="px-4 sm:px-6 max-w-6xl mx-auto mb-16 sm:mb-20">
+        <div class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-sm bg-gray-100 border border-gray-200/60 relative group" onclick="this.querySelector('iframe').style.pointerEvents='auto'">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.540424241748!2d-0.124625423379201!3d51.50332401035043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" 
+                class="w-full h-full border-0 pointer-events-none group-focus:pointer-events-auto filter grayscale contrast-125" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FORM & TRIAL SECTION -->
+    <section class="py-6 sm:py-12 px-4 sm:px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 sm:mb-24">
+        <!-- Request Quote Form -->
+        <div class="order-last lg:order-first bg-white p-6 sm:p-8 rounded-2xl border border-gray-100 shadow-sm">
+            <h2 class="text-xl sm:text-2xl font-serif font-medium text-gray-900 mb-2">Request a Quote</h2>
+            <p class="text-gray-500 text-xs mb-6 font-light">
+                Fill out the form below, and our team will get back to you with a customized offer tailored to your industry needs.
+            </p>
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Full Name" class="w-full bg-gray-50 border border-gray-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-800 text-base sm:text-sm font-light transition-colors" required>
+                    <input type="email" placeholder="Email" class="w-full bg-gray-50 border border-gray-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-800 text-base sm:text-sm font-light transition-colors" required>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Phone" class="w-full bg-gray-50 border border-gray-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-800 text-base sm:text-sm font-light transition-colors">
+                    <input type="text" placeholder="Subject" class="w-full bg-gray-50 border border-gray-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-800 text-base sm:text-sm font-light transition-colors">
+                </div>
+                <div>
+                    <textarea rows="4" placeholder="Message" class="w-full bg-gray-50 border border-gray-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-800 resize-none text-base sm:text-sm font-light transition-colors" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-black hover:bg-red-800 text-white font-medium text-xs tracking-widest uppercase py-4 rounded-md transition-colors shadow-sm active:scale-[0.99]">
+                    Get A Quote
+                </button>
+            </form>
+        </div>
+
+        <!-- Try GuardGloves Promotion -->
+        <div class="lg:pl-8 flex flex-col justify-center h-full text-center lg:text-left">
+            <span class="text-red-800 text-xs font-bold tracking-widest uppercase block mb-2">Partner With Us</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-light text-gray-900 mb-4 leading-tight">
+                Try GuardGloves protection with a corporate trial kit.
+            </h2>
+            <p class="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+                Experience maximum structural durability and premium tactile comfort. Request your professional product samples today and discover the industrial standard.
+            </p>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="px-4 sm:px-6 max-w-6xl mx-auto mb-20 sm:mb-28">
+        <div class="hero-gradient text-white rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-lg border border-white/[0.03]">
+            <!-- Subtle glow background effect -->
+            <div class="absolute -top-24 -left-24 w-48 h-48 bg-red-800/10 rounded-full filter blur-xl"></div>
+            
+            <span class="text-red-800 text-xs font-bold tracking-widest uppercase block mb-3">Let's Talk</span>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-serif font-light max-w-xl mx-auto mb-4 leading-snug">
+                We love challenges big and small - what's yours?
+            </h2>
+            <p class="text-gray-400 text-xs max-w-md mx-auto mb-8 leading-relaxed font-light">
+                Connect with our product engineering specialists to deploy the perfect industrial safety glove solutions for your workforce.
+            </p>
+            <button class="bg-white text-black hover:bg-red-800 hover:text-white font-semibold text-[10px] sm:text-xs tracking-widest uppercase px-8 py-4 rounded-md transition-all active:scale-95 shadow-md">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-[#000000] text-gray-400 text-sm border-t border-white/5 pt-16 pb-8 font-sans overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            
+            <!-- Top Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-12 pb-12 md:pb-16 border-b border-white/5">
+                
+                <!-- Column 1: Brand Info (Centered on Mobile) -->
+                <div class="lg:col-span-4 space-y-5 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <!-- Brand Logo Instead of Text -->
+                    <a href="#" class="block" aria-label="Guard Gloves Home">
+                        <img src="assets/images/logored1.webp" 
+                            alt="Guard Gloves Premium Luxury Leather Brand Official Logo" 
+                            class="w-2/3 sm:w-1/2 h-auto object-contain mx-auto" />
+                    </a>
+                    <p class="text-xs sm:text-sm text-gray-500 font-light leading-relaxed max-w-sm mx-auto lg:mx-0">
+                        Engineered for absolute precision and unrivaled hands protection. Delivering world-class handcrafted leather gear globally since 1966.
+                    </p>
+                    <!-- Social Media Links with Gold Hover -->
+                    <div class="flex gap-4 pt-1 justify-center lg:justify-start">
+                        <a href="#" aria-label="Guard Gloves Facebook" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-[#c5a880] hover:border-[#c5a880] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Guard Gloves Instagram" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-[#c5a880] hover:border-[#c5a880] transition-all duration-300">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 0.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Comfortable Spacing on Mobile) -->
+                <div class="lg:col-span-2 space-y-4 text-center lg:text-left">
+                    <h4 class="text-xs uppercase tracking-widest text-white font-bold">Shop</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm font-light">
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Work Collection</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Tactical Gear</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Limited Edition</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Brand Links -->
+                <div class="lg:col-span-2 space-y-4 text-center lg:text-left">
+                    <h4 class="text-xs uppercase tracking-widest text-white font-bold">The Brand</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm font-light">
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Our Craft</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Leather Story</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-[#c5a880] py-1 block transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter Subscription (Optimized Inputs) -->
+<div class="lg:col-span-4 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
+    <h4 class="text-xs uppercase tracking-widest text-white font-bold">Join the Inner Circle</h4>
+    <p class="text-xs text-gray-500 font-light leading-relaxed max-w-sm">
+        Subscribe to receive exclusive access to private collection drops, heritage stories, and premium member offers.
+    </p>
+    <form class="flex flex-col sm:flex-row gap-2 pt-2 w-full max-w-sm lg:max-w-none">
+        <!-- FIXED: Added id, name, and autocomplete for absolute browser compliance -->
+        <input 
+            type="email" 
+            id="newsletter-email"
+            name="email"
+            autocomplete="email"
+            placeholder="Your email address" 
+            class="w-full bg-white/[0.03] border border-white/10 focus:border-[#c5a880] outline-none px-4 py-3 text-base sm:text-xs text-white placeholder-gray-600 rounded-md sm:rounded-none transition-colors" 
+            required>
+        
+        <button type="submit" class="bg-white text-black font-bold uppercase tracking-widest text-[10px] px-6 py-3.5 sm:py-3 hover:bg-[#c5a880] hover:text-black transition-colors duration-300 whitespace-nowrap rounded-md sm:rounded-none">
+            Subscribe
+        </button>
+    </form>
+</div>
+
+            </div>
+
+            <!-- Bottom Footer (Copyright & Legal) -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center text-[10px] sm:text-[11px] uppercase tracking-widest text-gray-600 font-medium">
+                <p>&copy; 2026 Guard Gloves. All Rights Reserved.</p>
+                <div class="flex gap-6 justify-center">
+                    <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

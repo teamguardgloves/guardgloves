@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap path for search engine bots
+Sitemap: https://www.guardgloves.com/sitemap.xml
