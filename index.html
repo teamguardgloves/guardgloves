@@ -270,7 +270,7 @@
                     <span class="text-sm uppercase tracking-[0.25em] text-red-600 font-bold block">
                         Guarding Hands. Sustaining Tomorrow.
                     </span>
-                    <blockquote class="text-neutral-800 font-normal text-lg md:text-xl leading-relaxed">
+                    <blockquote class="text-neutral-800 font-semibold text-lg md:text-xl leading-relaxed">
                         "True industrial leadership is measured by the footprint we leave behind. Beyond manufacturing high-performance industrial safety gloves for our global partners, we are deeply committed to uplifting communities and protecting the environment. Through eco-conscious sourcing and sustainable PPE manufacturing, we deliver long-lasting hand protection."
                     </blockquote>
                 </div>
@@ -283,17 +283,22 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-7 relative rounded-2xl overflow-hidden bg-neutral-950 border border-neutral-900 shadow-lg min-h-[340px] md:min-h-[400px]">
-                <video class="w-full h-full object-cover absolute inset-0" autoplay loop muted playsinline poster="assets/images/video-poster.webp" aria-label="Guard Gloves automated B2B manufacturing plant and quality checking workflow video">
-                    <source src="assets/video/factory-production.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none"></div>
-                <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                    <span class="text-[10px] uppercase font-bold text-white tracking-widest">Inside The Facility</span>
-                </div>
-            </div>
+           <div class="lg:col-span-7 relative rounded-2xl overflow-hidden border border-neutral-200/80 shadow-md self-start w-full">
+    <!-- Auto Height Video -->
+    <video class="w-full h-auto block rounded-2xl" autoplay loop muted playsinline poster="assets/images/video-poster.webp" aria-label="Guard Gloves automated B2B manufacturing plant and quality checking workflow video">
+        <source src="assets/video/factory-production.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay Gradient (Non-blocking) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none rounded-2xl"></div>
+
+    <!-- Badge -->
+    <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-2 z-10">
+        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+        <span class="text-[10px] uppercase font-bold text-white tracking-widest">Inside The Facility</span>
+    </div>
+</div>
             
         </div>
     </div>
@@ -504,8 +509,14 @@
 <!-- SECTION: CERTIFICATIONS GLOBAL MARQUEE -->
 <section id="certifications" aria-label="International Certification and Factory Compliance Logos" class="bg-[#ffffff] text-[#000000] py-12 md:py-16 font-sans overflow-hidden border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full overflow-hidden select-none">
+        
+        <!-- Optional Fade Out Gradients on Edges -->
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+
         <div class="flex overflow-hidden w-full">
-            <div class="animate-marquee flex items-center gap-12 md:gap-16 lg:gap-20">
+            <!-- Continuous Marquee Track -->
+            <div class="animate-marquee flex w-max items-center gap-12 md:gap-16 lg:gap-20 shrink-0 pr-12 md:pr-16 lg:pr-20">
                 
                 <!-- ORIGINAL LOGO SET -->
                 <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center">
@@ -526,8 +537,17 @@
                 <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center">
                     <img src="assets/icon/kevlar.webp" alt="DuPont Kevlar Extreme Cut Resistance Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
                 </div>
+                   <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/stahi.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                  <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/3m.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                  <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/basf.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
 
-                <!-- DUPLICATED SET FOR SMOOTH LOOP -->
+                <!-- FULL DUPLICATED SET FOR SMOOTH INFINITE LOOP -->
                 <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
                     <img src="assets/images/iso-14001.webp" alt="ISO 14001 Certification" width="130" height="80" class="h-full object-contain max-w-[110px] xl:max-w-[130px]" loading="lazy">
                 </div>
@@ -536,6 +556,24 @@
                 </div>
                 <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
                     <img src="assets/icon/iso9001.webp" alt="ISO 9001 Quality Management" width="140" height="80" class="h-full object-contain max-w-[120px] xl:max-w-[140px]" loading="lazy">
+                </div>
+                <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/pgma.webp" alt="PGMA Member" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/tennery.webp" alt="Pakistan Tanners Association" width="125" height="80" class="h-full object-contain max-w-[110px] xl:max-w-[125px]" loading="lazy">
+                </div>
+                <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/kevlar.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                  <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/stahi.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                  <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/3m.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
+                </div>
+                  <div class="h-14 sm:h-16 md:h-20 flex flex-shrink-0 items-center justify-center" aria-hidden="true">
+                    <img src="assets/icon/basf.webp" alt="DuPont Kevlar Material" width="135" height="80" class="h-full object-contain max-w-[115px] xl:max-w-[135px]" loading="lazy">
                 </div>
 
             </div>
@@ -790,7 +828,7 @@
                 
                 <!-- Aspect-Ratio Locked Container for zero CLS -->
                 <div class="relative overflow-hidden bg-gray-50 w-full aspect-[4/3] shadow-md sm:shadow-lg rounded-2xl">
-                    <img src="assets/icon/factoryimg2.webp" 
+                    <img src="assets/icon/crafting.webp" 
                          alt="Expert glove smith constructing a premium Guard Gloves full-grain leather work glove utilizing high tensile double-stitching techniques" 
                          width="800" height="600"
                          loading="lazy"
@@ -863,177 +901,80 @@
     </div>
 </section>
 <!-- ========================================== -->
-<!-- SECTION: REVIEWS & TESTIMONIALS (WHITE THEME) -->
+<!-- SECTION: FACTORY SHOWCASE (SLIDESHOW) -->
 <!-- ========================================== -->
-<section id="reviews" aria-label="B2B Customer Testimonials and Validation" class="relative bg-[#ffffff] text-neutral-900 py-12 md:py-16 border-t border-neutral-100 font-sans overflow-hidden">
+<section id="factory-gallery" aria-label="Manufacturing Facilities Showcase" class="relative bg-[#ffffff] text-neutral-900 pt-10 pb-0 border-t border-neutral-100 font-sans w-full overflow-hidden">
     
-    <!-- GOOGLE STRUCTURED DATA: Review Schema For Organic Rich Snippets -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://www.guardgloves.com/#product-elite-collection",
-  "url": "https://www.guardgloves.com/",
-  "name": "Guard Gloves Elite Industrial Collection",
-  "image": "https://www.guardgloves.com/assets/logo.jpg",
-  "description": "Premium handcrafted leather work and heavy-duty impact safety performance gloves.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Guard Gloves"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.guardgloves.com/",
-    "priceCurrency": "USD",
-    "price": "25.00"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "148"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Marcus Vance"
-      },
-      "reviewBody": "The absolute best work gloves I have ever owned. The puncture resistance is exactly as advertised, and the leather molds to your hands perfectly within days."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "David K."
-      },
-      "reviewBody": "Unbelievable tactile feel. Usually, protective gloves feel clunky, but Guard Gloves gives me elite dexterity while keeping my hands completely safe from vibration."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Elena Rostova"
-      },
-      "reviewBody": "The craftsmanship justifies every single dollar. Water and oil resistance works flawlessly. Will definitely buy again for my whole automotive workshop team."
-    }
-  ]
-}
-</script>
-
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-8 z-10">
-        
-        <!-- Section Header -->
-        <div class="max-w-3xl mx-auto text-center mb-8 md:mb-12 space-y-2">
-            <span class="text-xs uppercase tracking-[0.15em] text-neutral-500 font-bold block">Trusted Globally</span>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-950 hover:text-[#ef4444] transition-colors duration-300 cursor-pointer">
-                What Our Professionals Say
-            </h2>
-            <div class="w-12 h-[2px] bg-[#ef4444] mx-auto mt-3"></div>
-        </div>
-
-        <!-- Reviews Container -->
-        <div class="flex overflow-x-auto pb-6 pt-1 snap-x snap-mandatory no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:overflow-x-visible md:pb-0" role="region" aria-label="B2B Wholesale Procurement Reviews">
-            
-            <!-- REVIEW 1: MARCUS VANCE -->
-            <div class="bg-[#fcfcfc] border border-neutral-200/80 p-5 sm:p-7 flex flex-col justify-between relative group hover:border-neutral-950 hover:bg-[#ffffff] transition-all duration-500 rounded-2xl min-w-[85%] sm:min-w-0 w-[85%] sm:w-auto snap-start shrink-0 shadow-sm hover:shadow-xl">
-                <span class="absolute top-2 right-6 text-5xl font-serif text-neutral-200/60 select-none pointer-events-none group-hover:text-[#ef4444]/20 transition-colors duration-500">“</span>
-                
-                <div class="space-y-3">
-                    <div class="flex gap-1 text-amber-500">
-                        <span class="sr-only">Verified 5 star industrial safety rating</span>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-xs sm:text-sm text-neutral-700 font-normal leading-relaxed">
-                        "The absolute best work gloves I have ever owned. The puncture resistance is exactly as advertised, and the leather molds to your hands perfectly within days."
-                    </p>
-                </div>
-
-                <div class="mt-5 pt-3 border-t border-neutral-200/80 flex justify-between items-center">
-                    <div>
-                        <h3 class="text-xs font-bold uppercase tracking-wider text-neutral-950">Marcus Vance</h3>
-                        <p class="text-[10px] text-neutral-500 mt-0.5">Heavy Industry Contractor</p>
-                    </div>
-                    <span class="text-[8px] uppercase tracking-widest text-neutral-600 bg-neutral-200/60 px-2 py-1 font-semibold rounded">Verified Buyer</span>
-                </div>
-            </div>
-
-            <!-- REVIEW 2: DAVID K. -->
-            <div class="bg-[#fcfcfc] border border-neutral-200/80 p-5 sm:p-7 flex flex-col justify-between relative group hover:border-neutral-950 hover:bg-[#ffffff] transition-all duration-500 rounded-2xl min-w-[85%] sm:min-w-0 w-[85%] sm:w-auto snap-start shrink-0 shadow-sm hover:shadow-xl">
-                <span class="absolute top-2 right-6 text-5xl font-serif text-neutral-200/60 select-none pointer-events-none group-hover:text-[#ef4444]/20 transition-colors duration-500">“</span>
-                
-                <div class="space-y-3">
-                    <div class="flex gap-1 text-amber-500">
-                        <span class="sr-only">Verified 5 star mechanics dexterity rating</span>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-xs sm:text-sm text-neutral-700 font-normal leading-relaxed">
-                        "Unbelievable tactile feel. Usually, protective gloves feel clunky, but Guard Gloves gives me elite dexterity while keeping my hands completely safe from vibration."
-                    </p>
-                </div>
-
-                <div class="mt-5 pt-3 border-t border-neutral-200/80 flex justify-between items-center">
-                    <div>
-                        <h3 class="text-xs font-bold uppercase tracking-wider text-neutral-950">David K.</h3>
-                        <p class="text-[10px] text-neutral-500 mt-0.5">Precision Machinist</p>
-                    </div>
-                    <span class="text-[8px] uppercase tracking-widest text-neutral-600 bg-neutral-200/60 px-2 py-1 font-semibold rounded">Verified Buyer</span>
-                </div>
-            </div>
-
-            <!-- REVIEW 3: ELENA ROSTOVA -->
-            <div class="bg-[#fcfcfc] border border-neutral-200/80 p-5 sm:p-7 flex flex-col justify-between relative group hover:border-neutral-950 hover:bg-[#ffffff] transition-all duration-500 rounded-2xl min-w-[85%] sm:min-w-0 w-[85%] sm:w-auto snap-start shrink-0 shadow-sm hover:shadow-xl">
-                <span class="absolute top-2 right-6 text-5xl font-serif text-neutral-200/60 select-none pointer-events-none group-hover:text-[#ef4444]/20 transition-colors duration-500">“</span>
-                
-                <div class="space-y-3">
-                    <div class="flex gap-1 text-amber-500">
-                        <span class="sr-only">Verified 5 star wholesale procurement rating</span>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-xs sm:text-sm text-neutral-700 font-normal leading-relaxed">
-                        "The craftsmanship justifies every single dollar. Water and oil resistance works flawlessly. Will definitely buy again for my whole team."
-                    </p>
-                </div>
-
-                <div class="mt-5 pt-3 border-t border-neutral-200/80 flex justify-between items-center">
-                    <div>
-                        <h3 class="text-xs font-bold uppercase tracking-wider text-neutral-950">Elena Rostova</h3>
-                        <p class="text-[10px] text-neutral-500 mt-0.5">Automotive Workshop Owner</p>
-                    </div>
-                    <span class="text-[8px] uppercase tracking-widest text-neutral-600 bg-neutral-200/60 px-2 py-1 font-semibold rounded">Verified Buyer</span>
-                </div>
-            </div>
-
-        </div>
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-6 md:mb-8 space-y-2 px-4 sm:px-8">
+        <span class="text-xs uppercase tracking-[0.15em] text-neutral-500 font-bold block">Our Infrastructure</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-950 hover:text-[#ef4444] transition-colors duration-300 cursor-pointer">
+            State-of-the-Art Manufacturing Facility
+        </h2>
+        <div class="w-12 h-[2px] bg-[#ef4444] mx-auto mt-3"></div>
     </div>
+
+    <!-- Edge-to-Edge Container -->
+    <div class="w-full relative group overflow-hidden leading-none block">
+        
+        <!-- Natural Auto-Height Wrapper with Relative Stacking -->
+        <div id="factory-slideshow-container" class="relative w-full h-auto overflow-hidden">
+            
+            <!-- IMAGE 1 (Active by default) -->
+            <img class="factory-slide active w-full h-auto block transition-all duration-1000 opacity-100 scale-100 border-0 p-0 m-0" 
+                 src="assets/icon/college.webp" 
+                 alt="Guard Gloves Production Facility 1">
+
+            <!-- IMAGE 2 -->
+            <img class="factory-slide absolute top-0 left-0 w-full h-auto block transition-all duration-1000 opacity-0 scale-100 pointer-events-none border-0 p-0 m-0" 
+                 src="assets/icon/collage2.webp" 
+                 alt="Guard Gloves Production Facility 2">
+
+            <!-- IMAGE 3 -->
+            <img class="factory-slide absolute top-0 left-0 w-full h-auto block transition-all duration-1000 opacity-0 scale-100 pointer-events-none border-0 p-0 m-0" 
+                 src="assets/icon/collage3.webp" 
+                 alt="Guard Gloves Production Facility 3">
+
+        </div>
+
+        <!-- Subtle Overlay Badge -->
+        <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-8 bg-neutral-950/80 backdrop-blur-md text-white px-4 py-2 rounded-lg border border-white/10 flex items-center gap-3 z-10">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#ef4444] animate-pulse"></span>
+            <div>
+                <p class="text-xs font-bold uppercase tracking-wider">Industrial Tannery & Production</p>
+                <p class="text-[10px] text-neutral-400">Integrated Supply Chain Operations</p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
+
+<!-- 5-Second Auto Slideshow Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".factory-slide");
+        if (slides.length <= 1) return;
+
+        let currentIndex = 0;
+
+        setInterval(() => {
+            const currentSlide = slides[currentIndex];
+            
+            // Hide current slide
+            currentSlide.classList.remove("opacity-100", "scale-105");
+            currentSlide.classList.add("opacity-0", "scale-100", "pointer-events-none");
+
+            // Move to next slide index
+            currentIndex = (currentIndex + 1) % slides.length;
+            const nextSlide = slides[currentIndex];
+
+            // Show next slide with zoom effect
+            nextSlide.classList.remove("opacity-0", "pointer-events-none");
+            nextSlide.classList.add("opacity-100", "scale-105");
+        }, 5000); // 5000ms = 5 Seconds
+    });
+</script>
 <!-- ========================================== -->
 <!-- SECTION: CONTACT & GLOBAL HUBS (WITH BG IMAGE) -->
 <!-- ========================================== -->
