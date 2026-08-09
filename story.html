@@ -51,35 +51,34 @@
 </head>
 <body class="bg-[#fcfcfc] text-gray-900 antialiased overflow-x-hidden">
 
- <header class="h-16 sm:h-20">
+<header class="h-16 sm:h-20">
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#000000] border-b border-white/[0.05]">
         <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
             
-            <!-- Logo Container -->
+            <!-- Logo -->
             <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
-                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
-                    <!-- ✔ AAPKA PEHLE WALA BADA LOGO PATH (Ab yeh chota nahi hoga aur original size me dikhega) -->
-                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
+                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center justify-center flex-1 px-4">
                 <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-white transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-white transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-white transition-colors duration-300">Strengths</a>
-                    <a href="legacy.html" class="hover:text-white transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-white transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-white transition-colors duration-300">Resources</a>
-                    <a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Use</a>
-                    <a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+                    <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+                   
                 </div>
             </div>
 
             <!-- Desktop CTA -->
             <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-white hover:bg-gray-200 text-black rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-white/10">
+                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
                     Contact Us
                 </a>
             </div>
@@ -89,7 +88,7 @@
 
             <!-- Mobile Hamburger/Close Button -->
             <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-white cursor-pointer p-2 active:scale-95 transition-transform select-none">
+                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
                         <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
@@ -100,15 +99,14 @@
             <!-- Mobile Menu Dropdown -->
             <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
                 <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Strengths</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Resources</a>
-                    <a href="terms.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Terms of Use</a>
-                    <a href="privacy.html" class="block py-2 border-b border-white/[0.03] hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="contact.html" class="block py-3 text-black bg-white rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-white/10">Contact Us</a>
+                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                    <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
                 </div>
             </div>
             
@@ -124,7 +122,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 h-56 sm:h-80 md:h-96 flex flex-col justify-center relative z-10">
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-serif tracking-wide text-[#f5f5f5]">Our Heritage</h1>
             <p class="text-[10px] sm:text-xs uppercase tracking-widest text-gray-300 mt-2 sm:mt-4">
-                <a href="index.html" class="hover:text-[#c5a880] transition">Home</a> / <span class="text-gray-400">About Us</span>
+                
             </p>
         </div>
     </section>
@@ -445,11 +443,11 @@
     <!-- Section Header (Optimized for Eco-Friendly Leather Sourcing Keywords) -->
     <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-0">
         <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif font-light tracking-wide text-gray-950 uppercase">
-            Sustainable & Eco-Conscious Tanning Practices
+            Precision Eco-Tanning
         </h2>
         <div class="w-12 h-[2px] bg-brand-red mx-auto"></div>
         <p class="text-gray-500 text-xs sm:text-base leading-relaxed font-light pt-1">
-            As a responsible corporate citizen, we are continuously investing in sustainable practices to protect our earth because in the end, we are all connected.
+            Crafting high-durability industrial leather through clean chemical balance, optimized hide utilization, and strict non-toxic processing—built for long wear and minimal environmental impact.
         </p>
     </div>
 
@@ -467,8 +465,8 @@
                     <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Eco-Friendly</span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Eco-Conscious Leather Manufacturing <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Certified Raw Materials</span>
+                    Eco-Conscious Manufacturing <br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Raw Materials</span>
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
@@ -493,8 +491,8 @@
                 </div>
                 
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Sustainable Safety Glove Factory <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">Innovation & Carbon Emission Control</span>
+                    Sustainable Factory Innovation <br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Emission Control</span>
                 </h2>
                 
                 <div class="w-12 h-[1px] bg-brand-red"></div>
@@ -519,8 +517,8 @@
                     <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Supply Lifecycle</span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Sustainable PPE Supply Chain <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">Corporate Sourcing Framework & Packaging</span>
+                    Eco-Responsible Corporate Sourcing <br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300"></span>
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
@@ -544,8 +542,8 @@
                     <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Ethical Compliance</span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Compliant Factory Operations <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Socially Responsible Sourcing</span>
+                    Sustainable Operations <br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Social Responsibility</span>
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
@@ -584,8 +582,8 @@
                     <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Global Benchmarks</span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Certified Industrial PPE <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">Manufacturing & EN388 ANSI Standards</span>
+                    Certified Industrial Manufacturing <br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Global Standards</span>
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
@@ -624,10 +622,7 @@
         
         <!-- Section Header Layout -->
         <div class="max-w-3xl mb-12 lg:mb-16 space-y-3">
-            <div class="inline-flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full" style="background-color: #ff0000;"></span>
-                <span class="text-[9px] uppercase tracking-[0.25em] text-white font-semibold">Enterprise Scale</span>
-            </div>
+            
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-wide text-white uppercase leading-tight">
                 Why Global Partners <br />
                 <span class="text-white font-light font-sans tracking-widest text-xl sm:text-2xl block mt-2">Choose Us</span>
@@ -639,12 +634,10 @@
         <div class="flex md:grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch overflow-x-auto md:overflow-x-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-none">
             
             <!-- Point 01 Container -->
-            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-white/[0.1] hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
-                <div class="font-sans text-[10px] uppercase tracking-[0.2em] font-bold" style="color: #ff0000;">
-                    Export Infrastructure
-                </div>
+            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-[#ff0000]/30 hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
+               
                 <div class="space-y-2">
-                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-white transition-colors duration-300">
+                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Global Market Integration
                     </h3>
                     <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
@@ -654,12 +647,10 @@
             </div>
 
             <!-- Point 02 Container -->
-            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-white/[0.1] hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
-                <div class="font-sans text-[10px] uppercase tracking-[0.2em] font-bold" style="color: #ff0000;">
-                  Manufacturing Base
-                </div>
+            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-[#ff0000]/30 hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
+               
                 <div class="space-y-2">
-                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-white transition-colors duration-300">
+                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Advanced Industrial Capacity
                     </h3>
                     <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
@@ -669,12 +660,10 @@
             </div>
 
             <!-- Point 03 Container -->
-            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-white/[0.1] hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
-                <div class="font-sans text-[10px] uppercase tracking-[0.2em] font-bold" style="color: #ff0000;">
-                    Standards & Quality
-                </div>
+            <div class="bg-[#0a0a0a] border border-white/[0.05] rounded-xl p-6 sm:p-8 space-y-4 group transition-all duration-300 hover:border-[#ff0000]/30 hover:bg-[#111111] w-[calc(100vw-32px)] sm:w-[calc(100vw-64px)] md:w-auto snap-center shrink-0">
+                
                 <div class="space-y-2">
-                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-white transition-colors duration-300">
+                    <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Pioneering Safety Innovation
                     </h3>
                     <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
