@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Choose Category</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Keyframes for Animations */
+    @keyframes fadeInZoom {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; visibility: visible; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    .animate-logo {
+      animation: fadeInZoom 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-intro-exit {
+      animation: fadeOut 0.8s ease-in-out 2.2s forwards;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans overflow-hidden">
+
+  
+<!-- 1. FULLSCREEN INTRO OVERLAY (BIGGER LOGO) -->
+<div id="intro-screen" class="fixed inset-0 z-50 bg-black flex flex-col justify-center items-center animate-intro-exit pointer-events-none p-4">
+  <!-- Logo Size Updated: Mobile par 280px (w-70) aur Desktop/Laptops par ~400px (md:w-96) -->
+  <img 
+    src="assets/images/logored1.webp" 
+    alt="Company Logo" 
+    class="w-72 md:w-[420px] max-w-[85vw] h-auto animate-logo object-contain drop-shadow-[0_10px_25px_rgba(255,255,255,0.05)]"
+  >
+</div>
+  <!-- 2. MAIN CATEGORY SELECTION PAGE -->
+  <main class="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-black">
+    
+    <!-- Option 1: Safety Gloves -->
+    <a href="safety-gloves.html" class="group relative w-full md:w-1/2 h-1/2 md:h-screen flex flex-col justify-center items-center p-8 border-b md:border-b-0 md:border-r border-zinc-800 transition-all duration-500 hover:bg-zinc-900/80">
+      
+      <!-- Subtle Glow Effect on Hover -->
+      <div class="absolute inset-0 bg-gradient-to-t from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+      <div class="relative z-10 text-center space-y-4">
+        <span class="text-xs uppercase tracking-widest text-yellow-500 font-semibold">Industrial Gear</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white group-hover:scale-105 transition-transform duration-300">
+          SAFETY GLOVES
+        </h2>
+        <p class="text-sm md:text-base text-zinc-400 max-w-sm mx-auto">
+          High-performance protective equipment & industrial work gloves.
+        </p>
+        <div class="inline-flex items-center space-x-2 text-sm font-medium text-yellow-500 pt-2 group-hover:translate-x-1 transition-transform">
+          <span>Explore Safety Range</span>
+          <span>&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Option 2: Sports Gloves -->
+    <a href="sports-gloves.html" class="group relative w-full md:w-1/2 h-1/2 md:h-screen flex flex-col justify-center items-center p-8 transition-all duration-500 hover:bg-zinc-900/80">
+      
+      <!-- Subtle Glow Effect on Hover -->
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+      <div class="relative z-10 text-center space-y-4">
+        <span class="text-xs uppercase tracking-widest text-blue-500 font-semibold">Athletic Gear</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white group-hover:scale-105 transition-transform duration-300">
+          SPORTS GLOVES
+        </h2>
+        <p class="text-sm md:text-base text-zinc-400 max-w-sm mx-auto">
+          Premium fitness, gym, cycling & professional athletic gloves.
+        </p>
+        <div class="inline-flex items-center space-x-2 text-sm font-medium text-blue-500 pt-2 group-hover:translate-x-1 transition-transform">
+          <span>Explore Sports Range</span>
+          <span>&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+  </main>
+
+</body>
+</html>
