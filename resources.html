@@ -37,331 +37,309 @@
         <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
             
             <!-- Logo -->
-            <div class="flex items-center h-full py-1 shrink-0 z-10 w-[120px] sm:w-[180px] md:w-[220px]">
-                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
-                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+            <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
+                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
+                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                    <a href="terms.html" class="hover:text-red-600 transition-colors duration-300">Terms of Use</a>
-                    <a href="privacy.html" class="hover:text-red-600 transition-colors duration-300">Privacy Policy</a>
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-1 active:scale-95 transition-transform select-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Horizontal Navigation Bar Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-b border-white/[0.08] shadow-2xl transition-all duration-300">
-                <div class="flex items-center gap-3 overflow-x-auto no-scrollbar px-4 py-3 text-xs font-medium tracking-wider uppercase text-gray-300 whitespace-nowrap">
-                    <a href="index.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="legacy.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Blueprint</a>
-                    <a href="resources.html" class="px-3 py-1.5 rounded-full bg-red-600 text-white transition-colors">Resources</a>
-                    <a href="terms.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Terms</a>
-                    <a href="privacy.html" class="px-3 py-1.5 rounded-full bg-white/[0.05] border border-white/10 hover:text-red-600 transition-colors">Privacy</a>
-                    <a href="contact.html" class="px-4 py-1.5 bg-red-600 text-white rounded-full font-bold tracking-widest shadow-lg shadow-red-600/20">Contact</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
 
     <!-- ========================================== -->
-    <!-- 2. RESOURCES HERO BANNER -->
-    <!-- ========================================== -->
-    <section class="relative text-white overflow-hidden bg-cover bg-center bg-no-repeat min-h-[25vh] sm:min-h-[40vh] flex items-center" style="background-image: url('assets/blogs/blogbg1.webp');">
-        <div class="absolute inset-0 bg-black/80"></div>
+<!-- 2. RESOURCES HERO BANNER -->
+<!-- ========================================== -->
+<section class="relative text-white overflow-hidden bg-cover bg-center bg-no-repeat h-[35vh] sm:h-[50vh] flex items-center" style="background-image: url('assets/blogs/blogbg1.webp');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-12 relative z-10 w-full flex flex-col justify-center">
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-serif font-bold tracking-wide text-white leading-tight w-full uppercase">
+            The Science of Safety
+        </h1>
+    </div>
+</section>
+   <!-- WELCOME / SAFETY MANUFACTURING HUB SECTION -->
+<section class="w-full bg-[#000000] border-b border-white/10 py-8 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-12 relative z-10 w-full flex flex-col justify-center">
-            <div class="inline-flex items-center gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 bg-red-600/20 border border-red-600/30 rounded-full w-fit mb-2 sm:mb-3">
-                <span class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
-                <span class="text-[8px] sm:text-xs uppercase tracking-widest text-red-400 font-semibold">Knowledge Base Hub</span>
-            </div>
+        <!-- LEFT COLUMN: Content Area -->
+        <div class="flex flex-col justify-center text-left space-y-4">
+            <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white uppercase leading-[1.15]">
+                Welcome To The <br />
+                Guard Gloves Safety <br />
+                <span class="text-red-600">Manufacturing Hub</span>
+            </h2>
             
-            <h1 class="text-lg sm:text-3xl md:text-5xl font-serif font-bold tracking-wide text-[#f5f5f5] leading-tight w-full uppercase">
-                The Science of Safety
-            </h1>
-            
-            <p class="text-[8px] sm:text-xs uppercase tracking-widest text-gray-400 mt-2 sm:mt-3">
-                <a href="index.html" class="hover:text-red-500 transition">Home</a> / <span class="text-gray-300">Resources Hub</span>
+            <div class="w-16 h-[2px] bg-red-600 my-2"></div>
+
+            <p class="text-xs sm:text-sm lg:text-base text-white font-normal leading-relaxed tracking-normal">
+                Welcome to the Guard Gloves Safety & Manufacturing Hub—the premier digital resource where we share our decades of vertical manufacturing expertise and deep engineering knowledge. As an international manufacturer and exporter of certified industrial protective gear, this hub is designed for B2B procurement managers, safety distributors, and emerging brands looking to establish a footprint in the PPE industry. Here, you will find comprehensive industry insights, technical material guides, and expert guidance on sourcing high-performance safety gloves. Explore our latest manufacturing innovations, compliance updates for international safety standards, and actionable strategies to help your business deliver safer, smarter, and more comfortable workdays.
             </p>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- 3. HUB INTRO SECTION -->
-    <!-- ========================================== -->
-    <section class="max-w-7xl mx-auto px-3 sm:px-8 lg:px-12 py-3 sm:py-4">
-        <div class="group bg-[#0a0a0a] border border-white/[0.08] rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-2xl transition-all duration-300 hover:border-red-600/60 hover:shadow-lg hover:shadow-red-600/10">
-            <div class="w-full space-y-2.5 sm:space-y-4">
-                
-                <!-- Category Badge -->
-                <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-red-600/10 border border-red-600/20 rounded-full w-fit">
-                    <span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
-                    <span class="text-[9px] sm:text-xs uppercase tracking-widest text-red-500 font-bold">// Engineering Repository</span>
-                </div>
-
-                <!-- Highlighted Bold Main Heading -->
-                <h2 class="text-base sm:text-3xl font-serif font-black uppercase tracking-wide text-white leading-tight transition-colors duration-300 group-hover:text-red-500">
-                    Welcome to Our Engineering Desk Repository
-                </h2>
-
-                <div class="w-10 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-24"></div>
-
-                <!-- Expanded Detailed Text -->
-                <div class="space-y-2 text-[11px] sm:text-sm text-gray-300 font-light leading-relaxed transition-colors duration-300 group-hover:text-gray-200">
-                    <p>
-                        Welcome to our central technical knowledge base. Explore our comprehensive collection of <strong class="text-white font-bold transition-colors duration-300 group-hover:text-red-400">technical blueprints</strong>, international safety compliance guides, and advanced leather material research updates engineered to safeguard industrial workforces.
-                    </p>
-                    <p>
-                        Our engineering desk continuously evaluates thermal insulation, mechanical abrasion limits, and ergonomic structural designs to meet global standards. Whether you are optimizing procurement budgets, mitigating supply chain vulnerabilities, or sourcing certified PPE gear for extreme environments, our detailed technical documentation provides the precise data required for high-volume manufacturing and corporate safety alignment.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================== -->
-    <!-- 4. MAIN ARTICLES GRID (Horizontal-Optimized Cards for Mobile) -->
-    <!-- ========================================== -->
-    <div class="max-w-7xl mx-auto px-3 sm:px-8 lg:px-12 py-3 pb-12 sm:pb-16">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-            
-            <!-- Blog Card 1 -->
-            <div onclick="window.location.href='blog1.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog1/blog1header.webp" alt="OEM Solutions" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// OEM Solutions</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Science of Safety: How Certified High-Visibility PPE Gloves Protect Workers in Low Light
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                In global industrial supply chains, managing low-light workplace safety around moving vehicles requires certified protection.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">Read Article</span>
-                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 2 -->
-            <div onclick="window.location.href='blog2.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog2/blog2bg1.webp" alt="Welding Safety" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Luminescence & Compliance</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                The Ultimate Sourcing Guide: Selecting the Perfect Welding Gloves
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Sourcing the correct hand protection is a critical decision for maximum finger dexterity and robust heat protection.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">Read Article</span>
-                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 3 -->
-            <div onclick="window.location.href='blog3.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog3/blog3bgheader.webp" alt="Corporate Strategy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Corporate Strategy</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Defying the Elements: Winter Work Gloves for Extreme Climates
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Cold. Slippery. Wet. Executing operations in challenging winter conditions requires high-performance PPE.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">Read Article</span>
-                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 4 -->
-            <div onclick="window.location.href='blog4.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog2/blogbg2h.webp" alt="Thermal Safety" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Thermal Isolation</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Protecting the Workforce: The Real ROI of Premium Safety Gloves
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Viewing industrial safety gloves strategically helps reduce injuries and lower overall expenditures.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">View Article</span>
-                    <i class="fa-solid fa-chevron-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 5 -->
-            <div onclick="window.location.href='blog5.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/bolog4/blog5bgh.webp" alt="Thermal Metallurgy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Thermal Metallurgy</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Sourcing Guide: Selecting the Perfect Welding Gloves
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Balancing maximum finger dexterity with robust thermal insulation under compliance standards.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">View Article</span>
-                    <i class="fa-solid fa-chevron-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 6 -->
-            <div onclick="window.location.href='blog6.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/bolog4/blog6bg.webp" alt="Ergonomics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Ergonomics & Sizing</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Guide to Industrial Cut-Resistant Gloves
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Safeguarding your workforce from sharp materials requires specialized fiber technology.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">View Article</span>
-                    <i class="fa-solid fa-chevron-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 7 -->
-            <div onclick="window.location.href='blog7.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog7/blog7bg.webp" alt="Material Science" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Material Science</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Private Label Safety Gloves: Transforming Obstacles
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Premium safety gear actively enhances key physical functions like grip control and shock absorption.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">View Article</span>
-                    <i class="fa-solid fa-chevron-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
-            <!-- Blog Card 8 -->
-            <div onclick="window.location.href='blog8.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/5">
-                <div class="flex flex-row md:flex-col gap-3 sm:gap-3">
-                    <div class="w-1/3 md:w-full h-28 sm:h-48 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
-                        <img src="assets/blogs/blog8/blogbg.webp" alt="Compliance Insights" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <div class="w-2/3 md:w-full space-y-1 sm:space-y-3 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold text-red-500 block mb-0.5 sm:mb-0">// Compliance Insights</span>
-                            <h3 class="text-xs sm:text-base font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug line-clamp-2 sm:line-clamp-none">
-                                Mastering ANSI and EN Safety Standards
-                            </h3>
-                            <p class="text-[10px] sm:text-xs text-gray-400 font-light leading-snug sm:leading-relaxed transition-colors duration-300 group-hover:text-gray-300 line-clamp-2 sm:line-clamp-none mt-1">
-                                Safety standards ensure protective products meet strict performance and safety requirements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 group-hover:text-white transition-colors">View Article</span>
-                    <i class="fa-solid fa-chevron-right text-[10px] sm:text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
-                </div>
-            </div>
-
+        <!-- RIGHT COLUMN: Direct Rounded Image (Without Outer Frame) -->
+        <div class="relative w-full h-[320px] sm:h-[420px] lg:h-[460px] rounded-3xl overflow-hidden group shadow-2xl">
+            <img src="assets/strength/image1.webp" alt="Guard Gloves Safety Manufacturing Facility Hub" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
         </div>
 
     </div>
+</section>
+    <!-- ========================================== -->
+<!-- 4. MAIN ARTICLES GRID (Horizontal-Optimized Cards for Mobile) -->
+<!-- ========================================== -->
+<div class="max-w-7xl mx-auto px-3 sm:px-8 lg:px-12 py-3 pb-12 sm:pb-16">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        
+        <!-- Blog Card 1 -->
+        <div onclick="window.location.href='blog1.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog1/blog1header.webp" alt="OEM Solutions" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            The Science of Safety: How Certified High-Visibility PPE Gloves Protect Workers in Low Light
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            In global industrial supply chains, managing low-light workplace safety around moving vehicles and heavy machinery requires more than just bright fabric. It demands rigorously tested protection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">Read Article</span>
+                <i class="fa-solid fa-arrow-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div onclick="window.location.href='blog2.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog2/blog2bg1.webp" alt="Welding Safety" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            The Ultimate Sourcing Guide: Selecting the Perfect Welding Gloves for Performance and Safety
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            Welcome to our comprehensive welding series! Whether you are a seasoned professional managing high-volume industrial production or a distributor sourcing gear for your clients, choosing the correct hand protection is a critical decision. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">Read Article</span>
+                <i class="fa-solid fa-arrow-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div onclick="window.location.href='blog3.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog3/blog3bgheader.webp" alt="Corporate Strategy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                      
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                           Defying the Elements: Winter Work Gloves for Extreme Industrial Climates
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            Cold. Slippery. Wet. When executing industrial operations in challenging winter conditions, your workforce requires high-performance personal protective equipment (PPE). 
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">Read Article</span>
+                <i class="fa-solid fa-arrow-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div onclick="window.location.href='blog4.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog2/blogbg2h.webp" alt="Thermal Safety" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            Protecting the Workforce, Optimizing the Margin: The Real ROI of Premium Safety Gloves
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            When evaluating corporate operations, high-level executives often overlook a critical variable: personal protective equipment (PPE). However, by viewing industrial safety gloves through a larger strategic lens, forward-thinking organizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">View Article</span>
+                <i class="fa-solid fa-chevron-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div onclick="window.location.href='blog5.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/bolog4/blog5bgh.webp" alt="Thermal Metallurgy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            Fit for Safety: A Simple Guide to Work Glove Sizing
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                           Sourcing the correct work glove size is absolutely essential for workforce safety, ergonomic comfort, and daily production line productivity. Whether your team operates in construction, manufacturing, transport, logistics, utilities, or engineering, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">View Article</span>
+                <i class="fa-solid fa-chevron-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+        <div onclick="window.location.href='blog6.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/bolog4/blog6bg.webp" alt="Ergonomics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                        
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            The Critical Guide to Industrial Cut-Resistant Gloves
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                           In high-risk industrial environments, selecting the right cut-resistant gloves is the foundation of proactive risk management. Safeguarding your workforce from sharp glass, metal stampings, and heavy machinery
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">View Article</span>
+                <i class="fa-solid fa-chevron-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 7 -->
+        <div onclick="window.location.href='blog7.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog7/blog7bg.webp" alt="Material Science" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            Private Label Safety Gloves: Transforming Obstacles into High-Impact Branding
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            For many manual operators, work gloves are occasionally viewed as an obstruction rather than an asset. However, premium safety gear does more than protect hands—it actively enhances key physical functions like grip control, tactile sensitivity, and shock absorption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">View Article</span>
+                <i class="fa-solid fa-chevron-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+        <!-- Blog Card 8 -->
+        <div onclick="window.location.href='blog8.html';" class="group bg-[#0a0a0a] border border-white/[0.05] rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-between h-full cursor-pointer transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10">
+            <div class="flex flex-row md:flex-col gap-3 sm:gap-4">
+                <div class="w-1/3 md:w-full h-32 sm:h-52 rounded-lg sm:rounded-xl overflow-hidden relative bg-black/50 shrink-0">
+                    <img src="assets/blogs/blog8/blogbg.webp" alt="Compliance Insights" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-2/3 md:w-full space-y-1.5 sm:space-y-3 flex flex-col justify-between">
+                    <div>
+                       
+                        <h3 class="text-sm sm:text-lg font-serif text-white uppercase transition-colors duration-300 group-hover:text-red-500 font-bold leading-snug">
+                            ANSI & EN Safety Standards
+                        </h3>
+                        <p class="text-xs sm:text-sm text-white font-normal leading-relaxed transition-colors duration-300 mt-2">
+                            Safety standards are the backbone of modern industrial manufacturing and PPE deployment. The American National Standards Institute (ANSI) and the European Norms (EN) are the two primary global frameworks ensuring that protective products meet strict performance and safety requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 transition-colors duration-300 group-hover:border-red-600/30 flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider text-white transition-colors">View Article</span>
+                <i class="fa-solid fa-chevron-right text-xs text-red-500 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
     <!-- ========================================== -->
     <!-- 5. GUARD GLOVES FOOTER -->

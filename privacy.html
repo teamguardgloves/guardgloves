@@ -23,62 +23,57 @@
             
             <!-- Logo -->
             <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
-                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
-                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
+                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                    <a href="terms.html" class="hover:text-red-600 transition-colors duration-300">Terms of Use</a>
-                    <a href="privacy.html" class="hover:text-red-600 transition-colors duration-300">Privacy Policy</a>
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <!-- Hamburger Lines (Hidden when peer is checked) -->
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <!-- X Close Lines (Shown only when peer is checked) -->
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Menu Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="terms.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Terms of Use</a>
-                    <a href="privacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Privacy Policy</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
@@ -87,32 +82,28 @@
     <div class="absolute inset-0 bg-black/85"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12 relative z-10 w-full flex flex-col justify-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-red-600/20 border border-red-600/30 rounded-full w-fit mb-3">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
-            <span class="text-[9px] sm:text-xs uppercase tracking-widest text-red-400 font-semibold">Legal & Transparency</span>
-        </div>
+        
         
         <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold tracking-wide text-[#f5f5f5] leading-tight w-full">
             Privacy Policy
         </h1>
         
-        <p class="text-[9px] sm:text-xs uppercase tracking-widest text-gray-400 mt-3">
-            <a href="index.html" class="hover:text-red-500 transition">Home</a> / <span class="text-gray-300">Privacy Policy</span>
-        </p>
+        
     </div>
 </section>
 
 <!-- Introduction Overview Block -->
+<!-- Introduction Overview Block -->
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 group">
-    <div class="bg-black border border-white/[0.05] rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-xl transition-all duration-300 group-hover:border-red-600/40">
-        <div class="w-full space-y-3 text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
-            <p class="text-xs sm:text-base text-white font-normal border-l-2 border-red-600 pl-3 py-0.5 group-hover:text-red-500 transition-colors">
+    <div class="bg-black border border-white/[0.05] rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
+        <div class="w-full space-y-4 leading-relaxed font-light text-white">
+            <p class="text-base sm:text-xl font-normal border-l-4 border-red-600 pl-4 py-1 group-hover:text-red-500 transition-colors text-white">
                 Guard Gloves (“Guard Gloves,” “we,” “us,” or “our”) respects your privacy and is committed to protecting personal information provided through our website.
             </p>
-            <p>
+            <p class="text-base sm:text-lg text-white">
                 This Privacy Policy explains how we collect, use, disclose, and protect information when you visit or interact with the Guard Gloves website.
             </p>
-            <p>
+            <p class="text-base sm:text-lg text-white">
                 The website is primarily intended for business-to-business (B2B) customers, including manufacturers, importers, distributors, wholesalers, retailers, safety companies, sports businesses, brands, and other commercial organizations.
             </p>
         </div>
@@ -123,28 +114,25 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3 space-y-6">
 
     <!-- 1. INFORMATION WE COLLECT -->
-    <div class="group relative bg-[url('assets/terms/privacybg.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacybg.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 01</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 Information We Collect
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 Depending on how you interact with us, we may collect:
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs sm:text-sm text-gray-400 font-light">
-                <ul class="space-y-1 list-disc pl-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base sm:text-lg text-white font-light">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Name and job title</li>
                     <li>Company or organization name</li>
                     <li>Business email address</li>
                     <li>Telephone number</li>
                     <li>Business or shipping address</li>
                 </ul>
-                <ul class="space-y-1 list-disc pl-5">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Country and city</li>
                     <li>Product interests, requirements, and structural specifications</li>
                     <li>Information submitted through quotation, sample, OEM/ODM, private-label, or contact forms</li>
@@ -152,28 +140,25 @@
                     <li>Information necessary to process business transactions or provide customer service</li>
                 </ul>
             </div>
-            <p class="text-gray-400 text-xs sm:text-sm font-light pt-2 border-t border-white/5">
+            <p class="text-white text-base sm:text-lg font-light pt-2 border-t border-white/10">
                 We generally collect information directly from you when you submit a form, request a quotation or sample, contact us, or communicate with us regarding our products or services.
             </p>
         </div>
     </div>
 
     <!-- 2. HOW WE USE INFORMATION -->
-    <div class="group relative bg-[url('assets/terms/privacyh1.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacyh1.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 02</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 How We Use Information
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 We may use collected information to:
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs sm:text-sm text-gray-400 font-light">
-                <ul class="space-y-1 list-disc pl-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base sm:text-lg text-white font-light">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Respond to business inquiries</li>
                     <li>Prepare quotations and proposals</li>
                     <li>Provide product information and samples</li>
@@ -181,7 +166,7 @@
                     <li>Establish and manage distributor or wholesale relationships</li>
                     <li>Process and fulfill business orders</li>
                 </ul>
-                <ul class="space-y-1 list-disc pl-5">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Communicate regarding products, shipments, and services</li>
                     <li>Provide customer support & improve our website and business services</li>
                     <li>Maintain business records</li>
@@ -190,27 +175,24 @@
                     <li>Send relevant business or marketing communications where permitted by law</li>
                 </ul>
             </div>
-            <div class="mt-4 pt-3 border-t border-white/10 text-xs sm:text-sm text-red-400 font-medium">
+            <div class="mt-4 pt-3 border-t border-white/10 text-base sm:text-lg text-red-400 font-medium">
                 Note: We do not sell personal information for money.
             </div>
         </div>
     </div>
 
     <!-- 3. BUSINESS INFORMATION -->
-    <div class="group relative bg-[url('assets/terms/privacyh2.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacyh2.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 03</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 Business Information
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 Because Guard Gloves operates primarily as a B2B manufacturer, exporter, distributor, and brand owner, we may also receive information about the businesses with which we communicate, such as:
             </p>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-1 text-xs sm:text-sm text-gray-400 font-light list-disc pl-5">
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-1.5 text-base sm:text-lg text-white font-light list-disc pl-5 marker:text-red-500">
                 <li>Company name & industry details</li>
                 <li>Business location</li>
                 <li>Product requirements & custom specifications</li>
@@ -218,119 +200,110 @@
                 <li>Distribution interests</li>
                 <li>Shipping and commercial requirements</li>
             </ul>
-            <p class="text-gray-400 text-xs sm:text-sm font-light pt-2 border-t border-white/5">
+            <p class="text-white text-base sm:text-lg font-light pt-2 border-t border-white/10">
                 Business information may be used to evaluate and manage potential or existing commercial relationships.
             </p>
         </div>
     </div>
 
+
     <!-- 4. SHARING INFORMATION -->
-    <div class="group relative bg-[url('assets/terms/privacyh4.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacyh4.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 04</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 Sharing Information
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 We may share personal information when reasonably necessary with:
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs sm:text-sm text-gray-400 font-light">
-                <ul class="space-y-1 list-disc pl-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base sm:text-lg text-white font-light">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Guard Gloves personnel and relevant business operations</li>
                     <li>Manufacturing and production teams</li>
                     <li>Canadian distribution and customer-service teams</li>
                     <li>Shipping, freight, logistics, and customs providers</li>
                 </ul>
-                <ul class="space-y-1 list-disc pl-5">
+                <ul class="space-y-1.5 list-disc pl-5 marker:text-red-500">
                     <li>Website hosting and technical service providers</li>
                     <li>Business communication and email service providers</li>
                     <li>Professional advisers and service providers</li>
                     <li>Government, regulatory, or law-enforcement authorities where legally required</li>
                 </ul>
             </div>
-            <p class="text-gray-400 text-xs sm:text-sm font-light pt-2 border-t border-white/5">
+            <p class="text-white text-base sm:text-lg font-light pt-2 border-t border-white/10">
                 We only share information as reasonably necessary for legitimate business purposes, service provision, legal compliance, or protection of our rights.
             </p>
         </div>
     </div>
 
+
     <!-- 5. CANADA AND PAKISTAN OPERATIONS -->
-    <div class="group relative bg-[url('assets/terms/privacyh6.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacyh6.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 05</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 Cross-Border Operations (Canada & Pakistan)
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 Guard Gloves operates through business activities in Pakistan and Canada.
             </p>
-            <ul class="space-y-2 text-xs sm:text-sm text-gray-400 font-light list-disc pl-5">
-                <li><strong>Pakistan operations</strong> may include manufacturing, product development, quality control, sourcing, and export activities.</li>
-                <li><strong>Canadian operations</strong> may include distribution, warehousing, branding, sales, and customer service.</li>
+            <ul class="space-y-2 text-base sm:text-lg text-white font-light list-disc pl-5 marker:text-red-500">
+                <li><strong class="text-white font-bold">Pakistan operations</strong> may include manufacturing, product development, quality control, sourcing, and export activities.</li>
+                <li><strong class="text-white font-bold">Canadian operations</strong> may include distribution, warehousing, branding, sales, and customer service.</li>
             </ul>
-            <p class="text-gray-400 text-xs sm:text-sm font-light pt-2 border-t border-white/5">
+            <p class="text-white text-base sm:text-lg font-light pt-2 border-t border-white/10">
                 As a result, personal information may be accessed, processed, or transferred between Canada, Pakistan, and other countries where our trusted service providers operate. Where required by applicable law, we take reasonable measures to protect personal information when it is transferred or accessed across borders.
             </p>
         </div>
     </div>
 
     <!-- 6. COOKIES AND WEBSITE TRACKING -->
-    <div class="group relative bg-[url('assets/terms/privacyh5.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.002] overflow-hidden">
+    <div class="group relative bg-[url('assets/terms/privacyh5.webp')] bg-cover bg-center border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40 overflow-hidden">
         <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
         <div class="relative z-10 space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 06</span>
-            </div>
-            <h2 class="text-lg sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors duration-300">
                 Cookies and Website Tracking
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed">
                 Our website may use cookies and similar technologies for essential functionality, security, remembering preferences, understanding traffic, and measuring marketing effectiveness.
             </p>
-            <p class="text-gray-400 text-xs sm:text-sm font-light">
+            <p class="text-white text-base sm:text-lg font-light">
                 We may use analytics or advertising services such as Google Analytics, Google Ads, Meta, LinkedIn, or similar services only where those services are actually implemented on the website. These services may collect information such as IP address, browser type, device details, and website activity.
             </p>
-            <p class="text-xs sm:text-sm text-gray-500 italic">
+            <p class="text-base sm:text-lg text-white italic">
                 You can control or disable cookies through your browser settings. Certain website functions may not work properly if essential cookies are disabled.
             </p>
         </div>
     </div>
-   <!-- 7 - 9: COMMUNICATIONS, SECURITY & RETENTION -->
+
+    <!-- 7 - 9: COMMUNICATIONS, SECURITY & RETENTION -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
+        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
             <div class="space-y-2">
-                <span class="text-[9px] uppercase tracking-widest font-bold text-gray-500 group-hover:text-red-500 transition-colors">Section 07</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Marketing Communications</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold duration-300">Marketing Communications</h3>
+                <p class="text-base sm:text-lg text-white font-light leading-relaxed">
                     If you provide your business contact details, we may send you relevant commercial updates. You may unsubscribe at any time by following the instructions provided in the email.
                 </p>
             </div>
         </div>
 
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
+        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
             <div class="space-y-2">
-                <span class="text-[9px] uppercase tracking-widest font-bold text-gray-500 group-hover:text-red-500 transition-colors">Section 08</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Data Security</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold duration-300">Data Security</h3>
+                <p class="text-base sm:text-lg text-white font-light leading-relaxed">
                     We employ administrative, technical, and organizational measures to protect data. However, no internet transmission or electronic storage system can be guaranteed to be 100% secure.
                 </p>
             </div>
         </div>
 
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
+        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
             <div class="space-y-2">
-                <span class="text-[9px] uppercase tracking-widest font-bold text-gray-500 group-hover:text-red-500 transition-colors">Section 09</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Data Retention</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold duration-300">Data Retention</h3>
+                <p class="text-base sm:text-lg text-white font-light leading-relaxed">
                     Information is retained only as long as reasonably necessary for business operations, legal, accounting, compliance, or dispute-resolution frameworks.
                 </p>
             </div>
@@ -338,66 +311,66 @@
     </div>
 
     <!-- 10 - 14: LEGAL RIGHTS & COMPLIANCE MISCELLANY -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm font-light text-gray-400">
-            <div class="space-y-3">
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base sm:text-lg font-light text-white">
+            <div class="space-y-4">
                 <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-xs sm:text-sm tracking-wider group-hover:text-red-500 transition-colors">10. Access and Correction</h4>
-                    <p class="mt-1">Subject to applicable law, you may request access to personal information we hold about you or ask us to correct inaccurate or incomplete information.</p>
+                    <h4 class="text-white font-bold uppercase text-lg sm:text-xl tracking-wider group-hover/sub:text-red-500 transition-colors duration-300">Access and Correction</h4>
+                    <p class="mt-1 text-white">Subject to applicable law, you may request access to personal information we hold about you or ask us to correct inaccurate or incomplete information.</p>
                 </div>
                 <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-xs sm:text-sm tracking-wider group-hover:text-red-500 transition-colors">11. Third-Party Websites</h4>
-                    <p class="mt-1">We are not responsible for the privacy practices, content, or policies of third-party websites linked within our platform.</p>
+                    <h4 class="text-white font-bold uppercase text-lg sm:text-xl tracking-wider group-hover/sub:text-red-500 transition-colors duration-300">Third-Party Websites</h4>
+                    <p class="mt-1 text-white">We are not responsible for the privacy practices, content, or policies of third-party websites linked within our platform.</p>
                 </div>
                 <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-xs sm:text-sm tracking-wider group-hover:text-red-500 transition-colors">12. Children</h4>
-                    <p class="mt-1">Our platform is intended for commercial entities and is not directed toward or intentionally designed to collect data from children.</p>
+                    <h4 class="text-white font-bold uppercase text-lg sm:text-xl tracking-wider group-hover/sub:text-red-500 transition-colors duration-300">Children</h4>
+                    <p class="mt-1 text-white">Our platform is intended for commercial entities and is not directed toward or intentionally designed to collect data from children.</p>
                 </div>
             </div>
-            <div class="space-y-3">
+            <div class="space-y-4">
                 <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-xs sm:text-sm tracking-wider group-hover:text-red-500 transition-colors">13. Privacy Rights & Complaints</h4>
-                    <p class="mt-1">Depending on location, you may have explicit data protection rights. If you have any concerns, please contact us first so we can resolve the matter.</p>
+                    <h4 class="text-white font-bold uppercase text-lg sm:text-xl tracking-wider group-hover/sub:text-red-500 transition-colors duration-300">Privacy Rights & Complaints</h4>
+                    <p class="mt-1 text-white">Depending on location, you may have explicit data protection rights. If you have any concerns, please contact us first so we can resolve the matter.</p>
                 </div>
                 <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-xs sm:text-sm tracking-wider group-hover:text-red-500 transition-colors">14. Changes to This Policy</h4>
-                    <p class="mt-1">We may update this policy periodically. The latest structural variant will always be made available on this target URL with an updated timestamp.</p>
+                    <h4 class="text-white font-bold uppercase text-lg sm:text-xl tracking-wider group-hover/sub:text-red-500 transition-colors duration-300">Changes to This Policy</h4>
+                    <p class="mt-1 text-white">We may update this policy periodically. The latest structural variant will always be made available on this target URL with an updated timestamp.</p>
                 </div>
             </div>
         </div>
     </div>
 
-   <!-- 15. CONTACT US -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 shadow-2xl">
+    <!-- 15. CONTACT US -->
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-900/20 hover:border-red-600/40">
         <div class="w-full space-y-4">
-            <h2 class="text-xl sm:text-2xl font-serif text-white uppercase tracking-wide group-hover:text-red-500 transition-colors font-bold">
-                15. Contact Us
+            <h2 class="text-xl sm:text-3xl font-serif text-white uppercase tracking-wide group-hover:text-red-500 transition-colors duration-300 font-bold">
+                Contact Us
             </h2>
-            <p class="text-xs sm:text-sm text-gray-300 font-light leading-relaxed">
+            <p class="text-base sm:text-lg text-white font-light leading-relaxed">
                 For privacy questions, formal structural requests, or administrative complaints, please reach out to our respective regional operational frameworks:
             </p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 text-xs sm:text-sm text-gray-400 font-light">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 text-base sm:text-lg text-white font-light">
                 <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1 group/pk">
-                    <strong class="text-white block uppercase text-[11px] tracking-wider text-red-400 group-hover/pk:text-red-500 transition-colors">Pakistan Manufacturing & Export Operations</strong>
+                    <strong class="text-red-500 block uppercase text-sm sm:text-base tracking-wider font-bold group-hover/pk:text-red-400 transition-colors">Pakistan Manufacturing & Export Operations</strong>
                     <p class="text-white font-medium">Guard Gloves</p>
-                    <p>82/5 Khyber Road Cantt</p>
-                    <p>51310 – Sialkot, Punjab - Pakistan</p>
-                    <p class="pt-1 text-gray-300"><strong>Email:</strong> <a href="mailto:info@guardgloves.com" class="hover:text-red-400 transition-colors">info@guardgloves.com</a></p>
-                    <p class="text-gray-300"><strong>Tel:</strong> <a href="tel:+923244356168" class="hover:text-red-400 transition-colors">+92-324-435-6168</a></p>
+                    <p class="text-white">82/5 Khyber Road Cantt</p>
+                    <p class="text-white">51310 – Sialkot, Punjab - Pakistan</p>
+                    <p class="pt-1 text-white"><strong class="text-white">Email:</strong> <a href="mailto:info@guardgloves.com" class="hover:text-red-500 transition-colors underline">info@guardgloves.com</a></p>
+                    <p class="text-white"><strong class="text-white">Tel:</strong> <a href="tel:+923244356168" class="hover:text-red-500 transition-colors underline">+92-324-4356-168</a></p>
                 </div>
                 <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1 group/ca">
-                    <strong class="text-white block uppercase text-[11px] tracking-wider text-red-400 group-hover/ca:text-red-500 transition-colors">Canada Distribution & Brand Operations</strong>
+                    <strong class="text-red-500 block uppercase text-xs sm:text-sm tracking-wider font-bold group-hover/ca:text-red-400 transition-colors">Canada Distribution & Brand Operations</strong>
                     <p class="text-white font-medium">Guard Gloves</p>
-                    <p>200 Silver Star Blvd</p>
-                    <p>Scarborough M1V 5H4, Ontario - Canada</p>
-                    <p class="pt-1 text-gray-300"><strong>Email:</strong> <a href="mailto:info@guardgloves.ca" class="hover:text-red-400 transition-colors">info@guardgloves.ca</a></p>
-                    <p class="text-gray-300"><strong>Tel:</strong> <a href="tel:+16473087321" class="hover:text-red-400 transition-colors">+1-647-308-7321</a></p>
+                    <p class="text-white">200 Silver Star Blvd</p>
+                    <p class="text-white">Scarborough M1V 5H4, Ontario - Canada</p>
+                    <p class="pt-1 text-white"><strong class="text-white">Email:</strong> <a href="mailto:info@guardgloves.ca" class="hover:text-red-500 transition-colors underline">info@guardgloves.ca</a></p>
+                    <p class="text-white"><strong class="text-white">Tel:</strong> <a href="tel:+16473087321" class="hover:text-red-500 transition-colors underline">+1-647-308-7321</a></p>
                 </div>
             </div>
             
-            <div class="pt-3 text-xs text-gray-500 border-t border-white/10">
-                <strong>Official Portal:</strong> <a href="https://www.guardgloves.com" target="_blank" class="underline text-gray-400 hover:text-red-400 transition-colors">www.guardgloves.com</a>
+            <div class="pt-3 text-base sm:text-lg text-white border-t border-white/10">
+                <strong class="text-white">Official Portal:</strong> <a href="https://www.guardgloves.com" target="_blank" class="underline text-white hover:text-red-500 transition-colors">www.guardgloves.com</a>
             </div>
         </div>
     </div>

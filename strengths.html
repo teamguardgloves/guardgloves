@@ -131,53 +131,51 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                   
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Menu Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
@@ -200,91 +198,73 @@
         </h2>
         <div class="w-16 h-[1.5px] bg-brand-red mx-auto"></div>
         <p class="text-[#555555] text-xs sm:text-base font-light leading-relaxed tracking-wide pt-1 max-w-2xl">
-            Advanced technical innovation, sustainable engineering, and rigorous R&D drive the manufacturing excellence of Guard Gloves.
+            Advanced technical innovation and rigorous R&D drive the manufacturing excellence of Guard Gloves.
         </p>
     </div>
 </section>
 
 <!-- MAIN CONTAINER FOR ALL 3 BLOCKS -->
-<section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-10">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+<section class="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 items-stretch">
         
-        <!-- CARD 01: Manufacturing Quality -->
-        <div class="group relative bg-[url('assets/strength/image1.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
+        <!-- CARD 01 -->
+        <div class="group relative bg-[url('assets/strength/image1.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-10 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
             <!-- Dark Overlay -->
             <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
             
-            <div class="relative z-10 space-y-3 sm:space-y-4 text-left">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
-                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Manufacturing Quality</span>
-                </div>
-                
+            <div class="relative z-10 space-y-5 text-left">
                 <!-- Heading -->
-                <h2 class="text-lg sm:text-2xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
                     Precision Product <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-sm sm:text-base block mt-1">Development Pipeline</span>
+                    <span class="text-white font-light font-sans tracking-widest text-lg sm:text-xl block mt-1.5">Development </span>
                 </h2>
                 
-                <div class="w-12 h-[1px] bg-brand-red"></div>
+                <div class="w-16 h-[2px] bg-brand-red"></div>
                 
                 <!-- Description -->
-                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+                <p class="text-white text-base sm:text-lg leading-relaxed font-normal">
                     We combine rigorous engineering and strict field testing to manufacture industrial safety solutions that exceed international regulatory standards. Powered by automated technology and precise quality control, our pipeline delivers consistent, premium-grade protection built for high-performance commercial environments.
                 </p>
             </div>
         </div>
 
-        <!-- CARD 02: Ergonomic Science -->
-        <div class="group relative bg-[url('assets/strength/image2.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
+        <!-- CARD 02 -->
+        <div class="group relative bg-[url('assets/strength/image2.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-10 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
             <!-- Dark Overlay -->
             <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
             
-            <div class="relative z-10 space-y-3 sm:space-y-4 text-left">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
-                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Ergonomic Science</span>
-                </div>
-                
+            <div class="relative z-10 space-y-5 text-left">
                 <!-- Heading -->
-                <h2 class="text-lg sm:text-2xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
-                    Advanced Functional <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-sm sm:text-base block mt-1">Design & Ergonomics</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
+                   Advanced Functional  <br />
+                    <span class="text-white font-light font-sans tracking-widest text-lg sm:text-xl block mt-1.5">Design & Ergonomics</span>
                 </h2>
                 
-                <div class="w-12 h-[1px] bg-brand-red"></div>
+                <div class="w-16 h-[2px] bg-brand-red"></div>
                 
                 <!-- Description -->
-                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+                <p class="text-white text-base sm:text-lg leading-relaxed font-normal">
                     We integrate industrial creativity with technical precision, utilizing advanced 3D CAD modeling to engineer high-performance safety gloves. By meticulously mapping hand ergonomics and stress points, our automated design frameworks deliver anatomically optimized hand protection that maximizes workplace dexterity, comfort, and safety.
                 </p>
             </div>
         </div>
 
-        <!-- CARD 03: Market Edge -->
-        <div class="group relative bg-[url('assets/strength/image3.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
+        <!-- CARD 03 -->
+        <div class="group relative bg-[url('assets/strength/image3.webp')] bg-cover bg-center border border-white/[0.05] rounded-3xl p-6 sm:p-10 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/[0.1] overflow-hidden flex flex-col justify-between">
             <!-- Dark Overlay -->
             <div class="absolute inset-0 bg-black/80 mix-blend-multiply pointer-events-none"></div>
             
-            <div class="relative z-10 space-y-3 sm:space-y-4 text-left">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
-                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Market Edge</span>
-                </div>
-                
+            <div class="relative z-10 space-y-5 text-left">
                 <!-- Heading -->
-                <h2 class="text-lg sm:text-2xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors group-hover:text-red-500">
                     Pioneering Innovation <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-sm sm:text-base block mt-1">& Market Differentiation</span>
+                    <span class="text-white font-light font-sans tracking-widest text-lg sm:text-xl block mt-1.5">& Market Differentiation</span>
                 </h2>
                 
-                <div class="w-12 h-[1px] bg-brand-red"></div>
+                <div class="w-16 h-[2px] bg-brand-red"></div>
                 
                 <!-- Description -->
-                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+                <p class="text-white text-base sm:text-lg leading-relaxed font-normal">
                     We reject conventional boundaries to pioneer original, next-generation hand protection technologies. By continuously driving engineering breakthroughs and introducing proprietary design enhancements, we manufacture unique, market-differentiated safety gloves that elevate protection standards and give our distribution partners a powerful competitive edge.
                 </p>
             </div>
@@ -294,18 +274,20 @@
 </section>
 
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-4 sm:py-6">
-    <div class="bg-black border border-white/[0.05] rounded-3xl p-6 sm:p-12 lg:p-16 shadow-xl">
+    <div class="bg-black border border-white/[0.05] rounded-3xl p-6 sm:p-12 lg:p-16 shadow-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-16 items-center">
-            <div class="w-full h-56 sm:h-96 rounded-2xl overflow-hidden shadow-md">
-                <img src="assets/icon/factory2.webp" alt="Strict Inline Quality Inspection and Testing Facility at Guard Gloves Manufacturing Unit" class="w-full h-full object-cover" loading="lazy">
+            
+            <div class="w-full rounded-2xl overflow-hidden shadow-md">
+                <img src="assets/icon/factory2.webp" alt="Strict Inline Quality Inspection and Testing Facility at Guard Gloves Manufacturing Unit" class="w-full h-auto object-cover" loading="lazy">
             </div>
+
             <div class="space-y-3 sm:space-y-4 text-left">
-                <h2 class="text-xl sm:text-3xl font-bold font-serif tracking-tight text-white uppercase leading-tight">
+                <h2 class="text-xl sm:text-3xl font-bold font-serif tracking-tight text-white hover:text-red-500 transition-colors duration-300 uppercase leading-tight cursor-pointer">
                     Strict Quality Assurance & Inline Inspection
                 </h2>
                 <div class="w-12 h-[2px] bg-brand-red"></div>
-                <p class="text-xs sm:text-base text-gray-300 font-light leading-relaxed">
-                    We implement strict quality control protocols throughout our production pipeline. Our team conducts continuous inline testing to verify material tensile strength, glove durability, and barrier integrity. This rigorous oversight ensures every batch exceeds international safety standards.
+                <p class="text-xs sm:text-base text-white/90 font-normal leading-relaxed tracking-normal">
+                    We implement strict quality control protocols throughout our production pipeline. Our team conducts continuous inline testing to verify material tensile strength, glove durability, and barrier integrity. This rigorous oversight ensures every batch exceeds international safety standards and delivers uncompromised, long-term performance.
                 </p>
             </div>
         </div>
@@ -313,15 +295,15 @@
 </section>
 
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-4 sm:py-6">
-    <div class="bg-black border border-white/[0.05] rounded-3xl p-6 sm:p-12 lg:p-16 shadow-xl">
+    <div class="bg-black border border-white/[0.05] rounded-3xl p-6 sm:p-12 lg:p-16 shadow-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-16 items-center">
             <div class="space-y-3 sm:space-y-4 order-2 md:order-1 text-left">
-                <h2 class="text-xl sm:text-3xl font-bold font-serif tracking-tight text-white uppercase leading-tight">
+                <h2 class="text-xl sm:text-3xl font-bold font-serif tracking-tight text-white hover:text-red-500 transition-colors duration-300 uppercase leading-tight cursor-pointer">
                     Optimized Production Workflows & Lean Assembly
                 </h2>
                 <div class="w-12 h-[2px] bg-brand-red"></div>
-                <p class="text-xs sm:text-base text-gray-300 font-light leading-relaxed">
-                    We maximize manufacturing efficiency by integrating precision cutting, specialized sewing, and inline quality validation into a single synchronized line. This lean engineering approach significantly accelerates production cycles while minimizing material waste and energy consumption.
+                <p class="text-xs sm:text-base text-white/90 font-normal leading-relaxed tracking-normal">
+                    We maximize manufacturing efficiency by integrating precision cutting, specialized sewing, and inline quality validation into a single synchronized line. This lean engineering approach significantly accelerates production cycles while minimizing material waste. By eliminating operational friction, we deliver premium, sustainably produced industrial gloves at an optimized cost.
                 </p>
             </div>
             <div class="w-full h-56 sm:h-96 rounded-2xl overflow-hidden shadow-md order-1 md:order-2">
@@ -340,45 +322,45 @@
             <div class="industrial-accordion-wrapper divide-y divide-white/10 border-t border-b border-white/10 w-full">
                 <div class="accordion-item py-3 transition-all duration-300">
                     <button onclick="handleAccordionToggle(this)" class="w-full flex items-center justify-between text-left text-white font-semibold tracking-wide text-sm sm:text-lg group py-2" aria-expanded="false">
-                        <span class="group-hover:text-red-500 transition-colors duration-300">Global Compliance & Safety Standards</span>
+                        <span class="group-hover:text-red-500 transition-colors duration-300">Certified Global Compliance & Safety Standards</span>
                         <i class="fa-solid fa-plus text-xs sm:text-sm text-gray-400 transition-transform duration-300 item-icon group-hover:text-red-500"></i>
                     </button>
                     <div class="accordion-content dynamic-panel opacity-0">
-                        <div class="text-xs sm:text-sm text-gray-300 font-light leading-relaxed pt-1 pb-3 max-w-xl">
+                        <div class="text-xs sm:text-sm text-white/90 font-normal leading-relaxed tracking-normal pt-1 pb-3 max-w-xl">
                             Our compliance with international safety standards (ANSI, EN388, EN511) is uncompromising. Each product carries certified marks, ensuring legal, regulatory, and ethical adherence across global industries.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item py-3 transition-all duration-300">
                     <button onclick="handleAccordionToggle(this)" class="w-full flex items-center justify-between text-left text-white font-semibold tracking-wide text-sm sm:text-lg group py-2" aria-expanded="false">
-                        <span class="group-hover:text-red-500 transition-colors duration-300">Customer-Centric Approach & OEM Solutions</span>
+                        <span class="group-hover:text-red-500 transition-colors duration-300">Client-Driven Customization & Long-Term Partnership</span>
                         <i class="fa-solid fa-plus text-xs sm:text-sm text-gray-400 transition-transform duration-300 item-icon group-hover:text-red-500"></i>
                     </button>
                     <div class="accordion-content dynamic-panel opacity-0">
-                        <div class="text-xs sm:text-sm text-gray-300 font-light leading-relaxed pt-1 pb-3 max-w-xl">
-                            We actively adapt our manufacturing capabilities to align with global clients' specific requirements, offering bespoke OEM & private label developments engineered for high end-user satisfaction.
+                        <div class="text-xs sm:text-sm text-white/90 font-normal leading-relaxed tracking-normal pt-1 pb-3 max-w-xl">
+                            We actively adapt our manufacturing capabilities to align with our global clients' specific feedback and market demands. By integrating distributor insights directly into our product development pipeline, we engineer tailored solutions that maximize end-user satisfaction. This collaborative approach ensures superior product loyalty, exceptional market trust, and reliable growth.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item py-3 transition-all duration-300">
                     <button onclick="handleAccordionToggle(this)" class="w-full flex items-center justify-between text-left text-white font-semibold tracking-wide text-sm sm:text-lg group py-2" aria-expanded="false">
-                        <span class="group-hover:text-red-500 transition-colors duration-300">Advanced Material Science</span>
+                        <span class="group-hover:text-red-500 transition-colors duration-300">Engineered Protective Materials</span>
                         <i class="fa-solid fa-plus text-xs sm:text-sm text-gray-400 transition-transform duration-300 item-icon group-hover:text-red-500"></i>
                     </button>
                     <div class="accordion-content dynamic-panel opacity-0">
-                        <div class="text-xs sm:text-sm text-gray-300 font-light leading-relaxed pt-1 pb-3 max-w-xl">
-                            We utilize material engineering breakthroughs—including cut-resistant fibers, premium handcrafted leathers, and advanced polymers—to manufacture industrial gloves that deliver unmatched multi-hazard hand protection.
+                        <div class="text-xs sm:text-sm text-white/90 font-normal leading-relaxed tracking-normal pt-1 pb-3 max-w-xl">
+                           We utilize material engineering breakthroughs—including cut-resistant fibers, premium quality leather and advanced polymers—to manufacture industrial gloves that deliver unmatched structural durability, tactile flexibility, and multi-hazard hand protection.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item py-3 transition-all duration-300">
                     <button onclick="handleAccordionToggle(this)" class="w-full flex items-center justify-between text-left text-white font-semibold tracking-wide text-sm sm:text-lg group py-2" aria-expanded="false">
-                        <span class="group-hover:text-red-500 transition-colors duration-300">Sustainability & SASB Eco-Innovation</span>
+                        <span class="group-hover:text-red-500 transition-colors duration-300">Eco-Conscious Production</span>
                         <i class="fa-solid fa-plus text-xs sm:text-sm text-gray-400 transition-transform duration-300 item-icon group-hover:text-red-500"></i>
                     </button>
                     <div class="accordion-content dynamic-panel opacity-0">
-                        <div class="text-xs sm:text-sm text-gray-300 font-light leading-relaxed pt-1 pb-3 max-w-xl">
-                            Aligned with Sustainability Accounting Standards Board (SASB) guidelines, we integrate green manufacturing processes, responsible sourcing, and eco-friendly raw materials across our supply chain to minimize environmental impact without compromising safety.
+                        <div class="text-xs sm:text-sm text-white/90 font-normal leading-relaxed tracking-normal pt-1 pb-3 max-w-xl">
+                            We integrate green manufacturing processes and sustainable raw materials across our supply chain to reduce material waste and deliver eco-friendly protective gloves without compromising safety.
                         </div>
                     </div>
                 </div>

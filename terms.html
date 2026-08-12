@@ -23,98 +23,86 @@
             
             <!-- Logo -->
             <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
-                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
-                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
+                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-5 text-[13px] font-medium tracking-wider uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                    <a href="terms.html" class="hover:text-red-600 transition-colors duration-300">Terms of Use</a>
-                    <a href="privacy.html" class="hover:text-red-600 transition-colors duration-300">Privacy Policy</a>
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Menu Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-sm font-medium tracking-wider uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="terms.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Terms of Use</a>
-                    <a href="privacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Privacy Policy</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
 
 <!-- Hero Banner -->
-<section class="relative text-white overflow-hidden bg-cover bg-center bg-no-repeat min-h-[25vh] sm:min-h-[35vh] flex items-center" style="background-image: url('assets/terms/termsbg.webp');">
+<section class="relative w-full bg-black text-white min-h-[380px] sm:min-h-[440px] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('assets/terms/termsbg.webp');">
     <div class="absolute inset-0 bg-black/60"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12 relative z-10 w-full flex flex-col justify-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-red-600/20 border border-red-600/30 rounded-full w-fit mb-3">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
-            <span class="text-xs uppercase tracking-widest text-red-400 font-semibold">Legal & Agreements</span>
-        </div>
-        
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-wide text-[#f5f5f5] leading-tight w-full">
             Terms of Use
         </h1>
-        
-        <p class="text-xs uppercase tracking-widest text-gray-400 mt-3">
-            <a href="index.html" class="hover:text-red-500 transition">Home</a> / <span class="text-gray-300">Terms of Use</span>
-        </p>
     </div>
 </section>
 
 <!-- Introduction Overview Block -->
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 group">
     <div class="bg-black border border-white/[0.05] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl transition-all duration-300 group-hover:border-red-600/40">
-        <div class="w-full space-y-4 text-gray-300 text-sm leading-relaxed font-light">
-            <p class="text-sm sm:text-lg text-white font-normal border-l-2 border-red-600 pl-3 py-0.5 group-hover:text-red-500 transition-colors">
+        <div class="w-full space-y-5 text-white text-sm sm:text-base leading-relaxed font-normal">
+            <p class="text-base sm:text-lg text-white font-medium border-l-2 border-red-600 pl-3 sm:pl-4 py-0.5 group-hover:text-red-500 transition-colors">
                 Welcome to Guard Gloves. These Terms of Use (“Terms”) govern access to and use of the Guard Gloves website, including its product information, company information, downloadable materials, inquiry forms, catalogues, and other business-related content (collectively, the “Website”).
             </p>
-            <p>
+            <p class="text-white">
                 Guard Gloves operates internationally through its business activities in Pakistan and Canada. Guard Gloves’ Pakistan operations primarily support manufacturing, sourcing, quality control, and export activities, while its Canadian operations support distribution, branding, sales, customer service, and related business activities.
             </p>
-            <p>
+            <p class="text-white">
                 The Website is primarily intended for business-to-business (“B2B”) users, including importers, distributors, wholesalers, retailers, safety companies, industrial buyers, employers, contractors, sports organizations, gyms, clubs, brands, and other commercial customers.
             </p>
-            <p>
+            <p class="text-white">
                 The Website is not primarily intended to operate as a consumer retail marketplace. Product information and pricing may be provided for business inquiry, quotation, sampling, private-label, OEM/ODM, wholesale, and distribution purposes. By accessing or using the Website, you agree to these Terms.
             </p>
         </div>
@@ -125,45 +113,38 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-6 space-y-6">
 
     <!-- 1. DEFINITIONS -->
-    <div class="group bg-[#0a0a0a]/50 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh1.webp');">
+    <div class="group bg-[#0a0a0a]/65 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh1.webp');">
         <div class="space-y-4 w-full relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 01</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
                 Definitions
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300 font-light">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-base sm:text-lg text-white font-normal">
                 <ul class="space-y-3 list-none pl-0">
-                    <li><strong class="text-white">“Guard Gloves,” “we,” “us,” or “our”:</strong> The applicable Guard Gloves business operation or legal entity responsible for the relevant business activity.</li>
-                    <li><strong class="text-white">“Website”:</strong> The Guard Gloves website and related webpages, catalogues, forms, downloadable materials, and digital services.</li>
-                    <li><strong class="text-white">“Products”:</strong> Gloves, workwear, protective equipment, sports or training gloves, accessories, and related products offered.</li>
+                    <li><strong class="text-white font-semibold">“Guard Gloves,” “we,” “us,” or “our”:</strong> The applicable Guard Gloves business operation or legal entity responsible for the relevant business activity.</li>
+                    <li><strong class="text-white font-semibold">“Website”:</strong> The Guard Gloves website and related webpages, catalogues, forms, downloadable materials, and digital services.</li>
+                    <li><strong class="text-white font-semibold">“Products”:</strong> Gloves, workwear, protective equipment, sports or training gloves, accessories, and related products offered.</li>
                 </ul>
                 <ul class="space-y-3 list-none pl-0">
-                    <li><strong class="text-white">“Business Customer”:</strong> A company, partnership, sole proprietorship, distributor, wholesaler, brand, or commercial buyer.</li>
-                    <li><strong class="text-white">“Inquiry”:</strong> A request for product information, samples, pricing, quotation, customization, private-label, or OEM/ODM services.</li>
-                    <li><strong class="text-white">“Content”:</strong> Text, photographs, graphics, logos, product specs, videos, designs, and trademarks on the Website.</li>
+                    <li><strong class="text-white font-semibold">“Business Customer”:</strong> A company, partnership, sole proprietorship, distributor, wholesaler, brand, or commercial buyer.</li>
+                    <li><strong class="text-white font-semibold">“Inquiry”:</strong> A request for product information, samples, pricing, quotation, customization, private-label, or OEM/ODM services.</li>
+                    <li><strong class="text-white font-semibold">“Content”:</strong> Text, photographs, graphics, logos, product specs, videos, designs, and trademarks on the Website.</li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- 2. BUSINESS-TO-BUSINESS PURPOSE -->
- <!-- 2. BUSINESS-TO-BUSINESS PURPOSE -->
-    <div class="group bg-[#0a0a0a]/50 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termsh2.webp');">
+    <div class="group bg-[#0a0a0a]/65 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termsh2.webp');">
         <div class="space-y-4 w-full relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 02</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
                 Business-to-Business Purpose
             </h2>
             <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-200 text-sm font-light leading-relaxed">
+            <p class="text-white text-base sm:text-lg font-normal leading-relaxed">
                 The Website is designed primarily to facilitate B2B relationships and commercial inquiries rather than direct consumer retail sales. Product pages may be used to:
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-300 font-light">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-base sm:text-lg text-white font-normal">
                 <ul class="space-y-2 list-disc pl-5 marker:text-red-600">
                     <li>Review product ranges & specifications</li>
                     <li>Request formal commercial quotations</li>
@@ -177,310 +158,306 @@
                     <li>Evaluate Guard Gloves as a manufacturer and supplier</li>
                 </ul>
             </div>
-            <p class="text-gray-400 text-sm font-light pt-2 border-t border-white/10 italic">
+            <p class="text-white text-sm sm:text-base font-normal pt-3 border-t border-white/20 italic leading-relaxed">
                 Unless expressly stated otherwise in a written agreement, information displayed on the Website does not constitute a binding offer to sell or a guarantee of product availability.
             </p>
         </div>
     </div>
 
-    <!-- 3. GUARD GLOVES BUSINESS OPERATIONS -->
-    <div class="group bg-[#0a0a0a]/50 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh3.webp');">
-        <div class="space-y-4 w-full relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 03</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
-                Guard Gloves Business Operations
-            </h2>
-            <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-200 text-sm font-light leading-relaxed">
-                Guard Gloves conducts specific specialized commercial actions across regional infrastructures:
-            </p>
-            <ul class="space-y-3 text-sm text-gray-300 font-light list-disc pl-5 marker:text-red-600">
-                <li><strong>Pakistan operations</strong> may include manufacturing, product development, sourcing, quality control, packaging, and export of Products.</li>
-                <li><strong>Canadian operations</strong> may include distribution, warehousing, branding, sales, customer service, and related commercial activities.</li>
+
+   <!-- 3. GUARD GLOVES BUSINESS OPERATIONS -->
+<div class="group bg-[#0a0a0a]/65 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh3.webp');">
+    <div class="space-y-4 w-full relative z-10">
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            Guard Gloves Business Operations
+        </h2>
+        <div class="w-12 h-[1px] bg-brand-red"></div>
+        <p class="text-white text-base sm:text-lg font-normal leading-relaxed">
+            Guard Gloves conducts specific specialized commercial actions across regional infrastructures:
+        </p>
+        <ul class="space-y-3 text-base sm:text-lg text-white font-normal list-disc pl-5 marker:text-red-600">
+            <li><strong class="text-white font-semibold">Pakistan operations</strong> may include manufacturing, product development, sourcing, quality control, packaging, and export of Products.</li>
+            <li><strong class="text-white font-semibold">Canadian operations</strong> may include distribution, warehousing, branding, sales, customer service, and related commercial activities.</li>
+        </ul>
+        <p class="text-white text-sm sm:text-base font-normal pt-3 border-t border-white/20 leading-relaxed">
+            The applicable company or business entity involved in a particular transaction will depend on the quotation, purchase order, invoice, supply agreement, and shipping documents. Nothing on the Website creates a partnership, joint venture, or single legal entity between the Pakistan and Canadian operations unless expressly agreed in writing.
+        </p>
+    </div>
+</div>
+
+<!-- 4. WEBSITE USE -->
+<div class="group bg-[#0a0a0a]/50 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh4.webp');">
+    <div class="space-y-4 w-full relative z-10">
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            Website Use Restrictions
+        </h2>
+        <div class="w-12 h-[1px] bg-brand-red"></div>
+        <p class="text-white text-base sm:text-lg font-normal leading-relaxed">
+            You agree to use the Website only for lawful and legitimate business purposes. You must not:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-base sm:text-lg text-white font-normal">
+            <ul class="space-y-2 list-disc pl-5 marker:text-red-600">
+                <li>Use the platform for fraudulent or deceptive purposes</li>
+                <li>Interfere with the operation or security of the Website</li>
+                <li>Attempt unauthorized access to systems or databases</li>
+                <li>Introduce viruses, malware, or malicious code</li>
+                <li>Scrape, copy, or systematically extract content</li>
             </ul>
-            <p class="text-gray-400 text-sm font-light pt-2 border-t border-white/10">
-                The applicable company or business entity involved in a particular transaction will depend on the quotation, purchase order, invoice, supply agreement, and shipping documents. Nothing on the Website creates a partnership, joint venture, or single legal entity between the Pakistan and Canadian operations unless expressly agreed in writing.
+            <ul class="space-y-2 list-disc pl-5 marker:text-red-600">
+                <li>Use automated systems for abusive actions</li>
+                <li>Impersonate Guard Gloves or another organization</li>
+                <li>Misuse Guard Gloves trademarks or asset files</li>
+                <li>Submit false or misleading business data</li>
+                <li>Misrepresent a product standard or affiliation</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <!-- 5 & 6. PRODUCT INFORMATION & PPE SAFETY -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Product Information
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                We make reasonable efforts to keep product data accurate. However, specifications, materials, and certifications are subject to change due to ongoing R&D, material availability, or regulatory updates. Photographs are representative; actual physical orders should be verified via approved structural counter-samples.
             </p>
         </div>
     </div>
 
-    <!-- 4. WEBSITE USE -->
-    <div class="group bg-[#0a0a0a]/50 backdrop-blur-md border border-white/[0.08] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(15, 15, 15, 0.50), rgba(15, 15, 15, 0.50)), url('assets/terms/termh4.webp');">
-        <div class="space-y-4 w-full relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 04</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
-                Website Use Restrictions
-            </h2>
-            <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-200 text-sm font-light leading-relaxed">
-                You agree to use the Website only for lawful and legitimate business purposes. You must not:
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                PPE, Safety, and Product Use
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                Some products are intended for industrial protective applications. Customers are fully responsible for determining whether products meet regional workplace hazard requirements. Stated certifications apply strictly under testing conditions; no single product offers unlimited risk elimination.
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-300 font-light">
-                <ul class="space-y-2 list-disc pl-5 marker:text-red-600">
-                    <li>Use the platform for fraudulent or deceptive purposes</li>
-                    <li>Interfere with the operation or security of the Website</li>
-                    <li>Attempt unauthorized access to systems or databases</li>
-                    <li>Introduce viruses, malware, or malicious code</li>
-                    <li>Scrape, copy, or systematically extract content</li>
-                </ul>
-                <ul class="space-y-2 list-disc pl-5 marker:text-red-600">
-                    <li>Use automated systems for abusive actions</li>
-                    <li>Impersonate Guard Gloves or another organization</li>
-                    <li>Misuse Guard Gloves trademarks or asset files</li>
-                    <li>Submit false or misleading business data</li>
-                    <li>Misrepresent a product standard or affiliation</li>
-                </ul>
-            </div>
         </div>
     </div>
+</div>
 
-    <!-- 5 & 6. PRODUCT INFORMATION & PPE SAFETY -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Section 05</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Product Information</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    We make reasonable efforts to keep product data accurate. However, specifications, materials, and certifications are subject to change due to ongoing R&D, material availability, or regulatory updates. Photographs are representative; actual physical orders should be verified via approved structural counter-samples.
-                </p>
-            </div>
-        </div>
-
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Section 06</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">PPE, Safety, and Product Use</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    Some products are intended for industrial protective applications. Customers are fully responsible for determining whether products meet regional workplace hazard requirements. Stated certifications apply strictly under testing conditions; no single product offers unlimited risk elimination.
-                </p>
-            </div>
-        </div>
+<!-- 7. STANDARDS, CERTIFICATIONS AND TECHNICAL DOCUMENTATION -->
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+    <div class="space-y-4 w-full">
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
+            Standards, Certifications & Technical Documentation
+        </h2>
+        <div class="w-12 h-[1px] bg-brand-red"></div>
+        <p class="text-white text-base sm:text-lg font-normal leading-relaxed">
+            Where applicable, Guard Gloves may provide information regarding standards, certifications (such as ANSI or EN structural parameters), test reports, technical specifications, or performance ratings. Such information is provided for business evaluation and must not be interpreted as a universal guarantee of suitability for every specific hazard. Customers should request and review formal technical documentation before placing commercial orders.
+        </p>
     </div>
+</div>
 
-    <!-- 7. STANDARDS, CERTIFICATIONS AND TECHNICAL DOCUMENTATION -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/30">
-        <div class="space-y-4 w-full">
-            <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-white/[0.03] border border-white/[0.08] rounded-full">
-                <span class="text-[10px] uppercase tracking-widest text-red-500 font-bold">Section 07</span>
-            </div>
-            <h2 class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-white uppercase group-hover:text-red-500 transition-colors">
-                Standards, Certifications & Technical Documentation
-            </h2>
-            <div class="w-12 h-[1px] bg-brand-red"></div>
-            <p class="text-gray-300 text-sm font-light leading-relaxed">
-                Where applicable, Guard Gloves may provide information regarding standards, certifications (such as ANSI or EN structural parameters), test reports, technical specifications, or performance ratings. Such information is provided for business evaluation and must not be interpreted as a universal guarantee of suitability for every specific hazard. Customers should request and review formal technical documentation before placing commercial orders.
+<!-- 8 - 10: COMMERCIAL MATRIX -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Quotations & Offers
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                Website data is indicative. Binding parameters including target pricing, MOQ tiers, logistics models, and lead times are formalized exclusively via targeted corporate quotations with explicit validity windows.
             </p>
         </div>
     </div>
 
-    <!-- 8 - 10: COMMERCIAL MATRIX -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Section 08</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Quotations & Offers</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    Website data is indicative. Binding parameters including target pricing, MOQ tiers, logistics models, and lead times are formalized exclusively via targeted corporate quotations with explicit validity windows.
-                </p>
-            </div>
-        </div>
-
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Section 09</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Orders & Acceptance</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    Guard Gloves reserves the absolute right to limit, modify, or decline contract fulfillments based on systemic mill capacities, component raw material shortages, or specific compliance checks.
-                </p>
-            </div>
-        </div>
-
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 flex flex-col justify-between h-full transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500">Section 10</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Custom & OEM/ODM</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    Business clients warrant full authorization over intellectual property assets, logos, or specifications submitted for custom or private-label production runs.
-                </p>
-            </div>
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Orders & Acceptance
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                Guard Gloves reserves the absolute right to limit, modify, or decline contract fulfillments based on systemic mill capacities, component raw material shortages, or specific compliance checks.
+            </p>
         </div>
     </div>
 
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Custom & OEM/ODM
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                Business clients warrant full authorization over intellectual property assets, logos, or specifications submitted for custom or private-label production runs.
+            </p>
+        </div>
+    </div>
+</div>
    <!-- 11 - 15: OPERATIONAL & SUPPLY FRAMEWORKS -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/30">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm font-light text-gray-400">
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">11. Distribution and Wholesale</h4>
-                    <p class="mt-1.5 text-gray-300">Territorial exclusivity framework models, wholesale pricing architectures, and trademark licensing protocols require an independent, signed bilateral commercial agreement.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">12. Samples & Product Development</h4>
-                    <p class="mt-1.5 text-gray-300">Evaluation structural samples may possess slight industrial deviances from final high-volume production output batches due to engineering optimization cycles.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">13. Shipping, Export, and Delivery</h4>
-                    <p class="mt-1.5 text-gray-300">Fulfillment location vectors utilize designated Incoterms® architectures. Importers maintain default liability over target custom declarations and clearance requirements.</p>
-                </div>
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base font-normal text-white">
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Distribution and Wholesale</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Territorial exclusivity framework models, wholesale pricing architectures, and trademark licensing protocols require an independent, signed bilateral commercial agreement.</p>
             </div>
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">14. Payment and Commercial Terms</h4>
-                    <p class="mt-1.5 text-gray-300">Default payment instruments (L/C, advance bank telegraphic transfers, deposits) are established in the primary corporate invoice structure. Delinquency triggers production freezes.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">15. Inspection & Quality Requirements</h4>
-                    <p class="mt-1.5 text-gray-300">Acceptable Quality Limits (AQL), lab procedures, and third-party validation parameters must be codified before production initialization. Discrepancies require immediate formal notification.</p>
-                </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Samples & Product Development</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Evaluation structural samples may possess slight industrial deviances from final high-volume production output batches due to engineering optimization cycles.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Shipping, Export, and Delivery</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Fulfillment location vectors utilize designated Incoterms® architectures. Importers maintain default liability over target custom declarations and clearance requirements.</p>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Payment and Commercial Terms</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Default payment instruments (L/C, advance bank telegraphic transfers, deposits) are established in the primary corporate invoice structure. Delinquency triggers production freezes.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Inspection & Quality Requirements</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Acceptable Quality Limits (AQL), lab procedures, and third-party validation parameters must be codified before production initialization. Discrepancies require immediate formal notification.</p>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- 16 - 20: INTELLECTUAL PROPERTY & LEGAL OVERVIEW -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/30">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm font-light text-gray-400">
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">16. Intellectual Property</h4>
-                    <p class="mt-1.5 text-gray-300">All digital design assets, photographs, code blocks, technical schematics, and textual copywriting remain the proprietary asset base of Guard Gloves protected by worldwide frameworks.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">17. Trademarks and Brand Use</h4>
-                    <p class="mt-1.5 text-gray-300">The Guard Gloves designation and corresponding emblems constitute protected corporate identity parameters. No default user rights are generated via standard portal browsing actions.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">18. Confidential and Proprietary Information</h4>
-                    <p class="mt-1.5 text-gray-300">B2B product blueprints, corporate price indices, and custom engineering diagrams exchanged remain strictly confidential under restrictive non-disclosure guidelines.</p>
-                </div>
+<!-- 16 - 20: INTELLECTUAL PROPERTY & LEGAL OVERVIEW -->
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base font-normal text-white">
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Intellectual Property</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">All digital design assets, photographs, code blocks, technical schematics, and textual copywriting remain the proprietary asset base of Guard Gloves protected by worldwide frameworks.</p>
             </div>
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">19. User-Submitted Business Materials</h4>
-                    <p class="mt-1.5 text-gray-300">Clients grant Guard Gloves a non-exclusive license to process, manipulate, and execute submitted design assets to effectively answer technical RFQs or initiate sample line setups.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">20. Third-Party Websites and Services</h4>
-                    <p class="mt-1.5 text-gray-300">External hyperlinks are provided for reference depth only. Guard Gloves assumes zero governance, operational verification, or structural liability over external digital interfaces.</p>
-                </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Trademarks and Brand Use</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">The Guard Gloves designation and corresponding emblems constitute protected corporate identity parameters. No default user rights are generated via standard portal browsing actions.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Confidential and Proprietary Information</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">B2B product blueprints, corporate price indices, and custom engineering diagrams exchanged remain strictly confidential under restrictive non-disclosure guidelines.</p>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">User-Submitted Business Materials</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Clients grant Guard Gloves a non-exclusive license to process, manipulate, and execute submitted design assets to effectively answer technical RFQs or initiate sample line setups.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Third-Party Websites and Services</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">External hyperlinks are provided for reference depth only. Guard Gloves assumes zero governance, operational verification, or structural liability over external digital interfaces.</p>
             </div>
         </div>
     </div>
-
+</div>
     <!-- 21 - 25: LIABILITY & SYSTEMIC EXCLUSIONS -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/30">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm font-light text-gray-400">
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">21. Website Availability</h4>
-                    <p class="mt-1.5 text-gray-300">We maintain digital platform access goals but do not guarantee error-free continuity. Interface layers are subject to modification or maintenance windows without notice.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">22. Website Disclaimers</h4>
-                    <p class="mt-1.5 text-gray-300">All asset configurations are presented for preliminary industrial evaluation. Binding performance values must be validated via standard contractual validation pathways.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">23. Limitation of Liability</h4>
-                    <p class="mt-1.5 text-gray-300">To the maximum extent permitted by applicable law, Guard Gloves is not liable for indirect, consequential, or punitive damages arising from web portal asset use or reliance.</p>
-                </div>
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base font-normal text-white">
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Website Availability</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">We maintain digital platform access goals but do not guarantee error-free continuity. Interface layers are subject to modification or maintenance windows without notice.</p>
             </div>
-            <div class="space-y-5">
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">24. Product Misuse & Customer Responsibilities</h4>
-                    <p class="mt-1.5 text-gray-300">Commercial operators are responsible for downstream product applications, localized market labeling compliance, and training final end-users on explicit product constraints.</p>
-                </div>
-                <div class="group/sub">
-                    <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">25. Force Majeure</h4>
-                    <p class="mt-1.5 text-gray-300">Fulfillment delays driven by natural anomalies, border restrictions, custom clearance system freezes, logistics disruptions, or raw material shortages constitute excused performance items.</p>
-                </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Website Disclaimers</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">All asset configurations are presented for preliminary industrial evaluation. Binding performance values must be validated via standard contractual validation pathways.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Limitation of Liability</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">To the maximum extent permitted by applicable law, Guard Gloves is not liable for indirect, consequential, or punitive damages arising from web portal asset use or reliance.</p>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Product Misuse & Customer Responsibilities</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Commercial operators are responsible for downstream product applications, localized market labeling compliance, and training final end-users on explicit product constraints.</p>
+            </div>
+            <div class="group/sub">
+                <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Force Majeure</h4>
+                <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Fulfillment delays driven by natural anomalies, border restrictions, custom clearance system freezes, logistics disruptions, or raw material shortages constitute excused performance items.</p>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- 26 & 27. LEGAL JURISDICTIONS & CLAUSES -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500 group-hover:text-red-500 transition-colors">Section 26</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Governing Law & Jurisdiction</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    <strong>Pakistan Transactions:</strong> Manufacturing and export agreements are governed under the legal frameworks of Pakistan and the Punjab provincial courts.<br>
-                    <strong>Canada Transactions:</strong> Distribution, branding, and customer fulfillment models adhere to the legal frameworks of Ontario and applicable federal Canadian law.
-                </p>
-            </div>
-        </div>
-
-        <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 transition-all duration-300 hover:border-red-600/40">
-            <div class="space-y-3">
-                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-500 group-hover:text-red-500 transition-colors">Section 27</span>
-                <h3 class="text-base font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">Dispute Resolution</h3>
-                <p class="text-sm text-gray-400 font-light leading-relaxed">
-                    B2B operators are strongly encouraged to initially attempt amicable resolution of commercial variances via structured executive consultation. Unresolved matters defer to the explicit judicial architecture defined within the primary transaction documents or corresponding governing laws.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 28 - 32. MISCELLANEOUS LEGAL VERDICTS -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/30">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm font-light text-gray-400">
-            <div class="group/sub">
-                <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">28. Changes to These Terms</h4>
-                <p class="mt-1 text-sm text-gray-300">We may update these terms periodically. The valid parameters are locked to the transaction documentation issuance stamp date.</p>
-            </div>
-            <div class="group/sub">
-                <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">29. Severability</h4>
-                <p class="mt-1 text-sm text-gray-300">If any structural paragraph is ruled legally invalid, that specific item is modified to the minimum required threshold, leaving all remaining segments fully intact.</p>
-            </div>
-            <div class="group/sub">
-                <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">30. No Waiver</h4>
-                <p class="mt-1 text-sm text-gray-300">A delay in enforcing a specific performance item or default status does not signify a universal waiver of those specific corporate enforcement rights.</p>
-            </div>
-            <div class="group/sub">
-                <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">31. Entire Agreement</h4>
-                <p class="mt-1 text-sm text-gray-300">These terms govern digital presence interface interaction. Explicit execution contracts, corporate purchase orders, and technical specs maintain higher operational precedence.</p>
-            </div>
-            <div class="group/sub md:col-span-2 lg:col-span-1">
-                <h4 class="text-white font-bold uppercase text-sm tracking-wider group-hover:text-red-500 transition-colors">32. No Agency or Partnership</h4>
-                <p class="mt-1 text-sm text-gray-300">Browsing actions generate no joint venture, global agency framework, exclusive franchise, or formal employment alignment between the parties.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 33 & 34. CONTACT INFORMATION & ACCEPTANCE -->
-    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:border-red-600/40 shadow-2xl">
-        <div class="w-full space-y-4">
-            <h2 class="text-xl sm:text-2xl font-serif text-white uppercase tracking-wide group-hover:text-red-500 transition-colors font-bold">
-                33. Corporate Contacts & Acceptance
-            </h2>
-            <p class="text-sm text-gray-300 font-light leading-relaxed">
-                By interacting with the Website, downloading catalogues, or submitting target manufacturing RFQs, you acknowledge full structural understanding and agree to these global Terms. For commercial alignment, utilize our legal operational touchpoints:
+<!-- 26 & 27. LEGAL JURISDICTIONS & CLAUSES -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Governing Law & Jurisdiction
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                <strong class="text-white font-semibold">Pakistan Transactions:</strong> Manufacturing and export agreements are governed under the legal frameworks of Pakistan and the Punjab provincial courts.<br>
+                <strong class="text-white font-semibold">Canada Transactions:</strong> Distribution, branding, and customer fulfillment models adhere to the legal frameworks of Ontario and applicable federal Canadian law.
             </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 text-sm text-gray-400 font-light">
-                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 group/pk">
-                    <strong class="text-white block uppercase text-[12px] tracking-wider text-red-400 group-hover/pk:text-red-500 transition-colors">Pakistan Manufacturing & Export Operations</strong>
-                    <p class="text-gray-300">Guard Gloves</p>
-                    <p class="text-white font-normal">Email: info@guardgloves.com</p>
-                    <p class="text-gray-400 font-medium">Tel: +92-324-435-6168</p>
-                </div>
-                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2 group/ca">
-                    <strong class="text-white block uppercase text-[12px] tracking-wider text-red-400 group-hover/ca:text-red-500 transition-colors">Canada Distribution & Brand Operations</strong>
-                    <p class="text-gray-300">Guard Gloves</p>
-                    
-                    <p class="text-white font-normal">Email: info@guardgloves.ca</p>
-                    <p class="text-gray-400 font-medium">Tel: +1-647-308-7321</p>
-                </div>
-            </div>
-            
-            <div class="pt-3 text-xs text-gray-500 border-t border-white/10">
-                <strong>Official Portal:</strong> <span class="underline">www.guardgloves.com</span>
-            </div>
         </div>
     </div>
+
+    <div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40">
+        <div class="space-y-3">
+            <h3 class="text-lg sm:text-xl font-serif text-white uppercase group-hover:text-red-500 transition-colors font-bold">
+                Dispute Resolution
+            </h3>
+            <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                B2B operators are strongly encouraged to initially attempt amicable resolution of commercial variances via structured executive consultation. Unresolved matters defer to the explicit judicial architecture defined within the primary transaction documents or corresponding governing laws.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 28 - 32. MISCELLANEOUS LEGAL VERDICTS -->
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-base font-normal text-white">
+        <div class="group/sub">
+            <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Changes to These Terms</h4>
+            <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">We may update these terms periodically. The valid parameters are locked to the transaction documentation issuance stamp date.</p>
+        </div>
+        <div class="group/sub">
+            <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Severability</h4>
+            <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">If any structural paragraph is ruled legally invalid, that specific item is modified to the minimum required threshold, leaving all remaining segments fully intact.</p>
+        </div>
+        <div class="group/sub">
+            <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">No Waiver</h4>
+            <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">A delay in enforcing a specific performance item or default status does not signify a universal waiver of those specific corporate enforcement rights.</p>
+        </div>
+        <div class="group/sub">
+            <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">Entire Agreement</h4>
+            <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">These terms govern digital presence interface interaction. Explicit execution contracts, corporate purchase orders, and technical specs maintain higher operational precedence.</p>
+        </div>
+        <div class="group/sub md:col-span-2 lg:col-span-1">
+            <h4 class="text-white font-bold uppercase text-base sm:text-lg tracking-wider group-hover/sub:text-red-500 transition-colors">No Agency or Partnership</h4>
+            <p class="mt-2 text-white text-sm sm:text-base leading-relaxed">Browsing actions generate no joint venture, global agency framework, exclusive franchise, or formal employment alignment between the parties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 33 & 34. CONTACT INFORMATION & ACCEPTANCE -->
+<div class="group bg-[#0a0a0a] border border-white/[0.05] rounded-2xl p-6 sm:p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/10 hover:border-red-600/40 shadow-2xl">
+    <div class="w-full space-y-5">
+        <h2 class="text-2xl sm:text-3xl font-serif text-white uppercase tracking-wide group-hover:text-red-500 transition-colors font-bold">
+            Corporate Contacts & Acceptance
+        </h2>
+        <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+            By interacting with the Website, downloading catalogues, or submitting target manufacturing RFQs, you acknowledge full structural understanding and agree to these global Terms. For commercial alignment, utilize our legal operational touchpoints:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 text-base text-white font-normal">
+            <div class="p-5 rounded-xl bg-white/[0.02] border border-white/10 space-y-2 group/pk">
+                <strong class="text-red-400 group-hover/pk:text-red-500 transition-colors block uppercase text-sm tracking-wider font-bold">Pakistan Manufacturing & Export Operations</strong>
+                <p class="text-white">Guard Gloves</p>
+                <p class="text-white">Email: info@guardgloves.com</p>
+                <p class="text-white">Tel: +92-324-4356-168</p>
+            </div>
+            <div class="p-5 rounded-xl bg-white/[0.02] border border-white/10 space-y-2 group/ca">
+                <strong class="text-red-400 group-hover/ca:text-red-500 transition-colors block uppercase text-sm tracking-wider font-bold">Canada Distribution & Brand Operations</strong>
+                <p class="text-white">Guard Gloves</p>
+                <p class="text-white">Email: info@guardgloves.ca</p>
+                <p class="text-white">Tel: +1-647-308-7321</p>
+            </div>
+        </div>
+        
+        <div class="pt-4 text-sm sm:text-base text-white border-t border-white/20">
+            <strong class="text-white">Official Portal:</strong> <span class="underline">www.guardgloves.com</span>
+        </div>
+    </div>
+</div>
 
 </section>
 

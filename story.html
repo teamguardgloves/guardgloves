@@ -63,53 +63,51 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                   
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Menu Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
@@ -132,7 +130,7 @@
     <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-4 sm:mb-6">
         <!-- Optimized Keyword-Rich Heading with Interactive Hover Effect -->
         <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif font-light tracking-wide text-gray-950 uppercase cursor-pointer transition-colors duration-300 hover:text-red-600">
-            Leading Industrial Leather Gloves Manufacturer
+            Leading Industrial  Manufacturer
         </h2>
         <div class="w-12 h-[2px] bg-brand-red mx-auto"></div>
         <p class="text-gray-500 text-xs sm:text-base leading-relaxed font-light pt-1">
@@ -404,11 +402,11 @@
     <!-- Corporate Responsibility Header with Red Hover -->
     <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-4 sm:mb-6">
         <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif font-light tracking-wide text-gray-950 uppercase cursor-pointer transition-colors duration-300 hover:text-red-600">
-            Sustainable Industrial Sourcing & Corporate Responsibility
+           Corporate Responsibility
         </h2>
         <div class="w-12 h-[2px] bg-brand-red mx-auto"></div>
         <p class="text-gray-500 text-xs sm:text-base leading-relaxed font-light pt-1">
-            We believe in sustainable industrial growth. Guard Gloves is committed to reducing environmental impact, optimizing resource usage, and supporting our community through transparent and accountable corporate actions.
+           We start off by focusing on environment friendly practices in the company. As a responsible corporate citizen, we are continuously investing in sustainable practices to protect our earth because in the end, we are all connected.
         </p>
     </div>
 
@@ -444,11 +442,11 @@
     <!-- Section Header with Red Hover -->
     <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-0">
         <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif font-light tracking-wide text-gray-950 uppercase cursor-pointer transition-colors duration-300 hover:text-red-600">
-            Precision Eco-Tanning
+            Built on Responsibility. Proven by Standards.
         </h2>
         <div class="w-12 h-[2px] bg-brand-red mx-auto"></div>
         <p class="text-gray-500 text-xs sm:text-base leading-relaxed font-light pt-1">
-            Crafting high-durability industrial leather through clean chemical balance, optimized hide utilization, and strict non-toxic processing—built for long wear and minimal environmental impact.
+            Our manufacturing approach combines responsible material selection, resource-efficient production, ethical operations, and internationally aligned quality systems to support dependable industrial hand protection for global markets.
         </p>
     </div>
 
@@ -467,7 +465,7 @@
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
-                    Environmental accountability is deeply embedded across our entire production infrastructure. By utilizing verified, responsibly tanned hides and deploying low-impact fabrication processes, we ensure every batch of heavy-duty hand protection remains non-toxic, clean, and fully engineered to anchor a carbon-conscious industrial future.
+                   Environmental accountability is deeply embedded across our entire production infrastructure. By utilizing verified, responsibly tanned hides and deploying low-impact fabrication processes, we ensure every batch of heavy-duty hand protection remains non-toxic, clean, and fully engineered to anchor a carbon-conscious industrial future.
                 </p>
             </div>
 
@@ -505,12 +503,12 @@
             <!-- Left Content Column -->
             <div class="lg:col-span-6 space-y-4 text-left">
                 <h2 class="text-2xl sm:text-3xl font-serif font-normal tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-600">
-                    Eco-Responsible Corporate Sourcing <br />
-                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300"></span>
+                    Eco-Responsible<br />
+                    <span class="text-gray-400 font-light font-sans tracking-widest text-lg sm:text-xl block mt-1 transition-colors duration-300 group-hover:text-gray-300">& Corporate Sourcing</span>
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
-                    We maximize operational efficiency through rigorous consumption controls and sustainable packaging solutions. Our facilities integrate advanced water recycling systems and low-impact transit materials, providing verified, environmentally sound corporate sourcing that reduces overhead and lowers ecological impact.
+                   We maximize operational efficiency through rigorous consumption controls and sustainable packaging solutions. Our facilities integrate advanced water recycling systems and low-impact transit materials, providing verified, environmentally sound corporate sourcing that reduces overhead and lowers ecological impact.
                 </p>
             </div>
 
@@ -531,7 +529,7 @@
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
-                    Our commitment to ethical manufacturing extends directly into localized industrial development and workforce welfare. We champion transparent corporate accountability by funding regional infrastructure and empowering local economies, providing our global distribution partners with a fully compliant, socially responsible sourcing framework.
+                   Our commitment to ethical manufacturing extends directly into localized industrial development and workforce welfare. We champion transparent corporate accountability by funding regional infrastructure and empowering local economies, providing our global distribution partners with a fully compliant, socially responsible sourcing framework.
                 </p>
             </div>
 
@@ -566,7 +564,7 @@
                 </h2>
                 <div class="w-12 h-[1px] bg-brand-red"></div>
                 <p class="text-white text-sm sm:text-base leading-relaxed font-light max-w-xl">
-                    Our commitment to excellence is backed by verified international certifications, ISO quality systems, and strict regulatory compliance frameworks. We adhere to rigorous global production standards and safety benchmarks, providing our international supply chain partners with completely certified, premium-grade products engineered for highly regulated commercial markets.
+                    Our commitment to excellence is backed by verified international certifications and strict regulatory compliance frameworks. We adhere to rigorous global production standards and quality benchmarks, providing our international supply chain partners with completely certified, premium-grade products engineered for highly regulated commercial markets.
                 </p>
             </div>
 
@@ -616,7 +614,7 @@
                     <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Global Market Integration
                     </h3>
-                    <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
+                    <p class="text-white text-xs sm:text-sm font-light leading-relaxed max-w-sm">
                         Successfully exporting premium-grade products to highly regulated markets across the world.
                     </p>
                 </div>
@@ -628,7 +626,7 @@
                     <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Advanced Industrial Capacity
                     </h3>
-                    <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
+                    <p class="text-white text-xs sm:text-sm font-light leading-relaxed max-w-sm">
                         Operating one of Pakistan’s premier, high-volume leather work glove manufacturing facilities, fully optimized for automated production.
                     </p>
                 </div>
@@ -640,7 +638,7 @@
                     <h3 class="text-base sm:text-lg font-serif font-normal text-white uppercase tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
                         Pioneering Safety Innovation
                     </h3>
-                    <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
+                    <p class="text-white text-xs sm:text-sm font-light leading-relaxed max-w-sm">
                         Leading the domestic sector in precision-engineered industrial work gloves, built to meet rigorous international safety standards.
                     </p>
                 </div>
