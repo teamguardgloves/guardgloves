@@ -1036,65 +1036,18 @@
     });
 </script>
 <!-- ========================================== -->
-<!-- SECTION: CONTACT & GLOBAL HUBS (WITH BG IMAGE) -->
+<!-- SECTION: CONTACT & GLOBAL HUBS -->
 <!-- ========================================== -->
 <section id="contact" aria-label="Guard Gloves Global Contact and Regional Offices" class="relative bg-[#000000] text-gray-100 py-16 md:py-24 border-t border-white/[0.03] font-sans overflow-hidden">
     
-    <!-- BACKGROUND IMAGE LAYER WITH LIGHTER OVERLAY -->
     <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
         <img src="assets/blogs/bolog4/blog5bgh.webp" 
              alt="Guard Gloves global B2B industrial manufacturing factory background" 
              width="1920" height="1080"
              loading="lazy"
              class="w-full h-full object-cover object-center opacity-40">
-        
-        <!-- Lightened Gradient Overlay so image stays visible -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90"></div>
     </div>
-
-    <!-- GOOGLE STRUCTURED DATA: ContactPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact Guard Gloves",
-  "description": "Get in touch with Guard Gloves Canada Office or Pakistan Head Office for corporate inquiries, bulk orders, and OEM custom solutions.",
-  "url": "https://www.guardgloves.com/contact.html",
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "Guard Gloves",
-    "email": "info@guardgloves.com",
-    "location": [
-      {
-        "@type": "Place",
-        "name": "Canada Regional Office",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "200 Silver Star Blvd",
-          "addressLocality": "Scarborough",
-          "addressRegion": "Ontario",
-          "postalCode": "M1V 5H4",
-          "addressCountry": "CA"
-        },
-        "telephone": "+1-647-308-7321"
-      },
-      {
-        "@type": "Place",
-        "name": "Pakistan Head Office & Factory",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Hajipura Road",
-          "addressLocality": "Sialkot",
-          "addressRegion": "Punjab",
-          "postalCode": "51310",
-          "addressCountry": "PK"
-        },
-        "telephone": "+92-324-4356168"
-      }
-    ]
-  }
-}
-</script>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-8 z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -1112,7 +1065,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left pt-4">
-                    <!-- Canada Office Card -->
                     <div class="p-5 rounded-2xl border border-white/10 bg-[#0d0d0d]/80 backdrop-blur-md flex flex-col justify-between hover:border-red-500/40 transition-all duration-300 shadow-xl">
                         <div class="space-y-2">
                             <div class="flex items-center gap-2">
@@ -1125,11 +1077,10 @@
                         </div>
                         <div class="pt-3 border-t border-white/10 mt-3 space-y-0.5 text-xs">
                             <p class="text-neutral-400">Tel: <a href="tel:+16473087321" class="text-white hover:text-red-500 transition-colors font-medium">+1-647-308-7321</a></p>
-                            <p class="text-neutral-400 truncate">Email: <a href="mailto:info@guardgloves.ca" class="text-white hover:text-red-500 transition-colors font-medium">info@guardgloves.com</a></p>
+                            <p class="text-neutral-400 truncate">Email: <a href="mailto:info@guardgloves.com" class="text-white hover:text-red-500 transition-colors font-medium">info@guardgloves.com</a></p>
                         </div>
                     </div>
 
-                    <!-- Pakistan Head Office Card -->
                     <div class="p-5 rounded-2xl border border-white/10 bg-[#0d0d0d]/80 backdrop-blur-md flex flex-col justify-between hover:border-green-500/40 transition-all duration-300 shadow-xl">
                         <div class="space-y-2">
                             <div class="flex items-center gap-2">
@@ -1141,8 +1092,8 @@
                             </p>
                         </div>
                         <div class="pt-3 border-t border-white/10 mt-3 space-y-0.5 text-xs">
-                            <p class="text-neutral-400">Tel: <a href="tel:+923241101741" class="text-white hover:text-green-500 transition-colors font-medium">+92-324-4356168</a></p>
-                            <p class="text-neutral-400 truncate">Email: <a href="mailto:info@guardgloves.ca" class="text-white hover:text-green-500 transition-colors font-medium">info@guardgloves.com</a></p>
+                            <p class="text-neutral-400">Tel: <a href="tel:+923244356168" class="text-white hover:text-green-500 transition-colors font-medium">+92-324-4356168</a></p>
+                            <p class="text-neutral-400 truncate">Email: <a href="mailto:info@guardgloves.com" class="text-white hover:text-green-500 transition-colors font-medium">info@guardgloves.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -1150,30 +1101,108 @@
 
             <!-- RIGHT COLUMN: INQUIRY FORM -->
             <div class="lg:col-span-5 w-full">
-                <form class="bg-[#0d0d0d]/85 backdrop-blur-lg p-6 sm:p-10 border border-white/15 space-y-5 shadow-2xl rounded-2xl max-w-xl mx-auto lg:max-w-none">
+                <form id="guard-contact-form" class="bg-[#0d0d0d]/85 backdrop-blur-lg p-6 sm:p-10 border border-white/15 space-y-5 shadow-2xl rounded-2xl max-w-xl mx-auto lg:max-w-none">
                     <div class="space-y-1.5">
                         <label class="text-[9px] uppercase tracking-wider text-gray-300 font-bold block">Full Name</label>
-                        <input type="text" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors" placeholder="John Doe">
+                        <input type="text" id="name" name="name" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors" placeholder="John Doe">
                     </div>
                     <div class="space-y-1.5">
                         <label class="text-[9px] uppercase tracking-wider text-gray-300 font-bold block">Email Address</label>
-                        <input type="email" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors" placeholder="john@example.com">
+                        <input type="email" id="email" name="email" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors" placeholder="john@example.com">
                     </div>
                     <div class="space-y-1.5">
                         <label class="text-[9px] uppercase tracking-wider text-gray-300 font-bold block">Message</label>
-                        <textarea rows="4" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors resize-none" placeholder="Write your corporate inquiry here..."></textarea>
+                        <textarea id="message" name="message" rows="4" required class="w-full bg-transparent border-b border-white/20 focus:border-white outline-none py-2 text-base sm:text-sm text-white placeholder-neutral-500 transition-colors resize-none" placeholder="Write your corporate inquiry here..."></textarea>
                     </div>
                     <div class="pt-2">
-                        <button type="submit" class="w-full bg-white text-black font-bold uppercase tracking-widest text-xs py-4 hover:bg-gray-200 active:scale-[0.99] transition-all duration-300 rounded-full shadow-xl">
+                        <button type="submit" id="submit-btn" class="w-full bg-white text-black font-bold uppercase tracking-widest text-xs py-4 hover:bg-gray-200 active:scale-[0.99] transition-all duration-300 rounded-full shadow-xl">
                             Send Global Inquiry
                         </button>
                     </div>
+                    
+                    <!-- LIVE DEBUG OUTPUT BOX -->
+                    <div id="debug-box" class="hidden mt-4 p-4 rounded-xl text-xs font-mono border overflow-x-auto"></div>
                 </form>
             </div>
             
         </div>
     </div>
 </section>
+
+<!-- ========================================== -->
+<!-- DEBUGGING JAVASCRIPT LOGIC -->
+<!-- ========================================== -->
+<script>
+document.getElementById('guard-contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const btn = document.getElementById('submit-btn');
+    const debugBox = document.getElementById('debug-box');
+    const originalText = btn.innerText;
+    
+    btn.innerText = 'Testing Connection...';
+    btn.disabled = true;
+
+    // Debug box reset
+    debugBox.classList.remove('hidden', 'bg-red-950/80', 'border-red-500', 'text-red-200', 'bg-green-950/80', 'border-green-500', 'text-green-200');
+    debugBox.classList.add('bg-neutral-900', 'border-neutral-700', 'text-gray-300');
+    debugBox.innerHTML = '⏳ <b>Sending request to /api/send...</b>';
+
+    const payload = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    try {
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        // Response Parse
+        let responseData;
+        const contentType = response.headers.get("content-type");
+        if (contentType && contentType.indexOf("application/json") !== -1) {
+            responseData = await response.json();
+        } else {
+            responseData = await response.text(); // Handles 404/500 HTML error pages
+        }
+
+        if (response.ok && responseData.success) {
+            btn.innerText = 'Sent Successfully!';
+            btn.classList.add('bg-green-600', 'text-white');
+            
+            debugBox.classList.add('bg-green-950/80', 'border-green-500', 'text-green-200');
+            debugBox.innerHTML = `✅ <b>SUCCESS (${response.status})</b><br><pre class="mt-2 text-[10px]">${JSON.stringify(responseData, null, 2)}</pre>`;
+            
+            document.getElementById('guard-contact-form').reset();
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('bg-green-600', 'text-white');
+                btn.disabled = false;
+            }, 5000);
+        } else {
+            btn.innerText = 'Failed!';
+            debugBox.classList.add('bg-red-950/80', 'border-red-500', 'text-red-200');
+            debugBox.innerHTML = `❌ <b>ERROR HTTP ${response.status}</b><br>
+                                  <b>Details:</b><br>
+                                  <pre class="mt-2 text-[10px] whitespace-pre-wrap">${typeof responseData === 'object' ? JSON.stringify(responseData, null, 2) : responseData}</pre>`;
+            btn.disabled = false;
+        }
+    } catch (err) {
+        btn.innerText = 'Fetch Error!';
+        debugBox.classList.add('bg-red-950/80', 'border-red-500', 'text-red-200');
+        debugBox.innerHTML = `❌ <b>NETWORK/JS EXCEPTION</b><br>
+                              <b>Message:</b> ${err.message}<br>
+                              <span class="text-[10px]">Note: Probably /api/send route is not accessible.</span>`;
+        btn.disabled = false;
+    }
+});
+</script>
 </main>
 
 <!-- PREMIUM FOOTER -->
@@ -1242,6 +1271,8 @@
 
     </div>
 </footer>
+
+
 
 </body>
 </html>
