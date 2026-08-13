@@ -14,193 +14,188 @@
             
             <!-- Logo -->
             <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
-                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home">
-                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Logo" class="object-contain object-left w-full h-full">
+                <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
+                    <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center justify-center flex-1 px-4">
-                <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
-                    <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
-                    <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
-                    <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
-                    <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
-                    <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
-                    <a href="terms.html" class="hover:text-red-600 transition-colors duration-300">Terms of Use</a>
-                    <a href="privacy.html" class="hover:text-red-600 transition-colors duration-300">Privacy Policy</a>
-                </div>
-            </div>
+<div class="hidden lg:flex items-center justify-center flex-1 px-4">
+    <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
+        <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+        <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
+        <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
+        <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors duration-300">Our Legacy</a>
+        <a href="technical.html" class="hover:text-red-600 transition-colors duration-300">Technical Blueprint</a>
+        <a href="resources.html" class="hover:text-red-600 transition-colors duration-300">Resources</a>
+    </div>
+</div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+<!-- Desktop CTA -->
+<div class="hidden lg:flex items-center z-10 shrink-0">
+    <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+        Contact Us
+    </a>
+</div>
 
-            <!-- Toggle Checkbox -->
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <!-- Mobile Hamburger/Close Button -->
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-gray-400 hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <!-- Hamburger Lines (Hidden when peer is checked) -->
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <!-- X Close Lines (Shown only when peer is checked) -->
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <!-- Mobile Menu Dropdown -->
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-gray-400">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="terms.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Terms of Use</a>
-                    <a href="privacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Privacy Policy</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
-            
+        </div>
         </div>
     </nav>
 </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-center px-4" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200');">
-        <!-- Black Overlay -->
-        <div class="absolute inset-0 bg-black/75"></div>
-        
-        <div class="relative z-10 max-w-3xl text-white">
-            <h1 class="text-4xl md:text-6xl font-light mb-4 hover:text-red-600 transition-colors duration-300 cursor-default">Our <span class="font-bold">Legacy</span></h1>
-            <p class="text-sm md:text-base leading-relaxed text-gray-300">
-                BUILT ON HERITAGE. ENGINEERED FOR WHAT’S NEXT.
+  <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-center px-4" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200');">
+    <!-- Black Overlay -->
+    <div class="absolute inset-0 bg-black/75"></div>
+    
+    <div class="relative z-10 max-w-3xl text-white group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h1 class="text-4xl md:text-6xl font-light mb-4 group-hover:text-red-600 transition-colors duration-300 cursor-default">Our <span class="font-bold">Legacy</span></h1>
+        <p class="text-sm md:text-base leading-relaxed text-gray-300">
+            BUILT ON HERITAGE. ENGINEERED FOR WHAT’S NEXT.
 For three generations, our family has evolved from international sports-goods trading into professional glove manufacturing—combining decades of hands-on experience with modern technology, responsible practices, and a commitment to continuous improvement.
 SINCE 1966
-            </p>
-        </div>
-    </section>
+        </p>
+    </div>
+</section>
 
-    <!-- WHERE WE STARTED SECTION -->
-    <section class="grid grid-cols-1 md:grid-cols-2">
-        <div class="p-8 md:p-16 flex flex-col justify-center bg-white">
-            <span class="text-gray-500 uppercase tracking-wider text-sm">Where</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 hover:text-red-600 transition-colors duration-300 cursor-default">We Started</h2>
-            <p class="text-gray-600 text-sm md:text-base">1966 — WHERE THE JOURNEY BEGAN
+<!-- WHERE WE STARTED SECTION -->
+<section class="grid grid-cols-1 md:grid-cols-2">
+    <div class="p-8 md:p-16 flex flex-col justify-center bg-white group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <span class="text-gray-500 uppercase tracking-wider text-sm">Where</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors duration-300 cursor-default">We Started</h2>
+        <p class="text-gray-600 text-sm md:text-base">1966 — WHERE THE JOURNEY BEGAN
 Our story began in 1966, when our family entered the international sports-goods trade. From our early beginnings, we developed relationships across Africa and the Middle East, gradually expanding into European and American markets. What started from a small office would eventually become the foundation for a much larger manufacturing journey.</p>
-        </div>
-        <div class="bg-cover bg-center h-64 md:h-auto min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800');"></div>
-    </section>
+    </div>
+    <div class="bg-cover bg-center h-64 md:h-auto min-h-[300px]" style="background-image: url('assets/technical/legacyh1.webp');"></div>
+</section>
 
-    <!-- TIMELINE & GRID SECTION -->
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white">
-        
-        <!-- 1984 - 1992 (Solid Black Box) -->
-        <div class="bg-black p-8 flex flex-col justify-center min-h-[280px]">
-            <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 hover:text-red-600 transition-colors duration-300 cursor-default"></h3>
-            <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
-                <li>FROM TRADING TO MAKING
+<!-- TIMELINE & GRID SECTION -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white">
+    
+    <!-- 1984 - 1992 (Solid Black Box) -->
+    <div class="bg-black p-8 flex flex-col justify-center min-h-[280px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 group-hover:text-red-600 transition-colors duration-300 cursor-default"></h3>
+        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+            <li>FROM TRADING TO MAKING
 As our experience in international markets grew, so did our understanding of what customers needed. The business evolved from trading sports goods to manufacturing, with the second generation taking the important step into professional glove production.
 We were no longer simply supplying products. We began making them.</li>
-                
-            </ul>
-        </div>
+            
+        </ul>
+    </div>
 
-        <!-- Image with Black Overlay -->
-        <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1590105577767-e21a46b53754?auto=format&fit=crop&q=80&w=800');">
-            <div class="absolute inset-0 bg-black/60"></div>
-        </div>
+    <!-- Image with Black Overlay -->
+    <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1590105577767-e21a46b53754?auto=format&fit=crop&q=80&w=800');">
+        <div class="absolute inset-0 bg-black/60"></div>
+    </div>
 
-        <!-- 1992 - 2000 (Solid Black Box) -->
-        <div class="bg-zinc-900 p-8 flex flex-col justify-center min-h-[280px]">
-            <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 hover:text-red-600 transition-colors duration-300 cursor-default">THE SECOND GENERATION — FROM EXPERIENCE TO EXPERTISE</h3>
-            <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
-                <li>The second generation established professional glove manufacturing as a core part of our business. Over time, manufacturing capabilities expanded, production processes became more sophisticated, and our knowledge of materials, construction and performance continued to grow. The foundation was set for the next chapter.</li>
-                
-            </ul>
-        </div>
+    <!-- 1992 - 2000 (Solid Black Box) -->
+    <div class="bg-zinc-900 p-8 flex flex-col justify-center min-h-[280px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 group-hover:text-red-600 transition-colors duration-300 cursor-default">THE SECOND GENERATION — FROM EXPERIENCE TO EXPERTISE</h3>
+        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+            <li>The second generation established professional glove manufacturing as a core part of our business. Over time, manufacturing capabilities expanded, production processes became more sophisticated, and our knowledge of materials, construction and performance continued to grow. The foundation was set for the next chapter.</li>
+            
+        </ul>
+    </div>
 
-        <!-- White Box (2000 - 2010) -->
-        <div class="bg-white text-gray-900 p-8 flex flex-col justify-center min-h-[280px]">
-            <h3 class="text-2xl font-bold mb-4 text-slate-900 border-b border-gray-200 pb-2 hover:text-red-600 transition-colors duration-300 cursor-default">THE THIRD GENERATION — BUILDING ON WHAT WE INHERITED</h3>
-            <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
-                <li>Today, the third generation carries that legacy forward. But preserving a legacy does not mean keeping things unchanged. It means taking what previous generations built—and making it better.
+    <!-- White Box (2000 - 2010) -->
+    <div class="bg-white text-gray-900 p-8 flex flex-col justify-center min-h-[280px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-2xl font-bold mb-4 text-slate-900 border-b border-gray-200 pb-2 group-hover:text-red-600 transition-colors duration-300 cursor-default">THE THIRD GENERATION — BUILDING ON WHAT WE INHERITED</h3>
+        <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
+            <li>Today, the third generation carries that legacy forward. But preserving a legacy does not mean keeping things unchanged. It means taking what previous generations built—and making it better.
 We introduced modern manufacturing technologies, computerized stitching systems,  new product development and stronger quality-management systems.</li>
-               
-            </ul>
-        </div>
+           
+        </ul>
+    </div>
 
-        <!-- White Box (2010 - 2022) -->
-        <div class="bg-white text-gray-900 p-8 flex flex-col justify-center min-h-[280px]">
-            <h3 class="text-2xl font-bold mb-4 text-slate-900 border-b border-gray-200 pb-2 hover:text-red-600 transition-colors duration-300 cursor-default">FROM A SMALL OFFICE TO A MODERN MANUFACTURING NETWORK</h3>
-            <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
-                <li>What began from a small office has evolved into three major manufacturing facilities, each covering more than 200,000 sq. ft. Today, our manufacturing capabilities allow us to take products from raw materials to finished goods under one roof.</li>
-                
-                
-            </ul>
-        </div>
+    <!-- White Box (2010 - 2022) -->
+    <div class="bg-white text-gray-900 p-8 flex flex-col justify-center min-h-[280px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-2xl font-bold mb-4 text-slate-900 border-b border-gray-200 pb-2 group-hover:text-red-600 transition-colors duration-300 cursor-default">FROM A SMALL OFFICE TO A MODERN MANUFACTURING NETWORK</h3>
+        <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
+            <li>What began from a small office has evolved into three major manufacturing facilities, each covering more than 200,000 sq. ft. Today, our manufacturing capabilities allow us to take products from raw materials to finished goods under one roof.</li>
+            
+            
+        </ul>
+    </div>
 
-        <!-- Image with Black Overlay -->
-        <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800');">
-            <div class="absolute inset-0 bg-black/60"></div>
-        </div>
+    <!-- Image with Black Overlay -->
+    <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800');">
+        <div class="absolute inset-0 bg-black/60"></div>
+    </div>
 
-        <!-- Image with Black Overlay (Welding) -->
-        <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800');">
-            <div class="absolute inset-0 bg-black/70"></div>
-        </div>
+    <!-- Image with Black Overlay (Welding) -->
+    <div class="relative bg-cover bg-center min-h-[280px]" style="background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800');">
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
 
-        <!-- 2022 (Solid Black Box) -->
-        <div class="bg-black p-8 flex flex-col justify-center min-h-[280px]">
-            <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 hover:text-red-600 transition-colors duration-300 cursor-default">THE EVOLUTION OF A GLOVE MANUFACTURER</h3>
-            <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
-                <li>SPORTS GOODS  →  PROFESSIONAL GLOVE MANUFACTURING  →  SPECIALIZED PROTECTIVE GLOVES  →  MODERN OEM MANUFACTURING  →  INNOVATION & NEW PRODUCT DEVELOPMENT
+    <!-- 2022 (Solid Black Box) -->
+    <div class="bg-black p-8 flex flex-col justify-center min-h-[280px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 group-hover:text-red-600 transition-colors duration-300 cursor-default">THE EVOLUTION OF A GLOVE MANUFACTURER</h3>
+        <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+            <li>SPORTS GOODS  →  PROFESSIONAL GLOVE MANUFACTURING  →  SPECIALIZED PROTECTIVE GLOVES  →  MODERN OEM MANUFACTURING  →  INNOVATION & NEW PRODUCT DEVELOPMENT
 Today, Guard Gloves is focused on manufacturing gloves across a wide range of applications, while continuing to develop products around the specific requirements of our customers and markets.</li>
-               
-            </ul>
-        </div>
-    </section>
+           
+        </ul>
+    </div>
+</section>
 
-    <!-- CERTIFICATIONS & AWARDS -->
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Presidential Award (White) -->
-        <div class="bg-white p-8 flex flex-col justify-center border-b md:border-r border-gray-100 min-h-[220px]">
-            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-300 cursor-default">MADE UNDER ONE ROOF</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">EXPERIENCE MEETS MODERN MANUFACTURING
+<!-- CERTIFICATIONS & AWARDS -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Presidential Award (White) -->
+    <div class="bg-white p-8 flex flex-col justify-center border-b md:border-r border-gray-100 min-h-[220px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 cursor-default">MADE UNDER ONE ROOF</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">EXPERIENCE MEETS MODERN MANUFACTURING
 Manufacturing is at the heart of Guard Gloves. Our facilities combine experienced craftsmanship with modern machinery and production systems designed to improve consistency, efficiency and quality.
 Computerized Stitching — Modern equipment designed for greater precision and consistency.
 Lean Manufacturing — Continuous improvement focused on reducing waste and improving efficiency.
 Modern Machinery — Replacing older equipment with newer technologies as our manufacturing requirements evolve.
 Integrated Production — Greater control across the journey from raw material to finished product.
 Product Development — Continually developing and improving products for changing customer requirements.</p>
-        </div>
+    </div>
 
-        <!-- Sustainability (Black Solid) -->
-        <div class="bg-zinc-900 text-white p-8 flex flex-col justify-center min-h-[220px]">
-            <h3 class="text-xl font-bold mb-3 hover:text-red-600 transition-colors duration-300 cursor-default">MORE THAN MANUFACTURING — A RESPONSIBILITY TO DO BETTER</h3>
-            <p class="text-sm text-gray-300 leading-relaxed">As the business entered its third generation, our definition of progress changed. Growth is not only about producing more. It is about how we produce, how we treat people, how we use resources and how we prepare for the future.
+    <!-- Sustainability (Black Solid) -->
+    <div class="bg-zinc-900 text-white p-8 flex flex-col justify-center min-h-[220px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors duration-300 cursor-default">MORE THAN MANUFACTURING — A RESPONSIBILITY TO DO BETTER</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">As the business entered its third generation, our definition of progress changed. Growth is not only about producing more. It is about how we produce, how we treat people, how we use resources and how we prepare for the future.
 Ethical Manufacturing — Building responsible practices into our operations.
 Social Responsibility — Creating a workplace and supply chain built around responsible standards.
 Environmental Awareness — Working toward more efficient and environmentally conscious manufacturing.
 Quality Systems — Developing structured systems that help us deliver consistent products.
 Continuous Improvement — Constantly looking for better ways to manufacture.</p>
-        </div>
+    </div>
 
-        <!-- Large Image spanning right side/bottom -->
-        <div class="bg-cover bg-center min-h-[220px] lg:row-span-2" style="background-image: url('https://images.unsplash.com/photo-1590105577767-e21a46b53754?auto=format&fit=crop&q=80&w=800');"></div>
+    <!-- Large Image spanning right side/bottom -->
+    <div class="bg-cover bg-center min-h-[220px] lg:row-span-2" style="background-image: url('https://images.unsplash.com/photo-1590105577767-e21a46b53754?auto=format&fit=crop&q=80&w=800');"></div>
 
-        <!-- Safety Standards (Black Solid) -->
-        <div class="bg-black text-white p-8 flex flex-col justify-center min-h-[220px]">
-            <h3 class="text-xl font-bold mb-3 hover:text-red-600 transition-colors duration-300 cursor-default">Recommended website visual flow</h3>
-            <p class="text-sm text-gray-300 leading-relaxed">    • Hero — full-width real factory image, black/white treatment with restrained red accents
+    <!-- Safety Standards (Black Solid) -->
+    <div class="bg-black text-white p-8 flex flex-col justify-center min-h-[220px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors duration-300 cursor-default">Recommended website visual flow</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">    • Hero — full-width real factory image, black/white treatment with restrained red accents
     • 1966 — oversized year and short origin story
     • Timeline — 1966 → Trading → Manufacturing → Second Generation → Third Generation → Guard Gloves Today → Future
     • Three Generations — strong typography with family/manufacturing imagery
@@ -209,41 +204,41 @@ Continuous Improvement — Constantly looking for better ways to manufacture.</p
     • Responsibility — black section with white typography and red accents
     • Global Journey — Africa → Middle East → Europe → USA → Canada
     • The Next Chapter — minimal closing statement</p>
-        </div>
+    </div>
 
-        <!-- Excellence in Quality (White) -->
-        <div class="bg-white p-8 flex flex-col justify-center border-t border-gray-100 min-h-[220px]">
-            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-red-600 transition-colors duration-300 cursor-default">Quality</h3>
-            <p class="text-sm text-gray-600 leading-relaxed">Our history has always been connected to international markets. From our early trading relationships in Africa and the Middle East, to expansion across Europe and the USA, our understanding of global customers has continued to shape the business.
+    <!-- Excellence in Quality (White) -->
+    <div class="bg-white p-8 flex flex-col justify-center border-t border-gray-100 min-h-[220px] group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300 cursor-default">Quality</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">Our history has always been connected to international markets. From our early trading relationships in Africa and the Middle East, to expansion across Europe and the USA, our understanding of global customers has continued to shape the business.
 In 2017, we established an office in Toronto, Ontario, Canada, strengthening our presence in North America. Today, that international perspective remains central to Guard Gloves.
 We manufacture around our customers’ needs.</p>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FOOTER/LOWER HERO SECTION -->
-    <section class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="bg-cover bg-center h-64 lg:h-auto min-h-[350px]" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800');"></div>
-        
-        <div class="flex flex-col justify-between">
-            <!-- Top Content -->
-            <div class="p-8 md:p-12 bg-white flex-1">
-                <h3 class="text-xl font-bold text-gray-900 mb-4 hover:text-red-600 transition-colors duration-300 cursor-default">THE NEXT CHAPTER — THE LEGACY CONTINUES</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">The journey that began in 1966 is still evolving. We continue to invest in manufacturing technology, lean processes, product development, responsible practices and new markets.
+<!-- FOOTER/LOWER HERO SECTION -->
+<section class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="bg-cover bg-center h-64 lg:h-auto min-h-[350px]" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800');"></div>
+    
+    <div class="flex flex-col justify-between">
+        <!-- Top Content -->
+        <div class="p-8 md:p-12 bg-white flex-1 group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 cursor-default">THE NEXT CHAPTER — THE LEGACY CONTINUES</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">The journey that began in 1966 is still evolving. We continue to invest in manufacturing technology, lean processes, product development, responsible practices and new markets.
 The next generation of Guard Gloves will be shaped by the same principle that has carried our family business forward for decades:
 Respect what experience has taught us.
 Improve what can be better.
 Build what comes next.</p>
-            </div>
-            
-            <!-- Bottom Black Box -->
-            <div class="p-8 md:p-12 bg-black text-white">
-                <h3 class="text-xl font-bold mb-4 hover:text-red-600 transition-colors duration-300 cursor-default">THREE GENERATIONS. DECADES OF EXPERIENCE. ONE CONTINUING JOURNEY.</h3>
-                <p class="text-sm text-gray-300 leading-relaxed mb-6">From our family heritage to the future of manufacturing, we continue to build products, capabilities and partnerships designed to last.
-LET’S BUILD WHAT’S NEXT.</p>
-                <button class="bg-white text-black px-6 py-2.5 text-sm font-semibold hover:bg-gray-200 transition-colors duration-200">Contact Us &rarr;</button>
-            </div>
         </div>
-    </section>
+        
+        <!-- Bottom Black Box -->
+        <div class="p-8 md:p-12 bg-black text-white group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-bold mb-4 group-hover:text-red-600 transition-colors duration-300 cursor-default">THREE GENERATIONS. DECADES OF EXPERIENCE. ONE CONTINUING JOURNEY.</h3>
+            <p class="text-sm text-gray-300 leading-relaxed mb-6">From our family heritage to the future of manufacturing, we continue to build products, capabilities and partnerships designed to last.
+LET’S BUILD WHAT’S NEXT.</p>
+            <button class="bg-white text-black px-6 py-2.5 text-sm font-semibold hover:bg-gray-200 transition-colors duration-200">Contact Us &rarr;</button>
+        </div>
+    </div>
+</section>
 
 <!-- Guard Gloves Footer -->
 <footer class="bg-[#000000] text-white text-sm border-t border-white/5 pt-10 pb-8 font-sans overflow-hidden mt-8">
