@@ -1,13 +1,24 @@
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Only POST requests allowed' });
+    return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  const { name, email, message } = req.body;
+  // File upload attempts reject karein
+  const contentType = req.headers['content-type'] || '';
+  if (!contentType.includes('application/json')) {
+    return res.status(400).json({ success: false, message: 'Invalid content type' });
+  }
+
+  let { name, email, message } = req.body || {};
 
   if (!name || !email || !message) {
-    return res.status(400).json({ message: 'All fields are required' });
+    return res.status(400).json({ success: false, message: 'All fields are required' });
   }
+
+  // String Trimming & Max Length Sanitization
+  name = String(name).trim().substring(0, 60);
+  email = String(email).trim().substring(0, 100);
+  message = String(message).trim().substring(0, 2000);
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
@@ -18,7 +29,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'Guard Gloves Contact <onboarding@resend.dev>',
-        to: ['teamguardgloves@gmail.com'], // Aapka Resend account email
+        to: ['teamguardgloves@gmail.com'],
         subject: `New Global Inquiry from ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
