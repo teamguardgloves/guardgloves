@@ -302,55 +302,99 @@
     </div>
 </section>
 
+<!-- JSON-LD Schema Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Learn More About ANSI Standard",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ANSI Impact Resistance",
+      "url": "impact.html",
+      "image": "assets/subblog/impact.webp"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ANSI Cut Resistance",
+      "url": "cut.html",
+      "image": "assets/subblog/cut.webp"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ANSI Abrasion Resistance",
+      "url": "abrasion.html",
+      "image": "assets/subblog/abrsion.webp"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "ANSI Puncture Resistance",
+      "url": "puncture.html",
+      "image": "assets/subblog/punture.webp"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "ANSI High Visibility",
+      "url": "visibilty.html",
+      "image": "assets/subblog/highvisibility.webp"
+    }
+  ]
+}
+</script>
+
+<!-- Learn More Section -->
 <section class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-3 space-y-6">
     
     <!-- Learn More Section (5 Blocks) -->
-    <div class="group relative bg-black border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-600/10 overflow-hidden">
-        <div class="relative z-10 space-y-6 w-full">
+    <div class="group relative bg-black border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-xl transition-all duration-300 transform md:hover:-translate-y-2 md:hover:border-red-600/50 md:hover:shadow-2xl md:hover:shadow-red-600/10 overflow-hidden">
+        <div class="relative z-10 space-y-4 sm:space-y-6 text-center w-full">
+            <h2 class="text-xl sm:text-3xl md:text-4xl font-serif font-bold tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-500">
+                Learn More About ANSI Standard
+            </h2>
+            <div class="w-16 h-[2px] bg-red-600 mx-auto transition-all duration-300 group-hover:w-24"></div>
             
-            <!-- Centered Header & Underline -->
-            <div class="flex flex-col items-center text-center space-y-3 sm:space-y-4">
-                <h2 class="text-xl sm:text-3xl md:text-4xl font-serif font-bold tracking-wide text-white leading-tight uppercase transition-colors duration-300 group-hover:text-red-500">
-                    Learn More About ANSI Standard
-                </h2>
-                <div class="w-16 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-24"></div>
-            </div>
 
-            <!-- Grid for 5 Clickable Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 pt-2">
+            <!-- Horizontal Scroll Container for Mobile / Grid for Desktop -->
+            <div class="flex lg:grid lg:grid-cols-5 gap-4 sm:gap-6 pt-2 overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-1 px-1 pb-2 text-left">
                 
                 <!-- Card 1 -->
-                <a href="impact.html" class="block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/10 overflow-hidden cursor-pointer">
-                    <div class="w-full h-48 sm:h-56 rounded-lg overflow-hidden">
-                        <img src="assets/subblog/impact.webp" alt="ANSI Impact Resistance" class="w-full h-full object-cover" />
+                <a href="impact.html" class="flex-shrink-0 w-[75%] sm:w-[45%] lg:w-auto snap-start block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform md:hover:-translate-y-1 md:hover:border-red-600/50 md:hover:shadow-lg md:hover:shadow-red-600/10 overflow-hidden cursor-pointer">
+                    <div class="w-full h-44 sm:h-52 md:h-56 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
+                        <img src="assets/subblog/impact.webp" alt="ANSI Impact Resistance" class="max-w-full max-h-full object-contain mx-auto" />
                     </div>
                 </a>
 
                 <!-- Card 2 -->
-                <a href="cut.html" class="block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/10 overflow-hidden cursor-pointer">
-                    <div class="w-full h-48 sm:h-56 rounded-lg overflow-hidden">
-                        <img src="assets/subblog/cut.webp" alt="ANSI Cut Resistance" class="w-full h-full object-cover" />
+                <a href="cut.html" class="flex-shrink-0 w-[75%] sm:w-[45%] lg:w-auto snap-start block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform md:hover:-translate-y-1 md:hover:border-red-600/50 md:hover:shadow-lg md:hover:shadow-red-600/10 overflow-hidden cursor-pointer">
+                    <div class="w-full h-44 sm:h-52 md:h-56 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
+                        <img src="assets/subblog/cut.webp" alt="ANSI Cut Resistance" class="max-w-full max-h-full object-contain mx-auto" />
                     </div>
                 </a>
 
                 <!-- Card 3 -->
-                <a href="abrasion-resistance.html" class="block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/10 overflow-hidden cursor-pointer">
-                    <div class="w-full h-48 sm:h-56 rounded-lg overflow-hidden">
-                        <img src="assets/subblog/abrsion.webp" alt="ANSI Abrasion Resistance" class="w-full h-full object-cover" />
+                <a href="abrasion.html" class="flex-shrink-0 w-[75%] sm:w-[45%] lg:w-auto snap-start block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform md:hover:-translate-y-1 md:hover:border-red-600/50 md:hover:shadow-lg md:hover:shadow-red-600/10 overflow-hidden cursor-pointer">
+                    <div class="w-full h-44 sm:h-52 md:h-56 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
+                        <img src="assets/subblog/abrsion.webp" alt="ANSI Abrasion Resistance" class="max-w-full max-h-full object-contain mx-auto" />
                     </div>
                 </a>
 
                 <!-- Card 4 -->
-                <a href="puncture.html" class="block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/10 overflow-hidden cursor-pointer">
-                    <div class="w-full h-48 sm:h-56 rounded-lg overflow-hidden">
-                        <img src="assets/subblog/punture.webp" alt="ANSI Puncture Resistance" class="w-full h-full object-cover" />
+                <a href="puncture.html" class="flex-shrink-0 w-[75%] sm:w-[45%] lg:w-auto snap-start block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform md:hover:-translate-y-1 md:hover:border-red-600/50 md:hover:shadow-lg md:hover:shadow-red-600/10 overflow-hidden cursor-pointer">
+                    <div class="w-full h-44 sm:h-52 md:h-56 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
+                        <img src="assets/subblog/punture.webp" alt="ANSI Puncture Resistance" class="max-w-full max-h-full object-contain mx-auto" />
                     </div>
                 </a>
 
                 <!-- Card 5 -->
-                <a href="visibilty.html" class="block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:border-red-600/50 hover:shadow-lg hover:shadow-red-600/10 overflow-hidden cursor-pointer">
-                    <div class="w-full h-48 sm:h-56 rounded-lg overflow-hidden">
-                        <img src="assets/subblog/highvisibility.webp" alt="ANSI High Visibility" class="w-full h-full object-cover" />
+                <a href="visibilty.html" class="flex-shrink-0 w-[75%] sm:w-[45%] lg:w-auto snap-start block bg-zinc-900 border border-white/10 p-2 rounded-xl transition-all duration-300 transform md:hover:-translate-y-1 md:hover:border-red-600/50 md:hover:shadow-lg md:hover:shadow-red-600/10 overflow-hidden cursor-pointer">
+                    <div class="w-full h-44 sm:h-52 md:h-56 bg-white rounded-lg overflow-hidden p-2 flex items-center justify-center">
+                        <img src="assets/subblog/highvisibility.webp" alt="ANSI High Visibility" class="max-w-full max-h-full object-contain mx-auto" />
                     </div>
                 </a>
 
