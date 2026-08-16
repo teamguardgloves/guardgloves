@@ -4,12 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guard Gloves</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Config for Custom Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
     /* White Brand Classes */
     .bg-brand-white { background-color: #ffffff; }
     .text-brand-white { color: #ffffff; }
@@ -27,74 +51,71 @@
     }
   </style>
 </head>
-<body class="bg-black text-white font-sans relative min-h-screen flex flex-col justify-between overflow-x-hidden">
+<body class="bg-black text-white font-sans relative min-h-screen flex flex-col justify-between overflow-x-hidden antialiased">
+
+  <!-- ================= BACKGROUND IMAGE WITH 70% BLACK FILTER ================= -->
+  <div class="fixed inset-0 -z-10 bg-black">
+    <img src="assets/portalbg.webp" alt="Background" class="w-full h-full object-cover object-center" />
+    <div class="absolute inset-0 bg-black/70"></div>
+  </div>
+  <!-- ========================================================================= -->
 
   <!-- ================= INTRO SCREEN OVERLAY ================= -->
   <div id="intro-screen" class="fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-700">
-    <div class="h-24 sm:h-32 px-4 flex items-center justify-center">
+    <div class="h-20 sm:h-28 md:h-32 px-4 flex items-center justify-center">
       <img src="assets/images/logored1.webp" alt="Guard Gloves Intro Logo" class="h-full w-auto object-contain animate-intro-logo" />
     </div>
   </div>
   <!-- ======================================================== -->
 
-  <!-- Left Floating Social Bar -->
-  <div class="fixed left-0 top-1/3 z-50 flex flex-col space-y-1">
-    <a href="#" class="bg-[#3b5998] text-white p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-sm sm:text-base hover:opacity-80 transition"><i class="fab font-bold fa-facebook-f"></i></a>
-    <a href="#" class="bg-[#1da1f2] text-white p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-sm sm:text-base hover:opacity-80 transition"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="bg-[#e1306c] text-white p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-sm sm:text-base hover:opacity-80 transition"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="bg-[#0077b5] text-white p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-sm sm:text-base hover:opacity-80 transition"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-
-  <!-- Right Floating "Verified Supplier" Badge -->
-  <div class="fixed right-0 top-1/3 z-50 bg-white text-black font-bold px-1.5 sm:px-2 py-4 sm:py-6 text-xs sm:text-base shadow-lg flex items-center justify-center [writing-mode:vertical-rl] tracking-wider border-l-4 border-brand-white">
-    <span class="text-blue-600 font-extrabold mr-1">✔</span> Verified Supplier
-  </div>
-
   <!-- TOP HEADER & NAVBAR SECTION -->
-  <div class="w-full pt-4">
-    
-    <!-- Header Logo Image Container -->
-    <header class="flex justify-center items-center mb-4 px-4">
-      <div class="h-16 sm:h-20 flex items-center justify-center">
-        <img src="assets/images/logored1.webp" alt="Guard Gloves Logo" class="h-full w-auto object-contain" />
+  <div class="w-full pt-2 sm:pt-4">
+    <header class="w-full bg-transparent px-2 sm:px-4 py-2 flex justify-center">
+      <!-- Main Container Pure Black with Bottom Red Line -->
+      <div class="relative w-full max-w-[1400px] mx-auto bg-black border border-gray-800 rounded-2xl px-4 sm:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 shadow-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[2px] before:bg-gradient-to-r before:from-transparent before:via-red-600 before:to-transparent">
+        
+        <!-- Logo -->
+        <a href="home.html" class="flex items-center">
+          <img src="assets/images/logored1.webp" alt="Guard Gloves Logo" class="h-8 sm:h-11 w-auto object-contain" />
+        </a>
+
+        <!-- Center Events -->
+        <div class="my-0 text-center">
+          <span class="text-xs sm:text-sm md:text-base font-semibold tracking-wider text-gray-200 uppercase">
+            Upcoming Events: <span class="font-bold text-white">ISPO, A+A, EICMA</span>
+          </span>
+        </div>
+
+        <!-- Nav Links -->
+        <nav class="flex items-center space-x-6 sm:space-x-8 text-xs sm:text-sm font-semibold text-white uppercase tracking-wider">
+          <a href="story.html" class="hover:text-red-500 transition-colors">About Us</a>
+          <a href="contact.html" class="hover:text-red-500 transition-colors">Contact Us</a>
+        </nav>
+
       </div>
     </header>
-
-    <!-- Navigation Bar -->
-    <nav class="bg-brand-white py-3 w-full text-center text-sm sm:text-base font-extrabold uppercase tracking-widest text-black shadow-md">
-      <div class="flex justify-center items-center space-x-6 sm:space-x-10 px-4">
-        <a href="#" class="hover:text-[#c8382b] transition">ABOUT US</a>
-        <a href="#" class="hover:text-[#c8382b] transition">CONTACT US</a>
-      </div>
-    </nav>
-
-    <!-- Marquee / Events Banner -->
-    <div class="bg-black text-white border-b border-gray-800 w-full text-center py-2 text-xs sm:text-base font-black uppercase tracking-wide px-2 overflow-x-auto whitespace-nowrap">
-      &lt;&lt; UPCOMING EVENTS: ISPO, A+A, EICMA &gt;&gt;
-    </div>
-
   </div>
 
   <!-- MAIN BODY CONTENT -->
-  <div class="w-full max-w-6xl mx-auto px-4 py-8 sm:py-12 flex-grow flex flex-col justify-center">
+  <div class="w-full max-w-6xl mx-auto px-4 py-6 sm:py-12 flex-grow flex flex-col justify-center">
 
     <!-- Grid Categories -->
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto w-full my-auto">
+    <main class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto w-full my-auto">
 
       <!-- Category 1: SAFETY -->
       <a href="home.html" class="flex flex-col items-center group cursor-pointer w-full">
-        <div class="w-full h-[350px] sm:h-[480px] bg-gray-900 border-2 border-gray-800 group-hover:border-[#c8382b] overflow-hidden relative shadow-xl rounded transition duration-300">
-          <img src="assets/icon/bgimage.webp" alt="Safety" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="w-full aspect-[3/4] max-w-xs sm:max-w-none bg-black border-2 border-gray-800 group-hover:border-[#c8382b] overflow-hidden relative shadow-xl rounded-lg transition duration-300">
+          <img src="assets/portal2.webp" alt="Safety" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300" />
         </div>
-        <h2 class="mt-3 sm:mt-4 text-xl sm:text-2xl font-black uppercase tracking-widest text-white group-hover:text-[#c8382b] transition duration-300">SAFETY</h2>
+        <h2 class="mt-3 sm:mt-4 text-xl sm:text-2xl font-extrabold uppercase tracking-widest text-white group-hover:text-[#c8382b] transition duration-300">SAFETY</h2>
       </a>
 
       <!-- Category 2: SPORTS -->
       <a href="home2.html" class="flex flex-col items-center group cursor-pointer w-full">
-        <div class="w-full h-[350px] sm:h-[480px] bg-gray-900 border-2 border-gray-800 group-hover:border-[#c8382b] overflow-hidden relative shadow-xl rounded transition duration-300">
-          <img src="https://picsum.photos/600/800?safety" alt="Sports" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="w-full aspect-[3/4] max-w-xs sm:max-w-none bg-black border-2 border-gray-800 group-hover:border-[#c8382b] overflow-hidden relative shadow-xl rounded-lg transition duration-300">
+          <img src="assets/portal1.webp" alt="Sports" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300" />
         </div>
-        <h2 class="mt-3 sm:mt-4 text-xl sm:text-2xl font-black uppercase tracking-widest text-white group-hover:text-[#c8382b] transition duration-300">SPORTS</h2>
+        <h2 class="mt-3 sm:mt-4 text-xl sm:text-2xl font-extrabold uppercase tracking-widest text-white group-hover:text-[#c8382b] transition duration-300">SPORTS</h2>
       </a>
 
     </main>
@@ -102,32 +123,57 @@
   </div>
 
   <!-- FOOTER SECTION -->
-  <footer class="w-full">
-    <!-- Contact Info Bar -->
-    <div class="border-t border-gray-800 bg-black py-4 text-sm sm:text-base font-bold text-white">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-center md:text-left">
+  <footer class="w-full bg-transparent px-2 sm:px-4 py-4 flex flex-col items-center">
+    <!-- Main Container Pure Black with Bottom Red Line -->
+    <div class="relative w-full max-w-[1400px] mx-auto bg-black border border-gray-800 rounded-2xl px-4 sm:px-8 py-5 sm:py-6 shadow-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[2px] before:bg-gradient-to-r before:from-transparent before:via-red-600 before:to-transparent">
+      
+      <div class="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-nowrap items-center justify-between gap-6 lg:divide-x divide-gray-800 text-center lg:text-left">
         
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-map-marker-alt text-brand-white text-base sm:text-lg"></i>
-          <span>Hajipura Road, Sialkot 51310, Punjab, Pakistan</span>
+        <!-- Section 1: Tagline -->
+        <div class="col-span-2 sm:col-span-3 lg:col-auto flex flex-col items-center lg:items-start justify-center space-y-1 pb-3 lg:pb-0 lg:pr-6 border-b lg:border-b-0 border-gray-800">
+          <h4 class="text-white font-bold text-xs sm:text-sm tracking-wide uppercase">Protection. Performance. Trust.</h4>
+          <p class="text-gray-300 text-xs sm:text-xs">Building safety. Enhancing performance.</p>
         </div>
 
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-phone-alt text-brand-white text-base sm:text-lg"></i>
-          <span>+92-324-4356168</span>
+        <!-- Section 2: Premium Quality -->
+        <div class="flex items-center justify-center lg:px-6">
+          <span class="text-white font-semibold text-xs sm:text-sm leading-tight uppercase tracking-wider">Premium<br>Quality</span>
         </div>
 
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-envelope text-brand-white text-base sm:text-lg"></i>
-          <span>info@guardgloves.com</span>
+        <!-- Section 3: Certified Protection -->
+        <div class="flex items-center justify-center lg:px-6">
+          <span class="text-white font-semibold text-xs sm:text-sm leading-tight uppercase tracking-wider">Certified<br>Protection</span>
+        </div>
+
+        <!-- Section 4: Trusted Worldwide -->
+        <div class="flex items-center justify-center lg:px-6">
+          <span class="text-white font-semibold text-xs sm:text-sm leading-tight uppercase tracking-wider">Trusted<br>Worldwide</span>
+        </div>
+
+        <!-- Section 5: Dedicated Support -->
+        <div class="flex items-center justify-center lg:px-6">
+          <span class="text-white font-semibold text-xs sm:text-sm leading-tight uppercase tracking-wider">Dedicated<br>Support</span>
+        </div>
+
+        <!-- Section 6: Follow Us -->
+        <div class="col-span-2 sm:col-span-1 lg:col-auto flex flex-col items-center space-y-2 lg:pl-6">
+          <span class="text-white font-bold text-xs uppercase tracking-wider">Follow Us</span>
+          <div class="flex items-center space-x-2.5">
+            <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-500 flex items-center justify-center text-white hover:border-red-500 hover:text-red-500 transition-colors text-xs font-semibold">f</a>
+            <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-500 flex items-center justify-center text-white hover:border-red-500 hover:text-red-500 transition-colors text-xs font-semibold">in</a>
+            <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-500 flex items-center justify-center text-white hover:border-red-500 hover:text-red-500 transition-colors text-xs font-semibold">ig</a>
+            <a href="#" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-500 flex items-center justify-center text-white hover:border-red-500 hover:text-red-500 transition-colors text-xs font-semibold">yt</a>
+          </div>
         </div>
 
       </div>
     </div>
 
-    <!-- Bottom Copyright Bar -->
-    <div class="bg-brand-white py-2.5 px-2 text-center text-xs sm:text-sm font-black text-black uppercase tracking-wider">
-      COPYRIGHT © 2025 GUARD GLOVES, ALL RIGHTS RESERVED.
+    <!-- Copyright Text -->
+    <div class="mt-4 text-center">
+      <p class="text-xs text-gray-400 tracking-widest uppercase font-medium">
+        &copy; 2026 GUARD GLOVES. ALL RIGHTS RESERVED.
+      </p>
     </div>
   </footer>
 
@@ -136,11 +182,8 @@
     window.addEventListener('DOMContentLoaded', () => {
       const introScreen = document.getElementById('intro-screen');
       
-      // 2.2 seconds logo animation ke baad overlay ko smoothly fade out karna
       setTimeout(() => {
         introScreen.classList.add('opacity-0');
-        
-        // Complete fade transition ke baad screen ko DOM se hide kar dena
         setTimeout(() => {
           introScreen.style.display = 'none';
         }, 700);
