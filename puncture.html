@@ -104,6 +104,7 @@
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#000000] border-b border-white/[0.05]">
         <div class="w-full mx-auto px-4 sm:px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-between relative">
             
+            <!-- Logo -->
             <div class="flex items-center h-full py-1 shrink-0 z-10 w-[140px] sm:w-[180px] md:w-[220px]">
                 <a href="index.html" class="block h-full w-full" aria-label="Guard Gloves Home Page">
                     <img src="assets/images/logored1.webp" alt="Guard Gloves Official Red Logo" class="object-contain object-left w-full h-full">
@@ -112,7 +113,7 @@
 
             <div class="hidden lg:flex items-center justify-center flex-1 px-4">
                 <div class="flex items-center gap-4 xl:gap-6 text-[11px] xl:text-[12px] font-medium tracking-widest uppercase text-white">
-                    <a href="index.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
+                    <a href="home.html" class="hover:text-red-600 transition-colors duration-300">Home</a>
                     <a href="story.html" class="hover:text-red-600 transition-colors duration-300">About Us</a>
                     <a href="strengths.html" class="hover:text-red-600 transition-colors duration-300">Strengths</a>
                     <a href="sustainibilty.html" class="hover:text-red-600 transition-colors duration-300">Sustainability</a>
@@ -122,36 +123,38 @@
                 </div>
             </div>
 
-            <!-- Desktop CTA -->
-            <div class="hidden lg:flex items-center z-10 shrink-0">
-                <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
-                    Contact Us
-                </a>
-            </div>
+        <div class="hidden lg:flex items-center z-10 shrink-0">
+            <a href="contact.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-[11px] xl:text-[12px] font-semibold tracking-widest uppercase transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/20">
+                Contact Us
+            </a>
+        </div>
 
-            <input type="checkbox" id="nav-toggle" class="hidden peer">
+        <!-- Toggle Checkbox -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer">
 
-            <div class="flex lg:hidden items-center z-10">
-                <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
-                        <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
-                    </svg>
-                </label>
-            </div>
+        <!-- Mobile Hamburger/Close Button -->
+        <div class="flex lg:hidden items-center z-10">
+            <label for="nav-toggle" class="text-white hover:text-red-600 cursor-pointer p-2 active:scale-95 transition-transform select-none" aria-label="Toggle Mobile Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path class="peer-checked:hidden block" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" id="hamburger-icon"></path>
+                    <path class="peer-checked:block hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" id="close-icon"></path>
+                </svg>
+            </label>
+        </div>
 
-            <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
-                <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
-                    <a href="index.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
-                    <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
-                    <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
-                    <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
-                    <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
-                    <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
-                    <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
-                    <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-white/[0.05] shadow-2xl transition-all duration-300 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="px-6 py-4 space-y-3 text-left text-xs font-medium tracking-widest uppercase text-white">
+                <a href="home.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Home</a>
+                <a href="story.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">About Us</a>
+                <a href="strengths.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Strengths</a>
+                <a href="sustainibilty.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Sustainability</a>
+                <a href="legacy.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Our Legacy</a>
+                <a href="technical.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Technical Blueprint</a>
+                <a href="resources.html" class="block py-2 border-b border-white/[0.03] hover:text-red-600 transition-colors">Resources</a>
+                <a href="contact.html" class="block py-3 text-white bg-red-600 rounded-full text-center font-bold mt-4 tracking-widest shadow-lg shadow-red-600/20">Contact Us</a>
             </div>
+        </div>
         </div>
     </nav>
 </header>
