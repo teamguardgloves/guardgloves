@@ -1,10 +1,28 @@
+// Simple In-memory IP tracking for Rate Limiting (60 Seconds Cooldown)
+const rateLimitMap = new Map();
+
 export default async function handler(req, res) {
   // 1. Only ALLOW POST Method
   if (req.method !== 'POST') {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
-  // 2. Reject non-JSON content types (Prevents direct File Upload Exploits)
+  // 2. SECURITY: Rate Limiting Check (1 Request per 60 Seconds per IP)
+  const clientIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown';
+  const currentTime = Date.now();
+  const windowTime = 60 * 1000; // 60 Seconds
+
+  if (rateLimitMap.has(clientIp)) {
+    const lastRequestTime = rateLimitMap.get(clientIp);
+    if (currentTime - lastRequestTime < windowTime) {
+      return res.status(429).json({ 
+        success: false, 
+        message: 'Too many requests. Please wait 60 seconds before submitting again.' 
+      });
+    }
+  }
+
+  // 3. Reject non-JSON content types (Prevents direct File Upload Exploits)
   const contentType = req.headers['content-type'] || '';
   if (!contentType.includes('application/json')) {
     return res.status(400).json({ success: false, message: 'Invalid content type' });
@@ -12,12 +30,12 @@ export default async function handler(req, res) {
 
   let { name, company, email, country, phone, projectType, category, quantity, details } = req.body || {};
 
-  // 3. Required Fields Check
+  // 4. Required Fields Check
   if (!name || !email || !company || !country || !projectType || !category || !details) {
     return res.status(400).json({ success: false, message: 'Required fields are missing' });
   }
 
-  // 4. SECURITY: Helper function to strip HTML / Script Tags (XSS Protection)
+  // 5. SECURITY: Helper function to strip HTML / Script Tags (XSS Protection)
   const sanitizeInput = (input) => {
     if (typeof input !== 'string') return '';
     return input
@@ -26,7 +44,7 @@ export default async function handler(req, res) {
       .trim();
   };
 
-  // 5. SECURITY: Check for suspicious hacking payloads/keywords
+  // 6. SECURITY: Check for suspicious hacking payloads/keywords
   const containsMaliciousContent = (text) => {
     const suspiciousPatterns = [
       /<script/i,
@@ -48,7 +66,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ success: false, message: 'Malicious content detected' });
   }
 
-  // 6. Sanitize and enforce strict Max Lengths
+  // 7. Sanitize and enforce strict Max Lengths
   name = sanitizeInput(name).substring(0, 60);
   company = sanitizeInput(company).substring(0, 80);
   email = sanitizeInput(email).substring(0, 100);
@@ -59,7 +77,7 @@ export default async function handler(req, res) {
   quantity = sanitizeInput(quantity || 'N/A').substring(0, 50);
   details = sanitizeInput(details).substring(0, 2000);
 
-  // 7. SECURITY: Strict Email Format Validation
+  // 8. SECURITY: Strict Email Format Validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return res.status(400).json({ success: false, message: 'Invalid email address' });
@@ -95,11 +113,12 @@ export default async function handler(req, res) {
       }),
     });
 
-    const data = await response.json();
-
     if (response.ok) {
+      // Record user's IP timestamp after a successful attempt
+      rateLimitMap.set(clientIp, currentTime);
       return res.status(200).json({ success: true, message: 'Inquiry sent successfully!' });
     } else {
+      const data = await response.json();
       return res.status(400).json({ success: false, error: data });
     }
   } catch (error) {

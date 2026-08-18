@@ -220,7 +220,8 @@
     </div>
 </section>
 
-<!-- MAIN HERO CONTACT SECTION (FORM + BANNER) -->
+
+
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-4">
     <div class="bg-white border border-gray-200 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12">
         
@@ -294,6 +295,9 @@
             <p class="text-xs text-gray-500 mb-5 sm:mb-6 font-light">Fill out the form below for formal quotation & technical sampling.</p>
 
             <form id="contactForm" class="space-y-3.5 sm:space-y-4">
+                <!-- Inline Notification Alert Container -->
+                <div id="formMessage" class="hidden p-3.5 rounded-2xl text-xs font-semibold transition-all duration-300"></div>
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                     <div>
                         <label class="block text-[11px] sm:text-xs font-semibold text-gray-700 uppercase mb-1 tracking-wider">
@@ -390,7 +394,7 @@
                 <div class="pt-2">
                     <button type="submit" id="submitBtn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 px-8 rounded-full text-xs tracking-wider uppercase transition-all duration-300 shadow-lg shadow-red-600/30 hover:scale-[1.01] flex items-center justify-center gap-2">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <span>Submit Project Inquiry</span>
+                        <span id="btnText">Submit Project Inquiry</span>
                     </button>
                 </div>
             </form>
@@ -481,15 +485,64 @@
             }, 3500);
         }
 
-        // 2. Form Submission Logic
+        // 2. Form Submission + Brute Force / Rate Limit Protection
         const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+
+        // UI Message Banner Helper Function
+        function showUIStatus(msg, isSuccess) {
+            if (!formMessage) return;
+            
+            formMessage.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800', 'border-emerald-200', 'bg-red-50', 'text-red-800', 'border-red-200', 'border');
+            
+            if (isSuccess) {
+                formMessage.classList.add('bg-emerald-50', 'text-emerald-800', 'border', 'border-emerald-200');
+            } else {
+                formMessage.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+            }
+            
+            formMessage.innerHTML = msg;
+        }
+
+        // Cooldown Timer Function
+        function startCooldown(seconds) {
+            let timeLeft = seconds;
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-60', 'cursor-not-allowed');
+
+            const timer = setInterval(() => {
+                btnText.innerText = `Please wait ${timeLeft}s...`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+                    btnText.innerText = 'Submit Project Inquiry';
+                }
+            }, 1000);
+        }
+
         if (contactForm) {
             contactForm.addEventListener('submit', async function(e) {
                 e.preventDefault();
 
-                const submitBtn = document.getElementById('submitBtn');
-                const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Sending...</span>';
+                // Check localStorage for Client-Side Rate Limiting
+                const lastSubmitTime = localStorage.getItem('last_submit_time');
+                const now = Date.now();
+                const cooldownPeriod = 60 * 1000; // 60 Seconds
+
+                if (lastSubmitTime && (now - lastSubmitTime) < cooldownPeriod) {
+                    const remaining = Math.ceil((cooldownPeriod - (now - lastSubmitTime)) / 1000);
+                    showUIStatus(`Too many requests. Please wait ${remaining} seconds before trying again.`, false);
+                    startCooldown(remaining);
+                    return;
+                }
+
+                // Processing State
+                btnText.innerText = 'Sending...';
                 submitBtn.disabled = true;
 
                 const formData = new FormData(this);
@@ -507,16 +560,25 @@
                     const result = await response.json();
 
                     if (response.ok && result.success) {
-                        alert('Your project inquiry has been sent successfully!');
+                        showUIStatus('Your project inquiry has been sent successfully!', true);
                         this.reset();
+                        
+                        // Set timestamp and trigger 60s cooldown timer
+                        localStorage.setItem('last_submit_time', Date.now());
+                        startCooldown(60);
+                    } else if (response.status === 429) {
+                        // Handle Rate Limit Error from Backend API
+                        showUIStatus(result.message || 'Too many requests. Please try again later.', false);
+                        startCooldown(60);
                     } else {
-                        alert('Error: ' + (result.message || 'Failed to send inquiry.'));
+                        showUIStatus(result.message || 'Failed to send inquiry.', false);
+                        submitBtn.disabled = false;
+                        btnText.innerText = 'Submit Project Inquiry';
                     }
                 } catch (error) {
-                    alert('An error occurred. Please try again.');
-                } finally {
-                    submitBtn.innerHTML = originalText;
+                    showUIStatus('Network error. Please check your connection and try again.', false);
                     submitBtn.disabled = false;
+                    btnText.innerText = 'Submit Project Inquiry';
                 }
             });
         }
