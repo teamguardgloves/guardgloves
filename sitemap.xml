@@ -8,24 +8,7 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://www.guardgloves.com/catalogue.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/collection.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/product.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  
   <url>
     <loc>https://www.guardgloves.com/strengths.html</loc>
     <lastmod>2026-08-01</lastmod>
@@ -33,7 +16,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.guardgloves.com/sustainbilty.html</loc>
+    <loc>https://www.guardgloves.com/sustainibilty.html</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -69,76 +52,102 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blogs (1 to 11 + Detail) -->
   <url>
-    <loc>https://www.guardgloves.com/blog-detail.html</loc>
+    <loc>https://www.guardgloves.com/high-visibility-ppe-gloves-low-light-safety.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.guardgloves.com/blog1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog4.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog5.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog6.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog7.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog8.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog9.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog10.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.guardgloves.com/blog11.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+  <loc>https://www.guardgloves.com/welding-gloves-sourcing-guide-performance-safety.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
 
+  <url>
+  <loc>https://www.guardgloves.com/winter-work-gloves-extreme-industrial-climates.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  </url>
+
+
+ <url>
+  <loc>https://www.guardgloves.com/real-roi-premium-safety-gloves-workforce-margin.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  </url>
+
+  <url>
+  <loc>https://www.guardgloves.com/work-glove-sizing-guide-safety-fit.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  </url>
+
+  <url>
+  <loc>https://www.guardgloves.com/industrial-cut-resistant-gloves-critical-guide.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://www.guardgloves.com/private-label-safety-gloves-branding-guide.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://www.guardgloves.com/mastering-ansi-en-safety-standards-gloves.html</loc>
+  <lastmod>2026-08-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+  
+<!-- Technical & Feature Pages (Newly Added) -->
+  <url>
+    <loc>https://www.guardgloves.com/abrasion.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.guardgloves.com/cut.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.guardgloves.com/impact.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.guardgloves.com/puncture.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.guardgloves.com/visibilty.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Legal & Policy Pages -->
   <url>
     <loc>https://www.guardgloves.com/privacy.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.guardgloves.com/terms.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
